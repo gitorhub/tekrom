@@ -21,7 +21,6 @@ function addOnFromList(el) {
 function addOnFromState(el) {
     const stateId = el.getAttribute("id");
     const wordState = document.querySelector("[data-state='" + stateId + "']");
-
     el.classList.add("on");
     wordState.classList.add("on");
 }
@@ -33,7 +32,6 @@ wordStates.forEach(function (el) {
     el.addEventListener("mouseleave", function () {
         removeAllOn();
     });
-
     el.addEventListener("touchstart", function () {
         removeAllOn();
         addOnFromList(el);
@@ -47,7 +45,6 @@ svgStates.forEach(function (el) {
     el.addEventListener("mouseleave", function () {
         removeAllOn();
     });
-
     el.addEventListener("touchstart", function () {
         removeAllOn();
         addOnFromState(el);

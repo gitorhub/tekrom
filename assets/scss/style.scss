@@ -564,9 +564,13 @@ $slide-content-size: 85%;
     svg {
       display: block;
       width: 100%;
+      path {
+        fill: #99D9F2;
+        transition: fill 300ms ease-in;
+      }
     }
     #states *.on {
-      fill: red;
+      fill: #03658C;
     }
 
     .list-of-states {

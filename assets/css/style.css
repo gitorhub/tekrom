@@ -494,8 +494,12 @@ a:focus {
   display: block;
   width: 100%;
 }
+.home-page .map-of-regions svg path {
+  fill: #99D9F2;
+  transition: fill 300ms ease-in;
+}
 .home-page .map-of-regions #states *.on {
-  fill: red;
+  fill: #03658C;
 }
 .home-page .map-of-regions .list-of-states {
   margin: 0;
