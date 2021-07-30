@@ -19,8 +19,6 @@ Tekrom Teknoloji
   --color-dark: #212529;
   --color-dark-blue: #282f65;
   --color-turquoise: #79dcf2;
-  --color-kiralik: #8bbacf;
-  --color-satilik: #c9e0ee;
   --color-border-top: #f36d24;
   --color-sidebar-border: #c6500f;
   --sidebar-loading-bar-border: solid 3px transparent;
@@ -140,6 +138,10 @@ a:focus {
 
 .min-vh-75 {
   min-height: 75vh;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 
 /* colors */
@@ -428,8 +430,7 @@ a:focus {
   position: relative;
   display: block;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 50%;
+  background-position: center;
   -webkit-backface-visibility: hidden;
   height: 0%;
   width: 100%;
@@ -445,6 +446,70 @@ a:focus {
 }
 .is-sliding .slide__img {
   filter: grayscale(100%);
+}
+
+/* home page detail */
+.home-page .map-of-regions {
+  position: relative;
+}
+.home-page .map-of-regions .region-card {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.home-page .map-of-regions .region-card .region-image img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.25rem;
+}
+.home-page .map-of-regions .region-card .region-content {
+  padding: 10px 10px 0;
+}
+.home-page .map-of-regions .region-card .region-content .desc {
+  position: relative;
+}
+.home-page .map-of-regions .region-card .region-content .desc p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.75rem;
+  color: var(--color-darken-gray);
+}
+.home-page .map-of-regions .region-card .region-content .desc .read-more {
+  background: white;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, white 30%);
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 10px 0 50px;
+  color: #1e4496;
+}
+.home-page .map-of-regions svg {
+  display: block;
+  width: 100%;
+}
+.home-page .map-of-regions #states *.on {
+  fill: red;
+}
+.home-page .map-of-regions .list-of-states {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home-page .map-of-regions .list-of-states li {
+  display: none;
+}
+.home-page .map-of-regions .list-of-states li.on {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

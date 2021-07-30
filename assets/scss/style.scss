@@ -20,8 +20,6 @@ Tekrom Teknoloji
   --color-dark: #212529;
   --color-dark-blue: #282f65;
   --color-turquoise: #79dcf2;
-  --color-kiralik: #8bbacf;
-  --color-satilik: #c9e0ee;
   --color-border-top: #f36d24;
   --color-sidebar-border: #c6500f;
   --sidebar-loading-bar-border: solid 3px transparent;
@@ -141,6 +139,10 @@ a:focus {
 
 .min-vh-75 {
   min-height: 75vh;
+}
+
+.fw-500 {
+  font-weight: 500;
 }
 
 /* colors */
@@ -490,8 +492,7 @@ $slide-content-size: 85%;
     position: relative;
     display: block;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 50%;
+    background-position: center;
     -webkit-backface-visibility: hidden;
     height: 0%;
     width: 100%;
@@ -508,6 +509,79 @@ $slide-content-size: 85%;
 
     .is-sliding & {
       filter: grayscale(100%);
+    }
+  }
+}
+
+/* home page detail */
+.home-page {
+  .map-of-regions {
+    position: relative;
+    .region-card {
+      display: flex;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      .region-image {
+        img {
+          width: 100px;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: .25rem;
+        }
+      }
+      .region-content {
+        padding: 10px 10px 0;
+        .title {
+
+        }
+        .desc {
+          position: relative;
+          p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: .75rem;
+            color: var(--color-darken-gray);
+          }
+          .read-more {
+            background: rgb(255,255,255);
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%);
+            font-size: .75rem;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 0 10px 0 50px;
+            color: #1e4496;
+          }
+        }
+      }
+
+    }
+    svg {
+      display: block;
+      width: 100%;
+    }
+    #states *.on {
+      fill: red;
+    }
+
+    .list-of-states {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .list-of-states li {
+      display: none;
+    }
+    .list-of-states li.on {
+      display: flex;
     }
   }
 }
