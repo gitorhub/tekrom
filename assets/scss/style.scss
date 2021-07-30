@@ -564,13 +564,18 @@ $slide-content-size: 85%;
     svg {
       display: block;
       width: 100%;
+      g {
+        &::after {
+          content: attr(data-city);
+        }
+      }
       path {
-        fill: #99D9F2;
+        fill: #f36d25;
         transition: fill 300ms ease-in;
       }
     }
     #states *.on {
-      fill: #03658C;
+      fill: #1e4496;
     }
 
     .list-of-states {

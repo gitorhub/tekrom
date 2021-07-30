@@ -494,12 +494,15 @@ a:focus {
   display: block;
   width: 100%;
 }
+.home-page .map-of-regions svg g::after {
+  content: attr(data-city);
+}
 .home-page .map-of-regions svg path {
-  fill: #99D9F2;
+  fill: #f36d25;
   transition: fill 300ms ease-in;
 }
 .home-page .map-of-regions #states *.on {
-  fill: #03658C;
+  fill: #1e4496;
 }
 .home-page .map-of-regions .list-of-states {
   margin: 0;
