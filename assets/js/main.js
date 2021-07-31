@@ -115,3 +115,31 @@ let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+    var lazyloadThrottleTimeout;
+
+    function lazyload() {
+        if (lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+        }
+
+        var lazyloadImages = document.getElementsByClassName('lazy');
+        if (lazyloadImages.length < 1) {
+            return;
+        }
+
+        lazyloadThrottleTimeout = setTimeout(function () {
+            var scrollTop = window.pageYOffset;
+            for (var i = 0; i < lazyloadImages.length; i++) {
+                if (lazyloadImages[i].offsetTop < window.innerHeight + scrollTop) {
+                    lazyloadImages[i].src = lazyloadImages[i].dataset.src;
+                    lazyloadImages[i].classList.remove('lazy');
+                }
+            }
+        }, 20);
+    }
+
+    document.addEventListener('scroll', lazyload);
+    window.addEventListener('resize', lazyload);
+    window.addEventListener('orientationChange', lazyload);
+})

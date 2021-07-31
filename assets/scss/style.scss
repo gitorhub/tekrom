@@ -202,6 +202,7 @@ a:focus {
   }
 
   .navbar-nav {
+
     /* mobil and tablet screen */
     @media (max-width: 992px) {
       background: #fff;
@@ -285,8 +286,9 @@ a:focus {
 
 /* home page slider */
 // fonts
-$font-header: Montserrat, helvetica;
-$font-nav: "Space Mono", monospace;
+$font-header: Montserrat,
+helvetica;
+// $font-nav: "Space Mono", monospace;
 // colors
 $color-dark: #111;
 $color-border: #ccc;
@@ -314,7 +316,8 @@ $mq-xlarge: 91em;
 .slides-nav {
   z-index: 99;
   position: absolute;
-  right: -5%;
+  // right: -5%;
+  right: 0;
   display: flex;
   align-items: center;
   height: 100%;
@@ -338,7 +341,7 @@ $mq-xlarge: 91em;
     display: inline-block;
     padding: 0.35em;
     margin: 0;
-    font-family: $font-nav;
+    // font-family: $font-nav;
     appearance: none;
     background: transparent;
     border: 0;
@@ -517,12 +520,14 @@ $slide-content-size: 85%;
 .home-page {
   .map-of-regions {
     position: relative;
+
     .region-card {
       display: flex;
       background-color: #fff;
-      border: 1px solid rgba(0,0,0,.125);
+      border: 1px solid rgba(0, 0, 0, .125);
       border-radius: .25rem;
       box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
       .region-image {
         img {
           width: 100px;
@@ -532,13 +537,15 @@ $slide-content-size: 85%;
           border-radius: .25rem;
         }
       }
+
       .region-content {
         padding: 10px 10px 0;
-        .title {
 
-        }
+        .title {}
+
         .desc {
           position: relative;
+
           p {
             display: -webkit-box;
             -webkit-line-clamp: 3;
@@ -547,9 +554,10 @@ $slide-content-size: 85%;
             font-size: .75rem;
             color: var(--color-darken-gray);
           }
+
           .read-more {
-            background: rgb(255,255,255);
-            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%);
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%);
             font-size: .75rem;
             position: absolute;
             right: 0;
@@ -561,17 +569,21 @@ $slide-content-size: 85%;
       }
 
     }
+
     svg {
       display: block;
       width: 100%;
+
       g {
         cursor: help;
       }
+
       path {
         fill: #f36d25;
         transition: fill 300ms ease-in;
       }
     }
+
     #states *.on {
       fill: #1e4496;
     }
@@ -585,11 +597,36 @@ $slide-content-size: 85%;
       left: 0;
       max-width: 540px;
     }
+
     .list-of-states li {
       display: none;
     }
+
     .list-of-states li.on {
       display: flex;
     }
+  }
+
+}
+
+
+.offices {
+  // &__inner>div:nth-child(-n + 3) {
+  //   width: calc(100% /3);
+  // }
+
+  .card {
+    border: none;
+
+    img {
+      border-radius: 100%;
+    }
+  }
+}
+.footer-prize{
+  .row>*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

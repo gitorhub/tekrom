@@ -291,7 +291,7 @@ a:focus {
 .slides-nav {
   z-index: 99;
   position: absolute;
-  right: -5%;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +326,6 @@ a:focus {
   display: inline-block;
   padding: 0.35em;
   margin: 0;
-  font-family: "Space Mono", monospace;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -662,5 +661,25 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.offices .card {
+  border: none;
+}
+
+.offices .card img {
+  border-radius: 100%;
+}
+
+.footer-prize .row > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
