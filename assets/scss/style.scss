@@ -149,6 +149,9 @@ a:focus {
   font-weight: 500;
 }
 
+.object-fit-cover {
+  object-fit: cover;
+}
 /* colors */
 .bg-color-main-one,
 .btn-color-main-one {
@@ -287,6 +290,8 @@ a:focus {
     }
   }
 }
+
+
 
 /* home page slider */
 // fonts
@@ -647,7 +652,6 @@ $slide-content-size: 85%;
     }
   }
 }
-
 
 .videos {
   &__video {

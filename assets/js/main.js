@@ -116,7 +116,13 @@ let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
+});
 
+/* swiper slider - home page */
+const swiper1 = new Swiper('.slider--life-in-maras', {
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
 
-
-})
