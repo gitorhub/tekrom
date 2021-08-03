@@ -116,6 +116,9 @@ let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
+    let seconds=new Date();
+    let year=seconds.getFullYear()
+    document.querySelector('.date-now').innerHTML=year;
 });
 
 /* swiper slider - home page */
