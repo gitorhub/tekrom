@@ -21,6 +21,13 @@ function addOnFromState(el) {
     const wordState = document.querySelector("[data-state='" + stateId + "']");
     el.classList.add("on");
     wordState.classList.add("on");
+    generalStates.addEventListener(
+        'mousemove',
+        function (event) {
+            wordState.style.top = event.pageY + 25 + 'px';
+            wordState.style.left = event.pageX + 'px';
+        }
+      );
 }
 wordStates.forEach(function (el) {
     el.addEventListener("mouseenter", function () {
@@ -66,32 +73,34 @@ generalStates.addEventListener("mouseenter", function (e) {
 
 
 
-const turkeyMap=function () {
-    const element = document.querySelector('.map-of-regions');
-    const info = document.querySelector('.city-names');
+// const turkeyMap=function () {
+//     const element = document.querySelector('.map-of-regions');
+//     const info = document.querySelector('.city-names');
 
   
-    element.addEventListener('mouseover',function (event) {
-        console.log('event:', event)
-        if (event.target.tagName === 'path') {
-          info.innerHTML = [
-            '<div>',
-            event.target.getAttribute('data-city-name'),
-            '</div>'
-          ].join('');
-        }
-      }
-    );
+//     element.addEventListener('mouseover',function (event) {
   
-    element.addEventListener(
-      'mousemove',
-      function (event) {
-        info.style.top = event.pageY + 25 + 'px';
-        info.style.left = event.pageX + 'px';
-      }
-    );
+
+
+//         if (event.target.tagName === 'path' ) {
+//           info.innerHTML = [
+//             '<div>',
+//             event.target.getAttribute('data-city-name'),
+//             '</div>'
+//           ].join('');
+//         }
+//       }
+//     );
+  
+//     element.addEventListener(
+//       'mousemove',
+//       function (event) {
+//         info.style.top = event.pageY + 25 + 'px';
+//         info.style.left = event.pageX + 'px';
+//       }
+//     );
 
   
   
-  }
-turkeyMap();  
+//   }
+// turkeyMap();  
