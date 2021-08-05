@@ -46,10 +46,12 @@ svgStates.forEach(function (el) {
         addOnFromState(el);
     });
 });
+
 generalStates.addEventListener("mouseleave", function (e) {
     if (e.relatedTarget && (e.relatedTarget.classList.contains("svg-states") || e.relatedTarget.classList.contains("list-of-states"))) {
         document.querySelector('#kahramanmaras').classList.add("on")
         document.querySelector('[data-state=kahramanmaras]').classList.add("on")
+        
     }
 })
 generalStates.addEventListener("mouseenter", function (e) {
@@ -58,3 +60,38 @@ generalStates.addEventListener("mouseenter", function (e) {
         document.querySelector('[data-state=kahramanmaras]').classList.remove("on")
     }
 })
+
+
+
+
+
+
+const turkeyMap=function () {
+    const element = document.querySelector('.map-of-regions');
+    const info = document.querySelector('.city-names');
+
+  
+    element.addEventListener('mouseover',function (event) {
+        console.log('event:', event)
+        if (event.target.tagName === 'path') {
+          info.innerHTML = [
+            '<div>',
+            event.target.getAttribute('data-city-name'),
+            '</div>'
+          ].join('');
+        }
+      }
+    );
+  
+    element.addEventListener(
+      'mousemove',
+      function (event) {
+        info.style.top = event.pageY + 25 + 'px';
+        info.style.left = event.pageX + 'px';
+      }
+    );
+
+  
+  
+  }
+turkeyMap();  
