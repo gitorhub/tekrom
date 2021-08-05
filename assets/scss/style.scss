@@ -26,7 +26,7 @@ Tekrom Teknoloji
   --shadow: rgba(131, 131, 131, 0.5);
   --shadow-one-side-only: 0 8px 6px -6px rgba(131, 131, 131, 0.3);
   --font-family-main: "Montserrat", Helvetica, Arial, Sans-Serif;
-  --box-radius: .5rem;
+  --box-radius: 15px;
   --box-radius-t: var(--box-radius) var(--box-radius) 0 0;
   --box-radius-b: 0 0 var(--box-radius) var(--box-radius);
   --box-radius-l: 0 var(--box-radius) var(--box-radius) 0;
@@ -151,6 +151,10 @@ a:focus {
 
 .object-fit-cover {
   object-fit: cover;
+}
+
+.fs-7 {
+  font-size: .9rem;
 }
 /* colors */
 .bg-color-main-one,
