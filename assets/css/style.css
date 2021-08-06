@@ -460,10 +460,6 @@ a:focus {
 }
 
 /* home page detail */
-.home-page .city-names {
-  position: absolute;
-  z-index: 2;
-}
 .home-page .map-of-regions {
   position: relative;
 }
@@ -530,15 +526,64 @@ a:focus {
 .home-page .map-of-regions .list-of-states li.on {
   display: flex;
 }
+@media (max-width: 992px) {
+  .home-page .slider--life-in-maras-card {
+    z-index: 2;
+  }
+  .home-page .slider--life-in-maras-card > div {
+    position: relative;
+    padding: 0 !important;
+  }
+  .home-page .slider--life-in-maras-card > div .bg-color-gray-mobile {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 3rem;
+  }
+  .home-page .slider--life-in-maras-card > div span,
+.home-page .slider--life-in-maras-card > div p {
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+  }
+  .home-page .slider--life-in-maras-card > div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .home-page .slider--life-in-maras-image {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+  }
+  .home-page .slider--life-in-maras-gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-page .slider--life-in-maras-gallery img {
+    width: 48%;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .home-page .slider--life-in-maras-card > div img {
+    display: none;
+  }
+  .home-page .slider--life-in-maras-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .offices .card {
   border: none;
 }
 
-.footer-prize .row > * {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+footer {
+  overflow-x: hidden;
 }
 
 .living-center .content-card {

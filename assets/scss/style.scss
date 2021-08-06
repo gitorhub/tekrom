@@ -531,10 +531,6 @@ $slide-content-size: 85%;
 
 /* home page detail */
 .home-page {
-  .city-names{
-    position: absolute;
-    z-index: 2;
-  }
   .map-of-regions {
     position: relative;
 
@@ -623,6 +619,71 @@ $slide-content-size: 85%;
       display: flex;
     }
   }
+
+  .slider--life-in-maras {
+    @media (max-width: 992px) {
+      &-card {
+        z-index: 2;
+
+        & > div {
+          position: relative;
+          padding: 0 !important;
+
+          .bg-color-gray-mobile {
+            background-color: rgba(0, 0, 0, .6);
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            padding: 3rem;
+          }
+
+          span,
+          p {
+            z-index: 2;
+            position: relative;
+            color: #ffffff;
+          }
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+        }
+      }
+      &-image {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        padding: 0;
+      }
+      &-gallery {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          width: 48%;
+          height: 100%;
+        }
+      }
+    }
+    @media (min-width: 992px) {
+      &-card {
+        & > div {
+          img {
+            display: none;
+          }
+        }
+      }
+      &-gallery {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
 
 
@@ -633,11 +694,11 @@ $slide-content-size: 85%;
 }
 
 .footer-prize {
-  .row>* {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+}
+
+footer {
+  overflow-x: hidden;
 }
 
 .living-center {
