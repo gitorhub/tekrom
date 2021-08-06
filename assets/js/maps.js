@@ -22,8 +22,8 @@ function addOnFromState(el) {
 }
 const turkeyMap = function () {
     generalStates.addEventListener('mousemove', (event) => {
-        generalWords.style.top = event.screenY + -150 + 'px';
-        generalWords.style.left = event.screenX + 55 + 'px';
+        generalWords.style.top = event.clientY + -150 + 'px';
+        generalWords.style.left = event.clientX + 55 + 'px';
         generalWords.style.position = 'fixed';
     });
 }
