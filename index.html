@@ -3,19 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>title</title>
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow"/>
     <meta name="keywords" content="keywords">
-    <meta name="copyright" content="Copyright 2021. All Rights Reserved." />
+    <meta name="copyright" content="Copyright 2021. All Rights Reserved."/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <!-- <link rel="icon" href="assets/images/logo/tekrom-logo.svg" type="image/x-icon" /> -->
     <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <header>
         <nav class="navbar navbar-expand-lg py-4 tekrom-menu" aria-label="Eighth navbar example">
             <div class="container">
@@ -127,13 +128,14 @@
                         </p>
                     </div>
                     <div class="row pb-5 tekrom-three">
-                        <div class="col-6 col-lg-4 text-center box-radius">
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-none d-lg-block text-center box-radius">
                             <img loading="lazy" src="assets/images/default-content-image.png"
                                  data-src="assets/images/content/home/maps/tekrom-working.jpg"
-                                 class="lazyload box-radius img-fluid w-100 h-100 object-fit-cover" alt="working">
+                                 class="lazyload box-radius img-fluid w-100 h-100 object-fit-cover"
+                                 alt="working">
                         </div>
                         <div
-                                class="col-12 col-lg-4 d-flex align-items-center justify-content-around flex-column text-center p-4 box-radius tekrom-three__text bg-color-gray">
+                                class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around flex-column text-center p-4 box-radius bg-color-gray tekrom-three__text">
                             <h2 class="fs-4">Kahramanmaraş’tan Dünyaya</h2>
                             <img src="assets/images/content/home/maps/world.svg" class="img-fluid my-4" alt="world">
                             <p class="fs-7">
@@ -143,8 +145,9 @@
                                 sunulmaktadır.
                             </p>
                         </div>
-                        <div class="col-6 col-lg-4 text-center box-radius">
-                            <img src="assets/images/content/home/maps/meeting.jpg"
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-none d-lg-block text-center box-radius">
+                            <img loading="lazy" src="assets/images/default-content-image.png"
+                                 data-src="assets/images/content/home/maps/meeting.jpg"
                                  class="lazyload box-radius img-fluid w-100 h-100 object-fit-cover"
                                  alt="meeting">
                         </div>
@@ -153,7 +156,7 @@
                     <!-- maps -->
                     <div class="text-center py-5 ">
                         <span class="fs-2 fw-500">Merkezi Konum</span>
-                        <p class="fs-6 text-secondary">
+                        <p class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 mx-auto fs-7 text-secondary">
                             Çevre illere mesafesi ortalama 1-2 saat arasında değişmesi bakımından ve antalya,
                             mersin,adana,
                             osmaniye, hatay, gaziantep ve şanlıurfadan geçen çevreyolundan dolayı ulaşım aşısından
@@ -200,66 +203,540 @@
                                     </div>
                                 </div>
                             </li>
-                            <li data-state="adiyaman">Adıyaman</li>
-                            <li data-state="malatya">Malatya</li>
-                            <li data-state="mersin">Mersin</li>
-                            <li data-state="kayseri">Kayseri</li>
-                            <li data-state="hatay">Hatay</li>
-                            <li data-state="gaziantep">Gaziantep</li>
-                            <li data-state="sanliurfa">Şanlıurfa</li>
-                            <li data-state="adana">Adana</li>
-                            <li data-state="kilis">Kilis</li>
-                            <li data-state="osmaniye">Osmaniye</li>
-                            <li data-state="nigde">Niğde</li>
-                            <li data-state="nevsehir">Nevşehir</li>
+                            <li data-state="adiyaman" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/adiyaman-nemrut.jpg"
+                                         alt="Adıyaman" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Adıyaman</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 160km 2 saat<br/>
+                                            <strong>Mesafe</strong>:
+                                            Etsiz Çiğ Köfte,
+                                            Nemrut Dağı,
+                                            Arsemia ve Perre Antik Kenti
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="malatya" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/malatya-levent-vadisi.jpg"
+                                         alt="Malatya" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Malatya</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 216km - 3 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Kayısısı meşhurdur.
+                                            Levend Vadisi,
+                                            Darende Kanyonu en tanınmış yerleridir.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="mersin" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/mersin-sehri.jpg"
+                                         alt="Mersin" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Mersin</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 270km 3 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Tarsus şelalesi,
+                                            Cenent cehennem mağaraları,
+                                            Eshab-ı Kehf,
+                                            Sahil Şeridi ve Plajları
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="kayseri" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/kayseri-erciyes.jpg"
+                                         alt="Kayseri" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Kayseri</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 273km 3-4 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Erciyes kayak merkezi,
+                                            Gesi bağları,
+                                            Yamaç paraşütü,
+                                            Kayseri Kalesi ve Surları,
+                                            Sucuk, Mantı
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="hatay" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/hatay-sahil.jpg"
+                                         alt="Hatay" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Hatay</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 273km 3-4 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Bilgi:
+                                            Hatay Künefe,
+                                            Arsuz Sahil Plajı,
+                                            Harbiye Şelaleleri
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="gaziantep" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/gaziantep-baklava.jpg"
+                                         alt="Gaziantep" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Gaziantep</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 83km 45dk<br/>
+                                            <strong>Bilgi</strong>:
+                                            Baklava,
+                                            Hayvanat Bahçesi,
+                                            Zeugma Antik Kenti ve Zeugma Mozaik Müzesi,
+                                            Parkantep Harikalar Diyarı
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="sanliurfa" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/sanliurfa-balikligol.jpg"
+                                         alt="Şanlıurfa" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Şanlıurfa</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 226 km 3 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Etli Çiğ Köfte,
+                                            Balıklıgöl,
+                                            Göbekli Tepe,
+                                            Halfeti Antik Kenti
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="adana" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/adana-kebap.jpg"
+                                         alt="Adana" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Adana</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 195km 2 buçuk saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Adana Kebap,
+                                            Varda köprüsü,
+                                            Seyhan nehri
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="kilis" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/kilis-tava.jpg"
+                                         alt="Kilis" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Kilis</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 148km 1 saat 50 dk<br/>
+                                            <strong>Bilgi</strong>:
+                                            Kilis tava,
+                                            Ravanda Kalesi,
+                                            Oylum Höyük
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="osmaniye" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/osmaniye-zorkun.jpg"
+                                         alt="Osmaniye" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Osmaniye</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 110km 1 buçuk saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Sabunçayı şelalesi,
+                                            Osmaniye Masal Park
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="nigde" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/nigde-gumusler-manastiri.jpg"
+                                         alt="Niğde" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Niğde</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 368km 4 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Gümüşler Manastırı
+                                            Roma dönemi eserleri, höyükler
+                                            Hanlar mederseler
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li data-state="nevsehir" class="region-card">
+                                <div class="region-image">
+                                    <img src="assets/images/content/home/maps/cities/nevsehir-peri-bacalari.jpg"
+                                         alt="Nevşehir" class="rounded-start">
+                                </div>
+                                <div class="region-content">
+                                    <div class="fs-6 title">Nevşehir</div>
+                                    <div class="desc">
+                                        <p>
+                                            <strong>Mesafe</strong>: 341 km 4 saat<br/>
+                                            <strong>Bilgi</strong>:
+                                            Kapadokya ve Peri bacaları,
+                                            Derinkuyu Yeraltı Şehri,
+                                            Mağara Oteller,
+                                            Ihlara Vadisi
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section>
+                <!-- content modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content tekrom-modal-content">
+                            <div class="modal-body">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/4-mevsim.jpg"
+                                             class="img-fluid rounded-top w-100" alt="content">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">4 Mevsim</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative cursor-pointer">
+                                        <p class="mb-0 text-center text-secondary fs-7" data-bs-toggle="modal"
+                                           data-bs-target="#exampleModal">
+                                            Akdeniz, Güneydoğu Anadolu, Doğu Anadolu ve İç Anadolu bölgelerinin birleşim
+                                            yerinde olan Kahramanmaraş bu yönüyle ülkemizde tek il olma özelliğini
+                                            taşırken
+                                            aynı anda 4 mevsimi yaşayabilmektedir.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- life of region -->
                 <div class="container">
                     <div class="text-center py-5">
                         <span class="fs-2 fw-500">Bölgenin Yaşam Merkezi</span>
-                        <p class="fs-6 text-secondary">
+                        <p class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 mx-auto fs-7 text-secondary">
                             Yazılım konusunda Doğu Akdeniz Bölgesinin teknoloji üssü olmanın gururunu yaşarken,
-                            yazılımla
-                            yaşamın iç içe geçtiği kentimizde neler bulabileceğinizi de sizlere sunuyoruz.
+                            yazılımla yaşamın iç içe geçtiği kentimizde neler bulabileceğinizi de sizlere sunuyoruz.
                         </p>
                     </div>
                     <div class="row living-center pb-5">
                         <div class="col-md-4 d-flex">
-                            <div class="rounded-3 shadow-soft content-card my-3">
-                                <div class="content-image">
-                                    <img src="assets/images/content/home/banners/teknoloji-ussu.jpg"
-                                         class="img-fluid rounded-top w-100" alt="content">
-                                    <div class="content-image-title">
-                                        <span class="fs-4">Teknoloji Üssü</span>
+                            <a href="assets/images/content/home/banners/4-mevsim.jpg"
+                               data-fancybox="living-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                                Akdeniz, Güneydoğu Anadolu, Doğu Anadolu ve İç Anadolu bölgelerinin birleşim
+                                                yerinde olan Kahramanmaraş bu yönüyle ülkemizde tek il olma özelliğini taşırken
+                                                aynı anda 4 mevsimi yaşayabilmektedir.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/4-mevsim.jpg"
+                                             class="img-fluid rounded-top w-100" alt="content">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">4 Mevsim</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary fs-7">
+                                            Akdeniz, Güneydoğu Anadolu, Doğu Anadolu ve İç Anadolu bölgelerinin birleşim
+                                            yerinde olan Kahramanmaraş bu yönüyle ülkemizde tek il olma özelliğini
+                                            taşırken
+                                            aynı anda 4 mevsimi yaşayabilmektedir.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
                                     </div>
                                 </div>
-                                <div class="desc p-4">
-                                    <p class="mb-0 text-center text-secondary">
-                                        Doğu akdeniz bölgesinin en önemli teknoloji üssü olan ilimiz, bölgenin silikon vadisi olma yolundadır.
-                                        E-ticaretten veri madenciliğine kadar bir çok teknoloji Tekrom bünyesinde Kahramanmaraş’ta üretilmektedir.
-                                    </p>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="col-md-4 d-flex">
-                            <div class="rounded-3 shadow-soft content-card my-3">
-                                <div class="content-image">
-                                    <img src="assets/images/content/home/banners/4-mevsim.jpg"
-                                         class="img-fluid rounded-top w-100" alt="content">
-                                    <div class="content-image-title">
-                                        <span class="fs-4">4 Mevsim</span>
+                            <a href="assets/images/content/home/banners/sportif-yasam.jpg"
+                               data-fancybox="living-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Doğa sporları, okçuluk, binicilik, paraşüt, kampçılık, dağcılık, tırmanış,
+                                            su sporları, adrenalin sporları, off-road yarışları, şelaleler, termal ve
+                                            kaplıca, Su Jeti ve Flyboard, rafting, kayak merkezi, kızak, snowboard, doğa
+                                            yürüyüşü ve kar moturu gibi bir çok alanda sportif faaliyete katılmak mümkün
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/sportif-yasam.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Sportif Yaşam">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Sportif Yaşam</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary">
+                                            Doğa sporları, okçuluk, binicilik, paraşüt, kampçılık, dağcılık, tırmanış,
+                                            su sporları, adrenalin sporları, off-road yarışları, şelaleler, termal ve
+                                            kaplıca, Su Jeti ve Flyboard, rafting, kayak merkezi, kızak, snowboard, doğa
+                                            yürüyüşü ve kar moturu gibi bir çok alanda sportif faaliyete katılmak mümkün
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
                                     </div>
                                 </div>
-                                <div class="desc p-4">
-                                    <p class="mb-0 text-center text-secondary">
-                                        Akdeniz, Güneydoğu Anadolu, Doğu Anadolu ve İç Anadolu bölgelerinin birleşim yerinde olan Kahramanmaraş bu yönüyle ülkemizde tek il olma özelliğini taşırken aynı anda 4 mevsimi yaşayabilmektedir.
-                                    </p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/ekonomik-yasam.jpg"
+                               data-fancybox="living-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Bölgede ve ülkemizde yaşam pahalılığı bakımından restoranlar %60, market ve
+                                            manavlar %42, ulaşım %35 ve kiralar da %32 oranında ortalamanın daha
+                                            altındadır. Kahramanmaraş bu yönüyle de tercih edilen bir şehirdir.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/ekonomik-yasam.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Ekonomik Yaşam">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Ekonomik Yaşam</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary">
+                                            Bölgede ve ülkemizde yaşam pahalılığı bakımından restoranlar %60, market ve
+                                            manavlar %42, ulaşım %35 ve kiralar da %32 oranında ortalamanın daha
+                                            altındadır.
+                                            Kahramanmaraş bu yönüyle de tercih edilen bir şehirdir.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/sosyal-yasam.jpg"
+                               data-fancybox="living-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Tiyatro, sinema, kitap fuarı ve imza günleri, toplu yemek ve eğlence
+                                            organizasyonları kentimizin olmazsa olmaz sosyal etkinliklerindendir. Dünyanın
+                                            en güzel doğal dondurmasının merkezi olması nedeniyle her yıl dondurma
+                                            fesitivali ile coşabilir, bölgenin en büyük Merkezlerinden olan Piazza AVM de
+                                            her hafta düzenlenen etkinliklere katılabilirsiniz.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/sosyal-yasam.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Sosyal Yaşam">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Sosyal Yaşam</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary">
+                                            Tiyatro, sinema, kitap fuarı ve imza günleri, toplu yemek ve eğlence
+                                            organizasyonları kentimizin olmazsa olmaz sosyal etkinliklerindendir.
+                                            Dünyanın
+                                            en güzel doğal dondurmasının merkezi olması nedeniyle her yıl dondurma
+                                            fesitivali ile coşabilir, bölgenin en büyük Merkezlerinden olan Piazza AVM
+                                            de
+                                            her hafta düzenlenen etkinliklere katılabilirsiniz.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/saglikli-yasam.jpg"
+                               data-fancybox="living-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Kentimizde Şehir ve Araştırma Hastanesi gibi dev hastanelerle beraber, alanında
+                                            uzman bir çok özel hastane de bulunmaktadır.
+                                            Çalışanlarımız, her hafta ofisimize gelen İş yeri Hekimine muayene olabilir,
+                                            reçete yazdırabilir, Allianz Tamamlayıcı Sağlık sigortası VIP hizmet alabilir.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/saglikli-yasam.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Sağlıklı Yaşam">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Sağlıklı Yaşam</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary fs-7">
+                                            Kentimizde Şehir ve Araştırma Hastanesi gibi dev hastanelerle beraber,
+                                            alanında
+                                            uzman bir çok özel hastane de bulunmaktadır.
+                                            Çalışanlarımız, her hafta ofisimize gelen İş yeri Hekimine muayene olabilir,
+                                            reçete yazdırabilir, Allianz Tamamlayıcı Sağlık sigortası VIP hizmet
+                                            alabilir.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/lezzetli-yasam.jpg"
+                               data-fancybox="living-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Hem yöresel lezzetler açısından son derece zengin olan Kahramanmaraş, hem de
+                                            MADO, Kervan, Akdo gibi zinzir kafeler sayesinde, aynı anda yemek, tatlı ve
+                                            içecek kültürünün harmanlanmış halini sizlere sunabilmektadir.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/lezzetli-yasam.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Lezzetli Yaşam">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Lezzetli Yaşam</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary fs-7">
+                                            Hem yöresel lezzetler açısından son derece zengin olan Kahramanmaraş, hem de
+                                            MADO, Kervan, Akdo gibi zinzir kafeler sayesinde, aynı anda yemek, tatlı ve
+                                            içecek kültürünün harmanlanmış halini sizlere sunabilmektadir.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center pt-5">
+                            <span class="fs-2 fw-500">Bölgenin Yazılım Merkezi</span>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/teknoloji-ussu.jpg"
+                               data-fancybox="software-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Doğu akdeniz bölgesinin en önemli teknoloji üssü olan ilimiz, bölgenin
+                                            silikon vadisi olma yolundadır.
+                                            E-ticaretten veri madenciliğine kadar bir çok teknoloji Tekrom bünyesinde
+                                            Kahramanmaraş’ta üretilmektedir.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/teknoloji-ussu.jpg"
+                                             class="img-fluid rounded-top w-100" alt="content">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Teknoloji Üssü</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary">
+                                            Doğu akdeniz bölgesinin en önemli teknoloji üssü olan ilimiz, bölgenin
+                                            silikon vadisi olma yolundadır.
+                                            E-ticaretten veri madenciliğine kadar bir çok teknoloji Tekrom bünyesinde
+                                            Kahramanmaraş’ta üretilmektedir.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/global-entegrasyon.jpg"
+                               data-fancybox="software-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Kahramanmaraş’ta geliştirilen teknolojiler, hem Türkiye’de insanımızın
+                                            istifadesine sunulurken, hem de google, amazon, whatsapp, facebook gibi dünya
+                                            yazılım devlerinin olduğu Silikon Vadisindeki ofisimiz vasıtası ile uluslarası
+                                            yazılım dünyasının istifadesine sunulmaktadır.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/global-entegrasyon.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Global Entegrasyon">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Global Entegrasyon</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary fs-7">
+                                            Kahramanmaraş’ta geliştirilen teknolojiler, hem Türkiye’de insanımızın
+                                            istifadesine sunulurken, hem de google, amazon, whatsapp, facebook gibi
+                                            dünya
+                                            yazılım devlerinin olduğu Silikon Vadisindeki ofisimiz vasıtası ile
+                                            uluslarası
+                                            yazılım dünyasının istifadesine sunulmaktadır.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <a href="assets/images/content/home/banners/global-partner.jpg"
+                               data-fancybox="software-center"
+                               data-caption="<div class='text-center col-12 col-md-6 mx-auto'>
+                                            Uluslararası düzeyde alanında en iyilerinden olan Facebook, Messanger,
+                                            Whatsapp gibi firmalarla beraber geliştirdiğimiz yazılımlar neticesinde
+                                            Helorobo gibi yeni dünya markaları oluşturuyoruz.
+                                            </div>">
+                                <div class="rounded-3 shadow-soft content-card my-3">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/banners/global-partner.jpg"
+                                             class="img-fluid rounded-top w-100" alt="Global Partnerler">
+                                        <div class="content-image-title">
+                                            <span class="fs-4">Global Partnerler</span>
+                                        </div>
+                                    </div>
+                                    <div class="desc p-4 position-relative">
+                                        <p class="mb-0 text-center text-secondary fs-7">
+                                            Uluslararası düzeyde alanında en iyilerinden olan Facebook, Messanger,
+                                            Whatsapp
+                                            gibi firmalarla beraber geliştirdiğimiz yazılımlar neticesinde Helorobo gibi
+                                            yeni dünya markaları oluşturuyoruz.
+                                        </p>
+                                        <strong class="read-more">Devamını Oku...</strong>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -271,15 +748,16 @@
                         <span class="fs-2 fw-500">Kahramanmaraş’ta Yaşam</span>
                     </div>
                     <div class="swiper-container mb-5 slider--life-in-maras">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper pb-4">
                             <div class="swiper-slide p-1 p-md-4">
                                 <div class="row position-relative">
-                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-4 mb-md-0 slider--life-in-maras-card">
+                                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-4 mb-lg-0 slider--life-in-maras-card">
                                         <div class="h-100 p-5 rounded-3 bg-color-gray shadow-one-side-only">
                                             <div class="bg-color-gray-mobile rounded-3">
                                                 <span class="d-block fs-4 fw-500 mb-5">Spor</span>
                                                 <p>
-                                                    Doğa sporlarından adrenalin sporlarına, su sporlarına yamaç paraşütüne
+                                                    Doğa sporlarından adrenalin sporlarına, su sporlarına yamaç
+                                                    paraşütüne
                                                     ve
                                                     kış sporlarına kadar bir çok alanda sportif faaliyet imkanı
                                                     bulunmaktadır.
@@ -318,56 +796,173 @@
                 <!-- future of technology in maras -->
                 <div class="container future-of-tech">
                     <div class="row">
-                        <h2 class="col-12 text-center py-2 py-lg-5">Kahramanmaraş’ta Teknolojinin Gelecegi</h2>
-                        <div class="col-12 p-2 p-lg-4">
-                            Kahramanmaraş Tekrom’da  2021 Ağustos  ayı itibari ile 120’nin üzerinde yazılımcı tüm dünyada kullanılacak olan yazılımları geliştiriken, firmamızda ağırlıklı olarak 
-                            Backend alanında  ️ Php , nodejs , .netcore, python, golang 
-                            Frontend alanında ️ Html , css , scss,  javascript , vuejs, reactjs, angularjs, Ext JS,  
-                            Mobile App alanında   Android kodlin , ios swift , flutter 
-                            Devops Engineer alanında  Docker , Kubernetes , Linux, apache,
-                            Database Administrator alanında ️ mysql,, mssql, postgresql , mongodb , elasticsearch , firebase, redis,
-                            UI - UX Designer alanında ️  Sketch , Figma, Avocode, Zeplin gibi teknolojiler kullanılmaktadır.
+                        <h2 class="col-12 text-center py-2 pt-lg-3">Kahramanmaraş’ta Teknolojinin Gelecegi</h2>
+                        <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 mx-auto fs-7 text-secondary text-center">
+                            <p>
+                                Kahramanmaraş Tekrom’da 2021 Ağustos ayı itibari ile 120’nin üzerinde yazılımcı tüm
+                                dünyada kullanılacak olan yazılımları geliştiriken, firmamızda ağırlıklı olarak
+                                Backend alanında ️ Php , nodejs , .netcore, python, golang
+                                Frontend alanında ️ Html , css , scss, javascript , vuejs, reactjs, angularjs, Ext JS,
+                                Mobile App alanında Android kodlin , ios swift , flutter
+                                Devops Engineer alanında Docker , Kubernetes , Linux, apache,
+                                Database Administrator alanında ️ mysql,, mssql, postgresql , mongodb , elasticsearch ,
+                                firebase, redis,
+                                UI - UX Designer alanında ️ Sketch , Figma, Avocode, Zeplin gibi teknolojiler
+                                kullanılmaktadır.
+                            </p>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 future-of-tech--logos">
                             <div class="row">
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/php.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/node.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/c-sharp.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/python.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/go.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/html-5.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/css-3.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/js.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/vue.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/react.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/angular.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/android.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/ios.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/vs-code.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/docker.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/linux.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/ubuntu.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/mysql.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/postgresql.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/mongodb.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/elastic-search.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/zeplin.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/figma.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/sketch.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/npm.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/git.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/bitbucket.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/swift.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/dart.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/github.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/java.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/c-plus-plus.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/sass.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/jquery.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/redux.svg" alt="" class="img-fluid"></div>
-                            <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center"><img src="assets/images/content/home/technology/used-languages/kotlin.svg" alt="" class="img-fluid"></div>
-   </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/php.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/node.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/c-sharp.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/python.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/go.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/html-5.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/css-3.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/js.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/vue.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/react.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/angular.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/android.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/ios.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/vs-code.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/docker.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/linux.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/ubuntu.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/mysql.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/postgresql.svg"
+                                         alt="" class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/mongodb.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/elastic-search.svg"
+                                         alt="" class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/zeplin.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/figma.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/sketch.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/npm.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/git.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/bitbucket.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/swift.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/dart.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/github.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/java.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/c-plus-plus.svg"
+                                         alt="" class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/sass.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/jquery.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/redux.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                                <div class="col-3 col-md-2 col-lg-1 d-flex justify-content-center align-items-center p-3">
+                                    <img src="assets/images/content/home/technology/used-languages/kotlin.svg" alt=""
+                                         class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tech-logos-more">
+                                +3000 site, +250 mobil uygulama (+1M kullanıcı)
+                            </div>
                         </div>
+
                         <div class="col-12 p-2 p-lg-4">
                             Bu ve haricen onlarca farklı teknolojiyi kullanan yazılımcılarımız  teknoloji konusunda kariyer
                             yaparken aynı zamanda sosyal bir yaşamın sürdürülebileceğini de bizlere göstermektedir.
@@ -375,24 +970,36 @@
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-12 col-lg-8 d-flex flex-wrap p-0">
-                                        <div class="p-2 p-lg-3 col-sm-6 col-12 technology-in-maras">
-                                            <img src="assets/images/content/home/technology/ofis-1.jpg" alt="Spor"
-                                                class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
-                                        </div>
-                                        <div class="p-2 p-lg-3 col-sm-6 col-12 technology-in-maras">
-                                            <img src="assets/images/content/home/technology/ofis-2.jpg" alt="Spor"
-                                                class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
-                                        </div>
-                                        <div class="p-2 p-lg-3 col-12 technology-in-maras">
-                                            <img src="assets/images/content/home/technology/ofis-3.jpg" alt="Spor"
-                                                class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
-                                        </div>
+                                    <div class="p-2 p-lg-3 col-sm-6 col-12 technology-in-maras">
+                                        <a href="assets/images/content/home/technology/ofis-1.jpg"
+                                           data-fancybox="future-of-technology">
+                                            <img src="assets/images/content/home/technology/ofis-1.jpg" alt=""
+                                                 class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
+                                        </a>
+                                    </div>
+                                    <div class="p-2 p-lg-3 col-sm-6 col-12 technology-in-maras">
+                                        <a href="assets/images/content/home/technology/ofis-2.jpg"
+                                           data-fancybox="future-of-technology">
+                                            <img src="assets/images/content/home/technology/ofis-2.jpg" alt=""
+                                                 class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
+                                        </a>
+                                    </div>
+                                    <div class="p-2 p-lg-3 col-12 technology-in-maras">
+                                        <a href="assets/images/content/home/technology/ofis-3.jpg"
+                                           data-fancybox="future-of-technology">
+                                            <img src="assets/images/content/home/technology/ofis-3.jpg" alt=""
+                                                 class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="col-12 col-lg-4 flex-wrap p-0 d-none d-lg-flex">
-                                        <div class="p-2 p-lg-3 col-12 technology-in-maras">
-                                            <img src="assets/images/content/home/technology/ofis-4.jpg" alt="Spor"
-                                                class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
-                                        </div>
+                                    <div class="p-2 p-lg-3 col-12 technology-in-maras">
+                                        <a href="assets/images/content/home/technology/ofis-4.jpg"
+                                           data-fancybox="future-of-technology">
+                                            <img src="assets/images/content/home/technology/ofis-4.jpg" alt=""
+                                                 class="w-100 object-fit-cover rounded-3 shadow-one-side-only">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -405,259 +1012,211 @@
                     <div class="text-center py-5">
                         <h2 class="fs-2 fw-500">Tekromda imkanlar</h2>
                         <p class="fs-6 text-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit maiores, quod deserunt ipsum minima magni dignissimos vitae rem mollitia sapiente ratione voluptas, magnam pariatur ut obcaecaolestias dolore inventore quidem a. Eos hic rerum eaque ad sed mollitia? Ab, nobis error. Ex amet eveniet exercitationem. Nemo, vel possimus. Harum, nobis sequi quaerat commodi dignissimos placeat ratione fugiat impedit optio numquam, odit et quam eos illum repellendus velit perspiciatis necessitatibus error similique vero.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit maiores, quod deserunt
+                            ipsum minima magni dignissimos vitae rem mollitia sapiente ratione voluptas, magnam pariatur
+                            ut obcaecaolestias dolore inventore quidem a. Eos hic rerum eaque ad sed mollitia? Ab, nobis
+                            error. Ex amet eveniet exercitationem. Nemo, vel possimus. Harum, nobis sequi quaerat
+                            commodi dignissimos placeat ratione fugiat impedit optio numquam, odit et quam eos illum
+                            repellendus velit perspiciatis necessitatibus error similique vero.
                         </p>
                     </div>
-
-                        <div class="swiper-container mb-5 slider--tekrom-facilities">
-
-                            <div class="pb-4 swiper-wrapper tekrom-facilities">
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/dogum-gunu-izni.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title d-flex justify-content-center">
-                                                    <span class="fs-4">Doğum Gününde İzin</span>
-                                                </div>
-                                            </div>
+                    <div class="swiper-container slider--tekrom-facilities">
+                        <div class="pb-5 swiper-wrapper tekrom-facilities">
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/dogum-gunu-izni.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">Doğum Gününde İzin</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/is-yeri-hekimi.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title">
-                                                    <span class="fs-4">İş Yeri Hekimi</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/tamamlayici-saglik.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title">
-                                                    <span class="fs-4">VIP Sağlık Hizmeti</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/remote.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title">
-                                                    <span class="fs-4">Uzaktan Çalışma İmkanı</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/coklu-internet.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title">
-                                                    <span class="fs-4">Hızlı ve Çoklu İnternet</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/ofis.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title">
-                                                    <span class="fs-4">8 Toplantı Salonu</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-facility/ofis-genel.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                                <div class="content-image-title">
-                                                    <span class="fs-4">+700m<sup>2</sup> Tesis</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
-
-
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/is-yeri-hekimi.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">İş Yeri Hekimi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/tamamlayici-saglik.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">VIP Sağlık Hizmeti</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/remote.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">Uzaktan Çalışma İmkanı</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/coklu-internet.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">Hızlı ve Çoklu İnternet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/ofis.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">8 Toplantı Salonu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-3 shadow-soft content-card">
+                                    <div class="content-image">
+                                        <img src="assets/images/content/home/tekrom-facility/ofis-genel.jpg"
+                                             class="img-fluid rounded-3 w-100 shadow-one-side-only" alt="content">
+                                        <div class="content-image-title rounded-bottom">
+                                            <span class="fs-4">+700m<sup>2</sup> Tesis</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
 
                 </div>
             </section>
-
-
             <section>
                 <!-- general ohotos from tekrom -->
                 <div class="container">
                     <div class="text-center py-5">
                         <h2 class="fs-2 fw-500">Ofisten Kareler</h2>
                     </div>
-
                         <div class="swiper-container mb-5 slider--tekrom-life">
-
                             <div class="pb-4 swiper-wrapper tekrom-life">
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/balkon.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/balkon.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/tsoft-eğlence.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/tsoft-eğlence.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/cay-ocagi.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/cay-ocagi.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/bakan-ziyaret.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/bakan-ziyaret.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/ders.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/ders.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/kahve.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/kahve.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/kantin.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/kantin.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/kebap.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/kebap.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/tantuni.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/tantuni.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/mini-golf.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/mini-golf.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/yemek.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/yemek.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/yemekhane.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/yemekhane.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-12 d-flex">
-                                        <div class="rounded-3 shadow-soft content-card">
-                                            <div class="content-image">
-                                                <img src="assets/images/content/home/tekrom-life/tsoft-konser.jpg"
-                                                    class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
-                                            </div>
+                                    <div class="rounded-3 shadow-soft content-card">
+                                        <div class="content-image">
+                                            <img src="assets/images/content/home/tekrom-life/tsoft-konser.jpg"
+                                                 class="img-fluid rounded-top w-100 shadow-one-side-only" alt="content">
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -668,7 +1227,7 @@
 
                 </div>
 
-                
+
             </section>
 
 
@@ -863,18 +1422,19 @@
     </footer>
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"
-        integrity="sha512-2cbsQGdowNDPcKuoBd2bCcsJky87Mv0LEtD/nunJUgk6MOYTgVMGihS/xCEghNf04DPhNiJ4DZw5BxDd1uyOdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" type="text/javascript" async>
-    </script>
+            integrity="sha512-2cbsQGdowNDPcKuoBd2bCcsJky87Mv0LEtD/nunJUgk6MOYTgVMGihS/xCEghNf04DPhNiJ4DZw5BxDd1uyOdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" type="text/javascript"
+            async></script>
     <script src="assets/js/maps.js?v=1.0.0"></script>
     <script src="assets/js/main.js?v=1.0.0"></script>
 </head>

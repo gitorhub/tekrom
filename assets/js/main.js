@@ -126,38 +126,43 @@ const swiper1 = new Swiper('.slider--life-in-maras', {
     slidesPerView: 1,
     pagination: {
         el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
     },
 });
 
 /* swiper slider - home page tekrom-facilities */
 
 const swiper2 = new Swiper('.slider--tekrom-facilities', {
-    slidesPerView: 1.2,
-    spaceBetween:0,
-    centeredSlides: true,
-    loop:true,
+    slidesPerView: 1,
+    spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
-      autoplay: {
+    },
+    autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-      },
+    },
     breakpoints: {
         640: {
-          slidesPerView: 2.2,
-          spaceBetween: 5,
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
         768: {
-          slidesPerView: 3.2,
-          spaceBetween: 10,
+            slidesPerView: 3,
+            spaceBetween: 20,
         },
-
-      },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
 });
 /* swiper slider - home page tekrom-life */
 
