@@ -76,10 +76,6 @@ a:focus {
   text-decoration: none;
 }
 
-pointer {
-  cursor: pointer;
-}
-
 .font-family-main {
   font-family: var(--font-family-main);
 }
@@ -207,7 +203,7 @@ pointer {
   background-color: #f8f9fa;
 }
 .tekrom-menu a.navbar-brand-tekrom img {
-  height: 25px;
+  height: 40px;
 }
 .tekrom-menu .navbar-nav {
   /* mobil and tablet screen */
@@ -469,6 +465,12 @@ pointer {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  /* wide screen */
+}
+@media (min-width: 992px) {
+  .home-page .map-of-regions .region-card {
+    min-width: 500px;
+  }
 }
 .home-page .map-of-regions .region-card .region-image img {
   width: clamp(100px, 8vw, 150px);
@@ -479,10 +481,10 @@ pointer {
 }
 .home-page .map-of-regions .region-card .region-content {
   padding: 10px 10px 0;
-  max-width: 400px;
 }
 .home-page .map-of-regions .region-card .region-content .desc {
   position: relative;
+  width: 100%;
 }
 .home-page .map-of-regions .region-card .region-content .desc p {
   font-size: 0.75rem;
@@ -519,7 +521,20 @@ pointer {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 540px;
+  /* wide screen */
+  /* mobil and tablet screen */
+}
+@media (min-width: 992px) {
+  .home-page .map-of-regions .list-of-states {
+    max-width: 540px;
+  }
+}
+@media (max-width: 992px) {
+  .home-page .map-of-regions .list-of-states {
+    position: static !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
 }
 .home-page .map-of-regions .list-of-states li {
   display: none;
@@ -544,6 +559,7 @@ pointer {
 @media (max-width: 992px) {
   .home-page .slider--life-in-maras-card {
     z-index: 2;
+    height: 500px;
   }
   .home-page .slider--life-in-maras-card > div {
     position: relative;
@@ -587,20 +603,65 @@ pointer {
   .home-page .slider--life-in-maras-card > div img {
     display: none;
   }
-  .home-page .slider--life-in-maras-gallery img {
-    width: 100%;
-    height: auto;
-  }
 }
 .home-page .future-of-tech--logos .tech-logos-more {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.home-page .future-of-tech--logos img {
-  filter: grayscale(1);
-  transition: 300ms filter ease-in-out;
+.home-page .line-in-tekrom--card-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
-.home-page .future-of-tech--logos img:hover {
-  filter: grayscale(0);
+.home-page .line-in-tekrom--card-box:hover .line-in-tekrom-information {
+  transform: translateY(0);
+}
+.home-page .line-in-tekrom--card-box:hover .line-in-tekrom-overlay {
+  height: 150%;
+}
+.home-page .line-in-tekrom--card-box .line-in-tekrom-information {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 20px;
+  z-index: 2;
+  height: 100%;
+  transform: translateY(80%);
+  transition: all 300ms;
+}
+.home-page .line-in-tekrom--card-box .line-in-tekrom-information .line-in-tekrom-title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.home-page .line-in-tekrom--card-box .line-in-tekrom-information .line-in-tekrom-explanation {
+  width: 100%;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.home-page .line-in-tekrom--card-box .line-in-tekrom-overlay {
+  position: absolute;
+  background: #1e4496;
+  background: linear-gradient(0deg, #1e4496 0%, rgba(30, 68, 150, 0) 100%);
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  z-index: 1;
+  transition: all 300ms;
+}
+.home-page .line-in-tekrom--card-box .line-in-tekrom-image {
+  width: 100%;
+  height: 100%;
+}
+.home-page .line-in-tekrom--card-box .line-in-tekrom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .offices .card {
