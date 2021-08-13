@@ -627,14 +627,14 @@ a:focus {
   padding: 0 20px;
   z-index: 2;
   height: 100%;
-  transform: translateY(80%);
+  transform: translateY(77%);
   transition: all 300ms;
 }
 .home-page .line-in-tekrom--card-box .line-in-tekrom-information .line-in-tekrom-title {
   width: 100%;
   font-weight: 700;
   font-size: 1.5rem;
-  padding-top: 20px;
+  padding: 10px 0;
 }
 .home-page .line-in-tekrom--card-box .line-in-tekrom-information .line-in-tekrom-explanation {
   width: 100%;
@@ -663,21 +663,24 @@ a:focus {
   height: 100%;
   object-fit: cover;
 }
-.home-page .content-card-video .title {
+.home-page .maras-publicity-videos a {
+  color: #212529;
+}
+.home-page .maras-publicity-videos .content-card-video .title {
   font-size: 1.5rem;
 }
-.home-page .content-card-video--box {
+.home-page .maras-publicity-videos .content-card-video--box {
   position: relative;
   width: 80%;
   height: 250px;
   border-radius: 21px 21px 0 0;
 }
-.home-page .content-card-video--box:hover .video-overlay,
-.home-page .content-card-video--box:hover .video-overlay-play-button {
+.home-page .maras-publicity-videos .content-card-video--box:hover .video-overlay,
+.home-page .maras-publicity-videos .content-card-video--box:hover .video-overlay-play-button {
   transition: all 300ms;
   opacity: 1;
 }
-.home-page .content-card-video--box .video-overlay {
+.home-page .maras-publicity-videos .content-card-video--box .video-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -687,7 +690,7 @@ a:focus {
   opacity: 0;
   transition: all 300ms;
 }
-.home-page .content-card-video--box .video-overlay-play-button {
+.home-page .maras-publicity-videos .content-card-video--box .video-overlay-play-button {
   width: 70px;
   height: 60px;
   position: absolute;
@@ -698,7 +701,7 @@ a:focus {
   opacity: 0;
   transition: all 300ms;
 }
-.home-page .content-card-video--box iframe, .home-page .content-card-video--box img {
+.home-page .maras-publicity-videos .content-card-video--box iframe, .home-page .maras-publicity-videos .content-card-video--box img {
   width: 100%;
   padding: 10px 10px 0;
   height: 250px;
@@ -706,8 +709,11 @@ a:focus {
   border-radius: 21px 21px 0 0;
 }
 
-.offices .card {
-  border: none;
+.tekrom-offices img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
 footer {
@@ -791,18 +797,6 @@ footer {
 }
 .tekrom-modal-content .read-more {
   display: none;
-}
-
-.videos__video {
-  position: relative;
-  overflow: hidden;
-  aspect-ratio: 16/9;
-}
-.videos__video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
