@@ -481,10 +481,23 @@ a:focus {
 }
 .home-page .map-of-regions .region-card .region-content {
   padding: 10px 10px 0;
+  /* mobil and tablet screen */
+}
+@media (max-width: 992px) {
+  .home-page .map-of-regions .region-card .region-content {
+    width: 100%;
+  }
 }
 .home-page .map-of-regions .region-card .region-content .desc {
   position: relative;
   width: 100%;
+  /* mobil and tablet screen */
+}
+@media (max-width: 992px) {
+  .home-page .map-of-regions .region-card .region-content .desc {
+    height: 100px;
+    overflow: scroll;
+  }
 }
 .home-page .map-of-regions .region-card .region-content .desc p {
   font-size: 0.75rem;

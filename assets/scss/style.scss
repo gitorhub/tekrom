@@ -554,10 +554,19 @@ $slide-content-size: 85%;
 
       .region-content {
         padding: 10px 10px 0;
+        /* mobil and tablet screen */
+        @media (max-width: 992px) {
+          width: 100%;
+        }
 
         .desc {
           position: relative;
           width: 100%;
+          /* mobil and tablet screen */
+          @media (max-width: 992px) {
+            height: 100px;
+            overflow: scroll;
+          }
 
           p {
             font-size: .75rem;

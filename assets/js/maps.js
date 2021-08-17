@@ -31,7 +31,7 @@ generalStates.addEventListener("mouseenter", () => {
     wordMaras.classList.remove("on")
     svgMaras.classList.remove("on")
     generalWords.removeAttribute("style");
-})
+}, 3000)
 generalStates.addEventListener("mouseleave", () => {
     wordMaras.classList.add("on");
     svgMaras.classList.add("on")
