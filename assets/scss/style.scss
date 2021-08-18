@@ -331,6 +331,12 @@ $mq-xlarge: 91em;
   align-items: center;
   height: 100%;
   color: #111;
+  @media (max-width: 768px) {
+    right: 50%;
+    transform: translateX(50%);
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
 
   @media (min-width: $mq-med) {
     right: 0;
@@ -343,6 +349,10 @@ $mq-xlarge: 91em;
     font-size: 1em;
     transform: rotate(90deg);
     transform-origin: center;
+    /* mobil and tablet screen */
+    @media (max-width: 768px) {
+      transform: none;
+    }
   }
 
   button {
@@ -356,6 +366,14 @@ $mq-xlarge: 91em;
     border: 0;
     overflow-x: hidden;
     transition: color 0.5s ease;
+
+    /* mobil and tablet screen */
+    @media (max-width: 768px) {
+      background: rgba(255, 255, 255, .8);
+      border-radius: 5px;
+      color: #000;
+      padding: 5px 10px;
+    }
 
     &:after {
       content: '';
@@ -441,7 +459,6 @@ $slide-content-size: 85%;
     display: flex;
     align-items: center;
     overflow-y: hidden;
-    transform: translateX(5%);
 
     @media (min-width: $mq-med) {
       //transform: translateX(-5%);
@@ -454,6 +471,8 @@ $slide-content-size: 85%;
     font-weight: 700;
     color: $color-dark;
     overflow-y: hidden;
+    padding-left: 5%;
+    z-index: 2;
 
     @media (min-width: $mq-med) {
       font-size: 3em;
@@ -480,6 +499,22 @@ $slide-content-size: 85%;
       .is-active &:nth-of-type(2n) span {
         transition-delay: 0.2s;
       }
+    }
+  }
+
+  &__overlay {
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 1;
+    clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    -webkit-clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    border-radius: 5px 0 0 5px;
+    /* mobil and tablet screen */
+    @media (max-width: 768px) {
+      width: 80%;
     }
   }
 
