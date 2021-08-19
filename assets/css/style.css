@@ -977,6 +977,15 @@ a:focus {
   border-radius: 21px 21px 0 0;
 }
 
+.swiper-pagination-bullet {
+  border-radius: 4px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 50px;
+  background-color: var(--color-main-one);
+}
+
 .tekrom-offices a {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -988,6 +997,10 @@ a:focus {
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 20px;
+}
+
+.footer-prize img {
+  max-width: 100%;
 }
 
 footer {
