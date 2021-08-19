@@ -155,7 +155,7 @@ const swiper2 = new Swiper('.slider--tekrom-facilities', {
             spaceBetween: 20,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
         },
         1024: {
@@ -163,6 +163,11 @@ const swiper2 = new Swiper('.slider--tekrom-facilities', {
             spaceBetween: 20,
         },
     },
+});
+$(".slider--tekrom-facilities").hover(function() {
+    (this).swiper.autoplay.stop();
+}, function() {
+    (this).swiper.autoplay.start();
 });
 /* swiper slider - home page tekrom-life */
 
