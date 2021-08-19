@@ -27,18 +27,22 @@ const turkeyMap = function () {
         generalWords.style.position = 'fixed';
     });
 }
-generalStates.addEventListener("mouseenter", () => {
-    wordMaras.classList.remove("on")
-    svgMaras.classList.remove("on")
-    generalWords.removeAttribute("style");
-}, 3000)
+
 generalStates.addEventListener("mouseleave", () => {
-    wordMaras.classList.add("on");
-    svgMaras.classList.add("on")
-    generalWords.setAttribute("style", "position:absolute");
+    setTimeout(() => {
+        if(![...wordStates].filter(e=>e.classList.contains("on")).length){
+            wordMaras.classList.add("on");
+            svgMaras.classList.add("on")
+            generalWords.setAttribute("style", "position:absolute");
+        }
+
+        
+    }, 1000);
+    
 })
 svgStates.forEach((el) => {
     el.addEventListener("mouseenter", () => {
+        removeAllOn();
         addOnFromState(el);
     });
     el.addEventListener("mouseleave", () => {
