@@ -126,6 +126,12 @@ a:focus {
 .fs-7 {
   font-size: .9rem;
 }
+/* mobil and tablet screen */
+@media (max-width: 992px) {
+  .mobile-text-center {
+    text-align: center;
+  }
+}
 /* colors */
 .bg-color-main-one,
 .btn-color-main-one {
@@ -143,6 +149,10 @@ a:focus {
 }
 .bg-color-solid-gray {
   background-color: var(--color-solid-gray);
+}
+.text-color-tsoft,
+.text-color-tsoft:hover {
+  color: #f36d20;
 }
 /* page loading bar */
 .pace {
@@ -781,12 +791,10 @@ $slide-content-size: 85%;
   }
 }
 
-
-
-
 footer {
   overflow-x: hidden;
 }
+
 .living-center,
 .tekrom-facilities {
   .content-card {
