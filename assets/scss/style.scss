@@ -23,7 +23,7 @@ Tekrom Teknoloji
   --color-sidebar-border: #c6500f;
   --sidebar-loading-bar-border: solid 3px transparent;
   --shadow: rgba(131, 131, 131, 0.5);
-  --shadow-one-side-only: 0 8px 6px -6px rgba(131, 131, 131, 0.3);
+  --shadow-one-side-only: 0 8px 6px -6px rgba(131, 131, 131, .3);
   --font-family-main: "Montserrat", Helvetica, Arial, Sans-Serif;
   --box-radius: 15px;
   --box-radius-t: var(--box-radius) var(--box-radius) 0 0;
@@ -125,6 +125,10 @@ a:focus {
 }
 .fs-7 {
   font-size: .9rem;
+}
+.swiper-container {
+  position: relative;
+  overflow: hidden;
 }
 /* mobil and tablet screen */
 @media (max-width: 992px) {
@@ -464,11 +468,9 @@ $slide-content-size: 85%;
   &__img {
     position: relative;
     display: block;
-    background-size: cover;
-    background-position: center;
-    -webkit-backface-visibility: hidden;
-    height: 0%;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     filter: grayscale(0%);
     transition: height 1s 1.4s $ease-cb-2, filter 0.4s 0.1s ease;
     border-radius: 5px;
@@ -634,16 +636,44 @@ $slide-content-size: 85%;
         }
       }
     }
+    @media (min-width: 992px) and (max-width: 1400px) {
+      &-card {
+        height: 550px;
+
+        &-content {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          p {
+            height: 100%;
+            overflow: auto;
+          }
+        }
+      }
+    }
     @media (min-width: 992px) {
       &-card {
+        height: 600px;
         & > div {
           img {
             display: none;
           }
         }
+        & > div > div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+      &-image {
+        height: 600px !important;
       }
       &-gallery {
+        display: flex;
+        flex-direction: column;
         img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
