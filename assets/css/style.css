@@ -907,6 +907,19 @@ footer {
   overflow-x: hidden;
 }
 
+.up-arrow {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.up-arrow img {
+  width: 40px;
+  height: 40px;
+}
+
 .living-center .content-card,
 .tekrom-facilities .content-card {
   background-color: #fff;

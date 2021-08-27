@@ -18,13 +18,11 @@ let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
-
 document.addEventListener('DOMContentLoaded', function () {
     let seconds=new Date();
     let year=seconds.getFullYear()
     document.querySelector('.date-now').innerHTML=year;
 });
-
 
 /* swiper slider - home page */
 const swiper1 = new Swiper('.slider--life-in-maras', {
@@ -102,4 +100,14 @@ const swiper3 = new Swiper('.slider--tekrom-life', {
           spaceBetween: 20,
         },
       },
+});
+
+/* page up arrow */
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#backToTop').fadeIn();
+    } else {
+        $('#backToTop').fadeOut();
+    }
 });
