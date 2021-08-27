@@ -62,134 +62,87 @@
         </nav>
     </header>
     <main>
-        <div class="container-fluid p-0 home-page ">
-            <section class="slides overflow-hidden">
-                <section class="slides-nav">
-                    <nav class="slides-nav__nav">
-                        <button class="slides-nav__prev js-prev">
-                            <span class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><</span>
-                            <span class="d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">Önceki</span>
-                        </button>
-                        <button class="slides-nav__next js-next">
-                            <span class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">></span>
-                            <span class="d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">Sonraki</span>
-                        </button>
-                    </nav>
-                </section>
-                <section class="slide is-active">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/dogal-yasam.jpg"
-                                 class="slide__img lazyload" alt="Doğal Yaşam">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Doğal</span>
-                                <span class="title-line">Yaşam</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
+        <div class="container-fluid p-0 home-page">
+            <section class="home-page-main-slider">
+                <div class="container p-0">
+                    <div class="swiper main-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Doğal</span>
+                                    <span class="title-line">Yaşam</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/dogal-yasam.jpg" class="swiper-lazy"
+                                     alt="Doğal Yaşam"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Ekonomik</span>
+                                    <span class="title-line">Yaşam</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/ekonomik-yasam.jpg" class="swiper-lazy"
+                                     alt="Ekonomik Yaşam"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Kamp</span>
+                                    <span class="title-line">Diyarı</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/kamp-diyari.jpg" class="swiper-lazy"
+                                     alt="Kamp Diyarı"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Adrenalin</span>
+                                    <span class="title-line">Dünyası</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/adrenalin-dunyasi.jpg" class="swiper-lazy"
+                                     alt="Adrenalin Dünyası"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Kış</span>
+                                    <span class="title-line">Sporu</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/kis-sporu.jpg" class="swiper-lazy"
+                                     alt="Kış Sporu"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Merkezi</span>
+                                    <span class="title-line">Konum</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/merkezi-konum.jpg" class="swiper-lazy"
+                                     alt="Merkezi Konum"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-content">
+                                    <span class="title-line">Teknoloji</span>
+                                    <span class="title-line">Üsü</span>
+                                </div>
+                                <div class="slide-overlay"></div>
+                                <img data-src="assets/images/slider/teknolojik-us.jpg" class="swiper-lazy"
+                                     alt="Teknoloji Üssü"/>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                </section>
-                <section class="slide">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/ekonomik-yasam.jpg"
-                                 class="slide__img lazyload" alt="Kahramanmaraş Ekonomik Yaşam">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Ekonomik</span>
-                                <span class="title-line">Yaşam</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
-                    </div>
-                </section>
-                <section class="slide ">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/kamp-diyari.jpg"
-                                 class="slide__img lazyload" alt="Kahramanmaraş Kamp Diyarı">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Kamp</span>
-                                <span class="title-line">Diyarı</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
-                    </div>
-                </section>
-                <section class="slide">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/adrenalin-dunyasi.jpg"
-                                 class="slide__img lazyload" alt="Kahramanmaraş Adrenalin Dünyası">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Adrenalin</span>
-                                <span class="title-line">Dünyası</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
-                    </div>
-                </section>
-                <section class="slide">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/kis-sporu.jpg"
-                                 class="slide__img lazyload" alt="Kahramanmaraş Kış Sporu">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Kış</span>
-                                <span class="title-line">Sporu</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
-                    </div>
-                </section>
-                <section class="slide">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/merkezi-konum.jpg"
-                                 class="slide__img lazyload" alt="Kahramanmaraş Merkezi Konum">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Merkezi</span>
-                                <span class="title-line">Konum</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
-                    </div>
-                </section>
-
- 
-                <section class="slide">
-                    <div class="slide__content">
-                        <figure class="slide__figure">
-                            <img loading="lazy" src="assets/images/slider/slider-loading.svg"
-                                 data-src="assets/images/slider/teknolojik-us.jpg"
-                                 class="slide__img lazyload" alt="Kahramanmaraş Merkezi Konum">
-                        </figure>
-                        <header class="slide__header">
-                            <h2 class="slide__title">
-                                <span class="title-line">Teknoloji</span>
-                                <span class="title-line">Üssü</span>
-                            </h2>
-                            <div class="slide__overlay"></div>
-                        </header>
-                    </div>
-                </section>
+                </div>
 
             </section>
             <section>

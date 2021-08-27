@@ -1,4 +1,19 @@
 /* home page slider */
+const swiper4 = new Swiper('.main-slider', {
+    lazy: true,
+    preloadImages: false,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+/* home page slider */
 (function ($) {
 
     var SliceSlider = {
