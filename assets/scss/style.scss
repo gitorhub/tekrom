@@ -198,15 +198,16 @@ a:focus {
       padding: 15px 20px;
       font-weight: 600;
       color: #1e4496;
+      transition: color 300ms ease-in-out;
       &::after {
         display: none;
       }
       &:hover {
-        color: var(--color-main-two);
+        color: #447cec;
       }
     }
     .active {
-      border-bottom: 2px solid var(--color-main-two);
+      border-bottom: 2px solid var(--color-main-one);
       a {
         color: var(--color-main-one);
       }
@@ -488,7 +489,6 @@ $slide-content-size: 85%;
 .home-page {
   .home-page-main-slider {
     background-color: #edecf1;
-    padding: 40px 0 0;
     .main-slider {
       --swiper-navigation-color: #fff;
       --swiper-pagination-color: #fff;
