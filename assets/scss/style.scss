@@ -618,8 +618,14 @@ $slide-content-size: 85%;
         transition: fill 300ms ease-in;
       }
     }
-    #states *.on {
+    #states .on {
       fill: #1e4496;
+    }
+    #states .states-kahramanmaras {
+      fill: #a4508b;
+      &:hover {
+        fill: #5f0a87;
+      }
     }
     .list-of-states {
       margin: 0;
