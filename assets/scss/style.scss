@@ -563,10 +563,6 @@ $slide-content-size: 85%;
       border: 1px solid rgba(0, 0, 0, .125);
       border-radius: .25rem;
       box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-      /* wide screen */
-      @media (min-width: 992px) {
-        min-width: 500px;
-      }
       .region-image {
         img {
           width: clamp(100px, 8vw, 150px);
@@ -610,6 +606,10 @@ $slide-content-size: 85%;
     svg {
       display: block;
       width: 100%;
+      /* mobil and tablet screen */
+      @media (max-width: 992px) {
+        padding-top: 120px;
+      }
       g {
         cursor: pointer;
       }
@@ -634,9 +634,10 @@ $slide-content-size: 85%;
       }
       /* mobil and tablet screen */
       @media (max-width: 992px) {
-        position: static !important;
+        position: absolute !important;
         left: 0 !important;
         top: 0 !important;
+        width: 100% !important;
       }
     }
     .list-of-states li {
