@@ -12,6 +12,7 @@ const swiper4 = new Swiper('.main-slider', {
     },
 });
 
+
 /* tooltips everywhere */
 let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
