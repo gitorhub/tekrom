@@ -153,10 +153,16 @@ a:focus {
 .bg-color-solid-gray {
   background-color: var(--color-solid-gray);
 }
+
+.bg-color-tsoft {
+  background-color: #f36d20;
+}
+
 .text-color-tsoft,
 .text-color-tsoft:hover {
   color: #f36d20;
 }
+
 /* page loading bar */
 .pace {
   -webkit-pointer-events: none;
@@ -983,5 +989,15 @@ footer {
   }
   .read-more {
     display: none;
+  }
+}
+
+.awards-area-text {
+  h6 {
+    background: #f36d20;
+    transform: translateY(50%);
+    margin: 0;
+    display: inline-block;
+    padding: 0 15px;
   }
 }
