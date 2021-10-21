@@ -105,10 +105,21 @@ const swiper3 = new Swiper('.slider--tekrom-life', {
 
 /* page up arrow */
 $(window).scroll(function() {
-    var height = $(window).scrollTop();
+    let height = $(window).scrollTop();
     if (height > 100) {
         $('#backToTop').fadeIn();
     } else {
         $('#backToTop').fadeOut();
     }
+});
+
+/* sticky navbar */
+$(document).ready(function() {
+    $(window).on('scroll', function() {
+        if (Math.round($(window).scrollTop()) > 300) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
 });

@@ -184,8 +184,28 @@ a:focus {
   height: 4px;
 }
 /* global components */
+.sticky-menu-height {
+  min-height: 100px;
+}
 .tekrom-menu {
   background-color: #f8f9fa;
+  &.scrolled {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    animation: navbarAnimation 0.2s ease-in-out;
+    @keyframes navbarAnimation {
+      from {
+        top: -100%;
+      }
+      to {
+        top: 0;
+      }
+    }
+  }
   a.navbar-brand-tekrom {
     img {
       height: 40px;
