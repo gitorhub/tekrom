@@ -11,20 +11,16 @@ const swiper4 = new Swiper('.main-slider', {
         prevEl: ".swiper-button-prev",
     },
 });
-
-
 /* tooltips everywhere */
 let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-
 document.addEventListener('DOMContentLoaded', function () {
-    let seconds=new Date();
-    let year=seconds.getFullYear()
-    document.querySelector('.date-now').innerHTML=year;
+    let seconds = new Date();
+    let year = seconds.getFullYear()
+    document.querySelector('.date-now').innerHTML = year;
 });
-
 /* swiper slider - home page */
 const swiper1 = new Swiper('.slider--life-in-maras', {
     slidesPerView: 1,
@@ -38,7 +34,6 @@ const swiper1 = new Swiper('.slider--life-in-maras', {
     preloadImages: false,
     lazy: true,
 });
-
 /* swiper slider - home page tekrom-facilities */
 const swiper2 = new Swiper('.slider--tekrom-facilities', {
     slidesPerView: 1,
@@ -71,40 +66,38 @@ const swiper2 = new Swiper('.slider--tekrom-facilities', {
         },
     },
 });
-$(".slider--tekrom-facilities").hover(function() {
+$(".slider--tekrom-facilities").hover(function () {
     (this).swiper.autoplay.stop();
-}, function() {
+}, function () {
     (this).swiper.autoplay.start();
 });
-
 /* swiper slider - home page tekrom-life */
 const swiper3 = new Swiper('.slider--tekrom-life', {
     slidesPerView: 1,
-    spaceBetween:0,
-    loop:true,
+    spaceBetween: 0,
+    loop: true,
     preloadImages: false,
     lazy: true,
     pagination: {
         el: ".swiper-pagination",
     },
-      autoplay: {
+    autoplay: {
         delay: 4500,
         disableOnInteraction: false,
-      },
+    },
     breakpoints: {
         640: {
-          slidesPerView: 2,
-          spaceBetween: 5,
+            slidesPerView: 2,
+            spaceBetween: 5,
         },
         768: {
-          slidesPerView: 4,
-          spaceBetween: 20,
+            slidesPerView: 4,
+            spaceBetween: 20,
         },
-      },
+    },
 });
-
 /* page up arrow */
-$(window).scroll(function() {
+$(window).scroll(function () {
     let height = $(window).scrollTop();
     if (height > 100) {
         $('#backToTop').fadeIn();
@@ -112,14 +105,24 @@ $(window).scroll(function() {
         $('#backToTop').fadeOut();
     }
 });
-
 /* sticky navbar */
-$(document).ready(function() {
-    $(window).on('scroll', function() {
-        if (Math.round($(window).scrollTop()) > 300) {
-            $('.navbar').addClass('scrolled');
-        } else {
-            $('.navbar').removeClass('scrolled');
-        }
-    });
-});
+// $(document).ready(function() {
+//     $(window).on('scroll', function() {
+//         if (Math.round($(window).scrollTop()) > 300) {
+//             $('.navbar').addClass('scrolled');
+//         } else {
+//             $('.navbar').removeClass('scrolled');
+//         }
+//     });
+// });
+var lastScrollTop = 0;
+document.addEventListener("scroll", function () {
+    let scrolltop = window.scrollY || document.documentElement.scrollTop
+    let navbar = document.querySelector(".navbar")
+    if (scrolltop > lastScrollTop) {
+        navbar.classList.remove("scrolled")
+    } else {
+        navbar.classList.add("scrolled")
+    }
+    lastScrollTop = scrolltop <= 0 ? 0 : scrolltop;
+}, false);
