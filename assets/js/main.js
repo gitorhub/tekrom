@@ -106,15 +106,7 @@ $(window).scroll(function () {
     }
 });
 /* sticky navbar */
-// $(document).ready(function() {
-//     $(window).on('scroll', function() {
-//         if (Math.round($(window).scrollTop()) > 300) {
-//             $('.navbar').addClass('scrolled');
-//         } else {
-//             $('.navbar').removeClass('scrolled');
-//         }
-//     });
-// });
+
 let lastScrollTop = 0;
 document.addEventListener("scroll", function () {
     let scrolltop = window.scrollY || document.documentElement.scrollTop
@@ -131,16 +123,19 @@ document.addEventListener("scroll", function () {
     lastScrollTop = scrolltop <= 0 ? 0 : scrolltop;
 }, false);
 
-
-
-
+/* navbar actice class*/
 document.addEventListener("click", (e) => {    
 let navlinks=document.querySelectorAll('.nav-link');
-   e.target.classList.contains("nav-link")? activeClassChanger(navlinks, "active", e.target):""
+   if (e.target.classList.contains("nav-link") && !e.target.classList.contains("dropdown-toggle")) {
+       activeClassChanger(navlinks, "active", e.target);
+       window.innerWidth<768? closeNavbar():""
+   } 
 })
 
-
-
+/*mobile close navbar function*/
+const closeNavbar=function () {
+    document.querySelector('.navbar-toggler').click()
+}
 const activeClassChanger=function (allElem, classChange="active", activeElem) { 
     [...allElem].forEach((el)=>{
         el.classList.remove(classChange)

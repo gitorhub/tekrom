@@ -7,7 +7,8 @@ Tekrom Teknoloji
   --thumbBG: #e4e4e4;
   --thumbBG-hover: #90a4ae;
   --bg-main: #fff;
-  --color-main-one: #1e4496;
+  // --color-main-one: #1e4496;
+  --color-main-one: #0a53be;
   --color-main-two: #00a650;
   --color-gray: #f7f7f7;
   --color-darken-gray: #999999;
@@ -282,6 +283,7 @@ a:focus {
       padding: 15px 20px;
       font-weight: 600;
       color: #1e4496;
+      color: var(--color-main-one);
       transition: color 300ms ease-in-out;
       &::after {
         display: none;
@@ -699,6 +701,7 @@ $slide-content-size: 85%;
       }
       path {
         fill: #f36d25;
+        fill: var(--color-main-one);
         transition: fill 300ms ease-in;
       }
     }
@@ -706,9 +709,11 @@ $slide-content-size: 85%;
       fill: #1e4496;
     }
     #states .states-kahramanmaras {
-      fill: #027313;
+      // fill: #027313;
+      fill: #f36d25;
       &:hover {
-        fill: #025920;
+        // fill: #025920;
+         fill: #d26124;
       }
     }
     .list-of-states {
@@ -1082,4 +1087,15 @@ footer {
 
 .sticky-content-list {
   height: 300px;
+}
+.accordion-button{
+  &:not(.collapsed){
+    color:var(--color-main-one);
+    background-color: #0a53be15
+  }
+  
+  &:focus{
+    box-shadow: none;
+    background-color: #0a52be25
+  }
 }
