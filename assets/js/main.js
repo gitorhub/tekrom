@@ -115,14 +115,35 @@ $(window).scroll(function () {
 //         }
 //     });
 // });
-var lastScrollTop = 0;
+let lastScrollTop = 0;
 document.addEventListener("scroll", function () {
     let scrolltop = window.scrollY || document.documentElement.scrollTop
     let navbar = document.querySelector(".navbar")
-    if (scrolltop > lastScrollTop) {
+    if(scrolltop>105){
+        if (scrolltop > lastScrollTop) {
+            navbar.classList.remove("scrolled")
+        } else {
+            navbar.classList.add("scrolled")
+        }
+    }else{
         navbar.classList.remove("scrolled")
-    } else {
-        navbar.classList.add("scrolled")
     }
     lastScrollTop = scrolltop <= 0 ? 0 : scrolltop;
 }, false);
+
+
+
+
+document.addEventListener("click", (e) => {    
+let navlinks=document.querySelectorAll('.nav-link');
+   e.target.classList.contains("nav-link")? activeClassChanger(navlinks, "active", e.target):""
+})
+
+
+
+const activeClassChanger=function (allElem, classChange="active", activeElem) { 
+    [...allElem].forEach((el)=>{
+        el.classList.remove(classChange)
+    })
+    activeElem.classList.add(classChange)
+}
