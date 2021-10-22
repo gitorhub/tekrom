@@ -1,7 +1,6 @@
 /*
 Tekrom Teknoloji
 */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 :root {
   --scrollbarBG: transparent;
@@ -268,7 +267,7 @@ a:focus {
     padding-top: 80px;
   }
   .tekrom-menu .navbar-collapse .navbar-overlay {
-    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(0, 0, 0, 0.8);
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     height: 100vh;
@@ -1419,17 +1418,17 @@ footer {
 }
 
 .sticky-content-list {
-  height: 300px;
+  height: 460px;
 }
 
 .accordion-button:not(.collapsed) {
   color: var(--color-main-one);
-  background-color: #0a53be10;
+  background-color: #0a53be15;
 }
 
 .accordion-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  background-color: #0a52be20;
+  background-color: #0a52be25;
 }
 /*# sourceMappingURL=style.css.map */
