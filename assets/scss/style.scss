@@ -185,10 +185,47 @@ a:focus {
 }
 /* global components */
 .sticky-menu-height {
-  min-height: 100px;
+  /* wide screen */
+  @media (min-width: 992px) {
+    min-height: 100px;
+  }
+  /* mobil and tablet screen */
+  @media (max-width: 992px) {
+    height: 66px;
+  }
 }
+
+
+
 .tekrom-menu {
-  background-color: #f8f9fa;
+  background: #ffffff;
+  /* mobil and tablet screen */
+  @media (max-width: 992px) {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .navbar-collapse {
+    /* mobil and tablet screen */
+    @media (max-width: 992px) {
+      padding-top: 80px;
+      .navbar-overlay {
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        z-index: 1;
+        transition: all 300ms ease;
+      }
+
+    }
+  }
+
   &.scrolled {
     position: fixed;
     top: 0;
@@ -207,42 +244,37 @@ a:focus {
     }
   }
   a.navbar-brand-tekrom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e2e2e2;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    position: absolute;
-    top: 0;
-    height: 140%;
-    width: 180px;
-    padding: 15px 25px 35px;
-    border-bottom: 3px solid #e99d15;
-
-    &:after {
-      content: '';
+    /* wide screen */
+    @media (min-width: 992px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      background: #e99d15;
-      -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-      clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-      left: 0;
-      top: 87%;
-      right: 0;
-      height: 100%;
-      display: block;
-      z-index: 9;
-
+      top: 0;
+      height: 140%;
+      padding: 20px 0 0;
+      img {
+        height: 100%;
+      }
     }
-    img {
-      height: 100%;
+    /* mobil and tablet screen */
+    @media (max-width: 992px) {
+      z-index: 2;
+      img {
+        position: absolute;
+        top: 10px;
+        height: 88px;
+      }
     }
   }
   .navbar-nav {
     /* mobil and tablet screen */
     @media (max-width: 992px) {
       background: #fff;
+      position: relative;
       border-radius: 5px;
       margin-top: 10px;
+      z-index: 2;
       border-top: 3px solid var(--color-main-two);
       box-shadow: var(--shadow-one-side-only);
     }
