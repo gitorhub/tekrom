@@ -13,437 +13,409 @@
     <meta name="keywords"
         content="tekrom, kahramanmaraş, kahramanmaraş teknoloji, php, backend, fullstack, nasıl php developer olunur, php nedir">
     <meta name="description" content="Php bilindiği üzere direkt olarak HTML taglarının arasına yazılabilmektedir. Hızlı şekilde bir websitesi geliştirilmek istendiğinde Php dili ile basit bir çatı oluşturulup kolayca geliştirme yapılabilmektedir. Bunun yanında birçok hazır framework ile kolayca içerdikleri araçlarla ve özellikleriyle geliştirme süresi çok daha kısa sürdürebilir." />
-    <meta property="og:locale" content="tr_TR" />
-    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:title" content="TEKROM Kahramanmaraş - PHP nedir ve nasıl PHP developer olunur? - TSOFT">
     <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <!-- Styles -->
     <link href="assets/cdn/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/cdn/css/fancybox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css?v=1.0.4" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <header>
-        <nav class="navbar navbar-expand-lg py-4 tekrom-menu" aria-label="Eighth navbar example">
-            <div class="container">
-                <a class="navbar-brand navbar-brand-tekrom" href="#">
-                    <img loading="lazy" src="assets/images/logo/marasteknolojiussu.svg" alt="TEKROM Kahramanmaraş">
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="sticky-menu-height">
+    <nav class="navbar navbar-expand-lg py-lg-4 tekrom-menu">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-tekrom" href="/">
+                <img loading="lazy" src="assets/images/logo/logo-4.png" alt="TEKROM Kahramanmaraş">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#tekromNavbar" aria-controls="tekromNavbar" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="tekromNavbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#merkezi-konum">Merkezi Konum</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#yasam">Etkinlikler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tekrom-teknoloji">Teknoloji</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#iletisim">İletişim</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container-fluid p-0 home-page">
-            <article>
-                <div class="container">
-                    <h1 class="text-center">PHP NEDİR VE NASIL PHP DEVELOPER OLUNUR?</h1>
-                    <section>
-                        <ul class="btn-danger p5">
-                            <li> maps.js ve kullanılmayan css css linkleri kaldırılmalı</li>
-                            <li> seo kısmı article ağırlıklı olarak değiştirilmeli
-                                author type vb</li>
-                            <li>atalara resim ve vurgulu yazılar eklenmeli</li>
-                            <li>bazı kelimeler stroong içine alınmalı html css js gibi</li>
-                            <strong>
-                                Bu yazı ile sizlere çok daha hızlı, çok daha
-                                kolay elde edilebilir ve herhangi bir diploma şartı olmayan yol haritası sunulacaktır.
-                            </strong>
-                            <strong>
-                                yazılımın geleceği internet üzerinden ilerleyecektir. Bu nedenle mobil ile web yazılım
-                                en hayati, en önemli ve en gelecek vadeden alan olarak görülmektedir.
-                            </strong>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="tekromNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#merkezi-konum">Merkezi Konum</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Yol Haritası ▼
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="/nasil-frontend-developer-olunur.html">
+                                    Front-end Developer
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/nasil-php-developer-olunur.html">
+                                    Php Developer
+                                </a>
+                            </li>
                         </ul>
-                    </section>
-                    <section>
-                        <div class="py-3 py-sm-5 text-secondary">
-                            <h1>Php Developer (Developer) Yol Haritası</h1>
-                                <p>Çoğunlukla programlamaya başlanırken yaşanılan en büyük problem nereden başlanacağının ve neler yapılacağının bilinmemesidir. Aslında bu yazımız Web Sitesi üretmek isteyen ya da Web Servisleri geliştirmek isteyenleri ilgilendirmektedir.</p>
-                            <p>Php geliştiricisi olmak için bir tek tutkunuzun olması yeterlidir o da web geliştiriciliği. Php’nin diğer dillere nazaran zor olduğu söylenebilir fakat bu tanımlama hiç doğru değildir ve hatta belki de programlamanın bütün keyiflerini alabileceğiniz ve kolayca öğrenebileceğiniz bir programlama dilidir.  </p>
-                            <p>
-                                Kendi tecrübelerimden konuşacak olursam daha önceleri: C, C++, Java, NodeJS ve Python dilleriyle geliştirmeler yaptım. Üniversite eğitimimde C dili ile başlayan programlama serüvenimde veri yapıları, işletim sistemleri, oyun programlama ve görüntü işleme ile ilgili çeşitli deneyimler edinmiştim. Bu tecrübe haliyle diğer dillerin inceliklerini keşfederken bana ciddi anlamda katkısı olmuştu. Genel olarak C yazım kuralları (syntax’ına) aşina bir kişinin en azından kendi deneyimlediğim dilleri öğrenmesi çok daha hızlı ve verimli olacaktır. 
-                            </p>
-                            <p>
-                                Yukarıdaki bahsettiğim dillerin amaçları yazılımın çok çeşitli sektörleri için faydalı olurken; Php daha çok web programlamada daha üstün bir dil olarak düşünülmelidir. Son zamanların parlayan yıldızı NodeJS her ne kadar bu alanda daha çok tercih edilmeye başlansa da, Php’nin yadsınamayacak tecrübesi daima konuşuluyor olacaktır. 
-                            </p>
-                           <p>
-                            Php bilindiği üzere direkt olarak HTML taglarının arasına yazılabilmektedir. Hızlı şekilde bir websitesi geliştirilmek istendiğinde Php dili ile basit bir çatı oluşturulup kolayca geliştirme yapılabilmektedir. Bunun yanında birçok hazır framework ile kolayca içerdikleri araçlarla ve özellikleriyle geliştirme süresi çok daha kısa sürdürebilir.
-                           </p>
-                           <p>
-                            Kod karmaşası frameworkler ile çoğunlukla minimuma indirgenir. Birçok framework MVC yapısına uygundur. Yani bir websitesini kolaylıkla oluşturmak için gerekecek olan bütün araçlara sahiptir. Bunlara aynı zamanda Full-Stack web frameworkleri adı da verilir. Örnek vermek gerekirse Symfony, Laravel, Codeigniter çok popüler full-stack web frameworkleridir. Öğrenmesi ve kullanımı son derece kolay frameworklerdir.
-                           </p> 
-                            <p>
-                                Bunun dışında API ya da servis geliştirmeleri için özelleştirilmiş frameworkler de bulunmaktadır. Bu türden frameworklere Micro web frameworkleri adı verilir. Örneğin Lumen servis geliştirmeleri için daha uygundur. Daha spesifik olan işlemlerde tercih edilir örnek vermek gerekirse; belirli sürelerde kur birimlerinin güncellenmesi, hava durumunun güncellenmesi ya da API için gerekebilecek verilerin sunulmasında çok daha verimli olacak bir frameworktur. 
-                            </p>
-                            <p>
-                                Bu alanda çok fazla geliştiricinin bulunması özellikle öğrenimini daha da kolaylaştırır. İnternet üzerinde bir websitesi oluşturduktan sonra bunu yayınlamak için bir Linux sunucuya sahip olmanız yeterlidir. Haliyle sunucu maliyetleri de çok yüksek olmayacaktır.
-                            </p>
-                            <p>
-                                Github üzerinde tonlarca açık-kaynak paketlerin varlığı Php için çok büyük bir ganimettir. Aynı zamanda dokümantasyonları açıklayıcı olması ve uygulanmasını kolaylaştırmaktadır.
-                            </p>
-                            <p>
-                                Veri tabanlarıyla uyumu: MySql, Ms-Sql, Sqlite, PostgreSql, Redis ve MongoDb vb. etkileşime girmek ve kullanmak çok kolaydır. Çünkü her biri için Php kütüphaneleri bulunmaktadır. 
-                            </p>
-                            <div>
-                                <p>  
-                                    Birtan Taşkın
-                                </p>
-                                <p>Php developer</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </article>
-            <section>
-                <div class="container tekrom-offices" id="iletisim">
-                    <div class="accordion" id="accordionTekromContact">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#genelmerkez">
-                                    Genel Merkez
-                                </button>
-                            </h2>
-                            <div id="genelmerkez" class="accordion-collapse collapse">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/genel-mudurluk.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="Esentepe Mahallesi, Haberler Sk. No:13 ŞİŞLİ / İSTANBUL">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/genel-mudurluk.jpg"
-                                            class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Tekrom">
-                                    </a>
-                                    <address>
-                                        Esentepe Mahallesi, Haberler Sk. No:13<br />
-                                        ŞİŞLİ / İSTANBUL
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#tsoftinc">
-                                    T-Soft Inc. Silikon Vadisi
-                                </button>
-                            </h2>
-                            <div id="tsoftinc" class="accordion-collapse collapse">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/california.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="906 Broadway, Suite 100, San Francisco, CA, 94133USA , SILICON VALLEY">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/california.jpg"
-                                            class="lazyload img-fluid rounded-circle" alt="TEKROM Bursa Satış Ofisi">
-                                    </a>
-                                    <address>
-                                        906 Broadway, Suite 100 , San Francisco, CA 94133<br />
-                                        Kaliforniya / Amerika Birleşik Devletleri
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#ytuArge">
-                                    İstanbul Ar-Ge Merkezi YTÜ Teknopark
-                                </button>
-                            </h2>
-                            <div id="ytuArge" class="accordion-collapse collapse">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/istanbul-teknokent.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="İstanbul Ar-Ge Merkezi YTÜ Teknopark">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/istanbul-teknokent.jpg"
-                                            class="lazyload img-fluid rounded-circle"
-                                            alt="TEKROM İstanbul Ar-Ge Merkezi YTÜ Teknopark">
-                                    </a>
-                                    <address>
-                                        Yıldız Teknik Üniv. Davutpaşa Kamp. Teknopark D2 Blok K2 No:104<br />
-                                        ESENLER / İSTANBUL
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#arge">
-                                    Anadolu Ar-Ge Merkezi KSÜ Teknokent
-                                </button>
-                            </h2>
-                            <div id="arge" class="accordion-collapse collapse show">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/maras-teknokent.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="KSÜ Avşar Kampüsü Teknokent Bina No:259 Kat:2 No:41 ONİKİŞUBAT / KAHRAMANMARAŞ">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/maras-teknokent.jpg"
-                                            class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Tekrom">
-                                    </a>
-                                    <address>
-                                        KSÜ Avşar Kampüsü Teknokent Bina No:259 Kat:2 No:41<br />
-                                        ONİKİŞUBAT / KAHRAMANMARAŞ
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#destekOperasyon">
-                                    Operasyon
-                                </button>
-                            </h2>
-                            <div id="destekOperasyon" class="accordion-collapse collapse">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/destek-operasyon.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="Maltepe Caddesi No:46-48 D:25 TOPKAPI / İSTANBUL">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/destek-operasyon.jpg"
-                                            class="lazyload img-fluid rounded-circle"
-                                            alt="TEKROM İstanbul Ar-Ge Merkezi YTÜ Teknopark">
-                                    </a>
-                                    <address>
-                                        Maltepe Caddesi No:46-48 D:25<br />
-                                        BAYRAMPAŞA / İSTANBUL
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#ankaraSatisOfis">
-                                    Ankara Satış Ofisi
-                                </button>
-                            </h2>
-                            <div id="ankaraSatisOfis" class="accordion-collapse collapse">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/ankara.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="Kızılırmak Mah. Dumlupınar Bulvarı Next Level Kat:16 ÇANKAYA / ANKARA">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/ankara.jpg"
-                                            class="lazyload img-fluid rounded-circle" alt="TEKROM Ankara Satış Ofisi">
-                                    </a>
-                                    <address>
-                                        Kızılırmak Mah. Dumlupınar Bulvarı Next Level Kat:16<br />
-                                        ÇANKAYA / ANKARA
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#bursaSatisOfis">
-                                    Bursa Satış Ofisi
-                                </button>
-                            </h2>
-                            <div id="bursaSatisOfis" class="accordion-collapse collapse">
-                                <div class="accordion-body d-flex align-items-center">
-                                    <a href="assets/images/content/home/offices/bursa.jpg"
-                                        data-fancybox="tekrom-address"
-                                        data-caption="Konak Mah. Lefkoşe Cad. Barış Sok. Ofis Plaza NİLÜFER / BURSA">
-                                        <img loading="lazy" src="assets/images/default-content-image.png"
-                                            data-src="assets/images/content/home/offices/bursa.jpg"
-                                            class="lazyload img-fluid rounded-circle" alt="TEKROM Bursa Satış Ofisi">
-                                    </a>
-                                    <address>
-                                        Konak Mah. Lefkoşe Cad. Barış Sok. Ofis Plaza<br />
-                                        NİLÜFER / BURSA
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="container py-5 footer-prize">
-                    <div class="col-12 p-3 rounded-3 bg-color-soft-gray">
-                        <div class="row">
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="https://www2.deloitte.com/content/dam/Deloitte/tr/Documents/technology-media-telecommunications/Fast50-2020-Turkey-Report.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2020.png" class="lazyload"
-                                        alt="deloitte2020">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="https://www2.deloitte.com/content/dam/Deloitte/tr/Documents/technology-media-telecommunications/Fast50-2019-Turkey-Report.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2019.jpg" class="lazyload"
-                                        alt="deloitte2019">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="https://www2.deloitte.com/content/dam/Deloitte/tr/Documents/technology-media-telecommunications/Fast-50-2018-Turkey-Report.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2018.png" class="lazyload"
-                                        alt="deloitte2018">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="https://fast50.deloitte.com.tr/UserFiles/pdf/Technology_Fast_50_2016_final.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2016.png" class="lazyload"
-                                        alt="deloitte2016">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="http://fast50.deloitte.com.tr/UserFiles/pdf/Fast50rapor_2015.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2015.png" class="lazyload"
-                                        alt="deloitte2015">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="http://fast50.deloitte.com.tr/UserFiles/pdf/Fast50rapor_2014.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2014.png" class="lazyload"
-                                        alt="deloitte2014">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <a href="http://fast50.deloitte.com.tr/UserFiles/pdf/Fast50rapor_2013.pdf"
-                                    target="_blank">
-                                    <img loading="lazy" src="assets/images/default-content-image.png"
-                                        data-src="assets/images/content/home/other/deloitte2013.png" class="lazyload"
-                                        alt="deloitte2013">
-                                </a>
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <img loading="lazy" src="assets/images/default-content-image.png"
-                                    data-src="assets/images/content/home/other/bilisim2019.png" class="lazyload"
-                                    alt="bilisim500-2016">
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <img loading="lazy" src="assets/images/default-content-image.png"
-                                    data-src="assets/images/content/home/other/bilisim2018.png" class="lazyload"
-                                    alt="bilisim500-2017">
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <img loading="lazy" src="assets/images/default-content-image.png"
-                                    data-src="./assets/images/content/home/other/bilisim2017.png" class="lazyload"
-                                    alt="bilisim500-2018">
-                            </div>
-                            <div
-                                class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 mx-auto d-flex align-items-center justify-content-center my-2">
-                                <img loading="lazy" src="assets/images/default-content-image.png"
-                                    data-src="assets/images/content/home/other/bilisim2016.png" class="lazyload"
-                                    alt="bilisim500-2019">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#yasam">Etkinlikler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tekrom-teknoloji">Teknoloji</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#iletisim">İletişim</a>
+                    </li>
+                </ul>
+                <div class="navbar-overlay" onclick="closeNavbar()"></div>
+            </div>
         </div>
-    </main>
-    <footer class="bg-color-gray">
-        <section>
-            <div class="container footer-bottom">
-                <div class="row">
-                    <div
-                        class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12 p-3 d-flex align-items-center justify-content-center justify-content-lg-start">
-                        <img loading="lazy" src="assets/images/default-content-image.png"
-                            data-src="assets/images/logo/tekrom-kahramanmaras.svg" alt="TEKROM Kahramanmaraş"
-                            class="lazyload img-fluid">
-                    </div>
-                    <div
-                        class="col-xxl-7 col-xl-7 col-lg-7 col-md-9 col-sm-12 col-12 p-3 d-xl-flex align-items-center justify-content-center justify-content-lg-start p-4 p-md-0 mobile-text-center">
-                        <span>
-                            © 2003 - <span class="date-now"></span>
-                            T-Soft E-Ticaret Sistemleri.
-                            <a href="https://www.tsoft.com.tr/" target="_blank" rel="nofollow"
-                                class="px-1 text-color-tsoft"> T-Soft </a> bir
-                            TEKROM markasıdır.
-                        </span>
-                    </div>
-                    <div
-                        class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
-                        <a href="https://www.facebook.com/tsofteticaret" class="p-3">
-                            <img loading="lazy" src="assets/images/default-content-image.png"
-                                data-src="assets/images/content/home/other/facebook.svg" class="lazyload"
-                                alt="facebook">
-                        </a>
-                        <a href="https://twitter.com/tsofteticaret" class="p-3">
-                            <img loading="lazy" src="assets/images/default-content-image.png"
-                                data-src="assets/images/content/home/other/twitter.svg" class="lazyload" alt="twitter">
-                        </a>
-                        <a href="https://www.linkedin.com/company/tsoft-eticaret/mycompany/" class="p-3">
-                            <img loading="lazy" src="assets/images/default-content-image.png"
-                                data-src="assets/images/content/home/other/linkedin.svg" class="lazyload"
-                                alt="linkedin">
-                        </a>
-                        <a href="https://www.instagram.com/tsofteticaret/" class="p-3">
-                            <img loading="lazy" src="assets/images/default-content-image.png"
-                                data-src="assets/images/content/home/other/instagram.svg" class="lazyload"
-                                alt="instagram">
-                        </a>
-                        <a href="https://www.youtube.com/user/TsoftEticaret" class="p-3">
-                            <img loading="lazy" src="assets/images/default-content-image.png"
-                                data-src="assets/images/content/home/other/youtube.svg" class="lazyload" alt="youtube">
-                        </a>
+    </nav>
+</header>
+
+<header class="py-3" style="background-color: #0a53be">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="post-heading text-white">
+                    <h1 class="fs-2 text-center">Php Developer Yol Haritası</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <article>
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <article>
+                        <section>
+                            <div class="py-3 py-sm-5 text-secondary">
+                                <p>Çoğunlukla programlamaya başlanırken yaşanılan en büyük problem nereden başlanacağının ve
+                                    neler yapılacağının bilinmemesidir. Aslında bu yazımız Web Sitesi üretmek isteyen ya da Web
+                                    Servisleri geliştirmek isteyenleri ilgilendirmektedir.</p>
+                                <p>Php geliştiricisi olmak için bir tek tutkunuzun olması yeterlidir o da web geliştiriciliği.
+                                    Php’nin diğer dillere nazaran zor olduğu söylenebilir fakat bu tanımlama hiç doğru değildir
+                                    ve hatta belki de programlamanın bütün keyiflerini alabileceğiniz ve kolayca
+                                    öğrenebileceğiniz bir programlama dilidir. </p>
+                                <p>
+                                    Kendi tecrübelerimden konuşacak olursam daha önceleri: C, C++, Java, NodeJS ve Python
+                                    dilleriyle geliştirmeler yaptım. Üniversite eğitimimde C dili ile başlayan programlama
+                                    serüvenimde veri yapıları, işletim sistemleri, oyun programlama ve görüntü işleme ile ilgili
+                                    çeşitli deneyimler edinmiştim. Bu tecrübe haliyle diğer dillerin inceliklerini keşfederken
+                                    bana ciddi anlamda katkısı olmuştu. Genel olarak C yazım kuralları (syntax’ına) aşina bir
+                                    kişinin en azından kendi deneyimlediğim dilleri öğrenmesi çok daha hızlı ve verimli
+                                    olacaktır.
+                                </p>
+                                <p>
+                                    Yukarıdaki bahsettiğim dillerin amaçları yazılımın çok çeşitli sektörleri için faydalı
+                                    olurken; Php daha çok web programlamada daha üstün bir dil olarak düşünülmelidir. Son
+                                    zamanların parlayan yıldızı NodeJS her ne kadar bu alanda daha çok tercih edilmeye başlansa
+                                    da, Php’nin yadsınamayacak tecrübesi daima konuşuluyor olacaktır.
+                                </p>
+                                <p>
+                                    Php bilindiği üzere direkt olarak HTML taglarının arasına yazılabilmektedir. Hızlı şekilde bir websitesi geliştirilmek istendiğinde Php dili ile basit bir çatı oluşturulup kolayca geliştirme yapılabilmektedir. Bunun yanında birçok hazır framework ile kolayca içerdikleri araçlarla ve özellikleriyle geliştirme süresi çok daha kısa sürdürebilir.
+                                </p>
+                                <p>
+                                    Kod karmaşası frameworkler ile çoğunlukla minimuma indirgenir. Birçok framework MVC yapısına uygundur. Yani bir websitesini kolaylıkla oluşturmak için gerekecek olan bütün araçlara sahiptir. Bunlara aynı zamanda Full-Stack web frameworkleri adı da verilir. Örnek vermek gerekirse Symfony, Laravel, Codeigniter çok popüler full-stack web frameworkleridir. Öğrenmesi ve kullanımı son derece kolay frameworklerdir.
+                                </p>
+                                <p>
+                                    <span class="d-block fs-3" id="content-1">Servislerin Önemi</span>
+                                    Bunun dışında API ya da servis geliştirmeleri için özelleştirilmiş frameworkler de bulunmaktadır. Bu türden frameworklere Micro web frameworkleri adı verilir. Örneğin Lumen servis geliştirmeleri için daha uygundur. Daha spesifik olan işlemlerde tercih edilir örnek vermek gerekirse; belirli sürelerde kur birimlerinin güncellenmesi, hava durumunun güncellenmesi ya da API için gerekebilecek verilerin sunulmasında çok daha verimli olacak bir frameworktur.
+                                </p>
+                                <p>
+                                    Bu alanda çok fazla geliştiricinin bulunması özellikle öğrenimini daha da kolaylaştırır. İnternet üzerinde bir websitesi oluşturduktan sonra bunu yayınlamak için bir Linux sunucuya sahip olmanız yeterlidir. Haliyle sunucu maliyetleri de çok yüksek olmayacaktır.
+                                </p>
+                                <p>
+                                    <span class="d-block fs-3" id="content-2">Açık Kaynak</span>
+                                    Github üzerinde tonlarca açık-kaynak paketlerin varlığı Php için çok büyük bir ganimettir. Aynı zamanda dokümantasyonları açıklayıcı olması ve uygulanmasını kolaylaştırmaktadır.
+                                </p>
+                                <p>
+                                    <span class="d-block fs-3" id="content-3">Veri Tabanları ile Uyumu</span>
+                                    MySql, Ms-Sql, Sqlite, PostgreSql, Redis ve MongoDb vb. etkileşime
+                                    girmek ve kullanmak çok kolaydır. Çünkü her biri için Php kütüphaneleri bulunmaktadır.
+                                </p>
+                                <div>
+                                    <blockquote>
+                                        <strong class="d-block">Birtan Taşkın</strong>
+                                        <span>Php Developer</span>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="sticky-top pt-5">
+                        <div class="pt-5">
+                            <div class="card mt-5">
+                                <div class="p-2">
+                                    <ul class="list-group list-group-flush overflow-auto sticky-content-listX">
+                                        <li class="list-group-item">
+                                            <a href="#content-1">
+                                                Servislerin Önemi
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#content-2">
+                                                Açık Kaynak
+                                            </a>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="#content-3">
+                                                Veri Tabanları ile Uyumu
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="up-arrow" id="backToTop">
-            <a href="#">
-                <img src="assets/images/icons/up-arrow.svg" alt="Yukarı Çık">
-            </a>
+        </article>
+        <div class="container tekrom-offices my-5 p-0" id="iletisim">
+            <div class="accordion" id="accordionTekromContact">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#genelmerkez">
+                            Genel Merkez
+                        </button>
+                    </h2>
+                    <div id="genelmerkez" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/genel-mudurluk.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="Esentepe Mahallesi, Haberler Sk. No:13 ŞİŞLİ / İSTANBUL">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/genel-mudurluk.jpg"
+                                     class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Tekrom">
+                            </a>
+                            <address>
+                                Esentepe Mahallesi, Haberler Sk. No:13<br/>
+                                ŞİŞLİ / İSTANBUL
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tsoftinc">
+                            T-Soft Inc. Silikon Vadisi
+                        </button>
+                    </h2>
+                    <div id="tsoftinc" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/california.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="906 Broadway, Suite 100, San Francisco, CA, 94133USA , SILICON VALLEY">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/california.jpg"
+                                     class="lazyload img-fluid rounded-circle" alt="TEKROM Bursa Satış Ofisi">
+                            </a>
+                            <address>
+                                906 Broadway, Suite 100 , San Francisco, CA 94133<br/>
+                                Kaliforniya / Amerika Birleşik Devletleri
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ytuArge">
+                            İstanbul Ar-Ge Merkezi YTÜ Teknopark
+                        </button>
+                    </h2>
+                    <div id="ytuArge" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/istanbul-teknokent.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="İstanbul Ar-Ge Merkezi YTÜ Teknopark">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/istanbul-teknokent.jpg"
+                                     class="lazyload img-fluid rounded-circle"
+                                     alt="TEKROM İstanbul Ar-Ge Merkezi YTÜ Teknopark">
+                            </a>
+                            <address>
+                                Yıldız Teknik Üniv. Davutpaşa Kamp. Teknopark D2 Blok K2 No:104<br/>
+                                ESENLER / İSTANBUL
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#arge">
+                            Anadolu Ar-Ge Merkezi KSÜ Teknokent
+                        </button>
+                    </h2>
+                    <div id="arge" class="accordion-collapse collapse show">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/maras-teknokent.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="KSÜ Avşar Kampüsü Teknokent Bina No:259 Kat:2 No:41 ONİKİŞUBAT / KAHRAMANMARAŞ">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/maras-teknokent.jpg"
+                                     class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Tekrom">
+                            </a>
+                            <address>
+                                KSÜ Avşar Kampüsü Teknokent Bina No:259 Kat:2 No:41<br/>
+                                ONİKİŞUBAT / KAHRAMANMARAŞ
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#destekOperasyon">
+                            Operasyon
+                        </button>
+                    </h2>
+                    <div id="destekOperasyon" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/destek-operasyon.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="Maltepe Caddesi No:46-48 D:25 TOPKAPI / İSTANBUL">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/destek-operasyon.jpg"
+                                     class="lazyload img-fluid rounded-circle"
+                                     alt="TEKROM İstanbul Ar-Ge Merkezi YTÜ Teknopark">
+                            </a>
+                            <address>
+                                Maltepe Caddesi No:46-48 D:25<br/>
+                                BAYRAMPAŞA / İSTANBUL
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#ankaraSatisOfis">
+                            Ankara Satış Ofisi
+                        </button>
+                    </h2>
+                    <div id="ankaraSatisOfis" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/ankara.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="Kızılırmak Mah. Dumlupınar Bulvarı Next Level Kat:16 ÇANKAYA / ANKARA">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/ankara.jpg"
+                                     class="lazyload img-fluid rounded-circle" alt="TEKROM Ankara Satış Ofisi">
+                            </a>
+                            <address>
+                                Kızılırmak Mah. Dumlupınar Bulvarı Next Level Kat:16<br/>
+                                ÇANKAYA / ANKARA
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#bursaSatisOfis">
+                            Bursa Satış Ofisi
+                        </button>
+                    </h2>
+                    <div id="bursaSatisOfis" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex align-items-center">
+                            <a href="assets/images/content/home/offices/bursa.jpg"
+                               data-fancybox="tekrom-address"
+                               data-caption="Konak Mah. Lefkoşe Cad. Barış Sok. Ofis Plaza NİLÜFER / BURSA">
+                                <img loading="lazy" src="assets/images/default-content-image.png"
+                                     data-src="assets/images/content/home/offices/bursa.jpg"
+                                     class="lazyload img-fluid rounded-circle" alt="TEKROM Bursa Satış Ofisi">
+                            </a>
+                            <address>
+                                Konak Mah. Lefkoşe Cad. Barış Sok. Ofis Plaza<br/>
+                                NİLÜFER / BURSA
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="assets/cdn/js/popper.min.js"></script>
-    <script src="assets/cdn/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/cdn/js/pace.min.js"></script>
-    <script src="assets/cdn/js/fancybox.umd.js"></script>
-    <script src="assets/cdn/js/lazysizes.min.js" type="text/javascript" async></script>
-</head>
+    </div>
+</main>
+
+<footer class="bg-color-gray">
+    <section>
+        <div class="container footer-bottom">
+            <div class="row">
+                <div
+                        class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12 p-3 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <img loading="lazy" src="assets/images/default-content-image.png"
+                         data-src="assets/images/logo/tekrom-kahramanmaras.svg" alt="TEKROM Kahramanmaraş"
+                         class="lazyload img-fluid">
+                </div>
+                <div
+                        class="col-xxl-7 col-xl-7 col-lg-7 col-md-9 col-sm-12 col-12 p-3 d-xl-flex align-items-center justify-content-center justify-content-lg-start p-4 p-md-0 mobile-text-center">
+                    <span>
+                        © 2003 - <span class="date-now"></span>
+                        T-Soft E-Ticaret Sistemleri.
+                        <a href="https://www.tsoft.com.tr/" target="_blank" rel="nofollow"
+                           class="px-1 text-color-tsoft"> T-Soft </a> bir
+                        TEKROM markasıdır.
+                    </span>
+                </div>
+                <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <a href="https://www.facebook.com/tsofteticaret" class="p-3">
+                        <img loading="lazy" src="assets/images/default-content-image.png"
+                             data-src="assets/images/content/home/other/facebook.svg" class="lazyload"
+                             alt="facebook">
+                    </a>
+                    <a href="https://twitter.com/tsofteticaret" class="p-3">
+                        <img loading="lazy" src="assets/images/default-content-image.png"
+                             data-src="assets/images/content/home/other/twitter.svg" class="lazyload" alt="twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/company/tsoft-eticaret/mycompany/" class="p-3">
+                        <img loading="lazy" src="assets/images/default-content-image.png"
+                             data-src="assets/images/content/home/other/linkedin.svg" class="lazyload"
+                             alt="linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/tsofteticaret/" class="p-3">
+                        <img loading="lazy" src="assets/images/default-content-image.png"
+                             data-src="assets/images/content/home/other/instagram.svg" class="lazyload"
+                             alt="instagram">
+                    </a>
+                    <a href="https://www.youtube.com/user/TsoftEticaret" class="p-3">
+                        <img loading="lazy" src="assets/images/default-content-image.png"
+                             data-src="assets/images/content/home/other/youtube.svg" class="lazyload" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="up-arrow" id="backToTop">
+        <a href="#">
+            <img src="assets/images/icons/up-arrow.svg" alt="Yukarı Çık">
+        </a>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="assets/cdn/js/popper.min.js"></script>
+<script src="assets/cdn/js/bootstrap.bundle.min.js"></script>
+<script src="assets/cdn/js/swiper-bundle.min.js"></script>
+<script src="assets/cdn/js/pace.min.js"></script>
+<script src="assets/cdn/js/fancybox.umd.js"></script>
+<script src="assets/cdn/js/lazysizes.min.js" type="text/javascript" async></script>
+<script src="assets/js/maps.js?v=1.0.0"></script>
+<script src="assets/js/main.js?v=1.0.0"></script>
+</body>
 </html>
