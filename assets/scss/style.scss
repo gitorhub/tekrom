@@ -215,15 +215,22 @@ a:focus {
     @media (max-width: 992px) {
       padding-top: 80px;
       .navbar-overlay {
-        background-color: rgba(0,0,0,.8);
-        background-color: rgba(255,255,255,.5);
+        background-color: rgba(255, 255, 255, .0);
         width: 100%;
         height: 100vh;
         position: absolute;
         left: 0;
         top: 70px;
         z-index: 1;
-        transition: all 300ms ease;
+        animation: navbarOverlay 700ms forwards;
+      }
+      @keyframes navbarOverlay {
+        from {
+          background-color: rgba(255, 255, 255, 0);
+        }
+        to {
+          background-color: rgba(255, 255, 255, .7);
+        }
       }
 
     }
@@ -702,20 +709,18 @@ $slide-content-size: 85%;
         cursor: pointer;
       }
       path {
-        fill: #f36d25;
-        fill: var(--color-main-one);
+        fill: #f29320;
         transition: fill 300ms ease-in;
       }
     }
     #states .on {
-      fill: #1e4496;
+      fill: #7c2a7f;
     }
     #states .states-kahramanmaras {
-      // fill: #027313;
-      fill: #f36d25;
+      fill: #7c2a7f;
+
       &:hover {
-        // fill: #025920;
-         fill: #d26124;
+        fill: #f8b25d;
       }
     }
     .list-of-states {
