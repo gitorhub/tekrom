@@ -559,7 +559,7 @@ a:focus {
     }
     .swiper-pagination-bullet-active {
       color: #fff;
-      background: #007aff;
+      background: #f29820;
     }
     @media (max-width: 992px) {
       &-card {
@@ -604,7 +604,7 @@ a:focus {
         }
       }
     }
-    @media (min-width: 992px) and (max-width: 1400px) {
+    @media (max-width: 991px) {
       &-card {
         height: 550px;
 
@@ -619,7 +619,7 @@ a:focus {
         }
       }
     }
-    @media (min-width: 992px) {
+    @media (min-width: 992px) and (max-width: 1200px) {
       &-card {
         height: 600px;
         & > div {
@@ -634,7 +634,33 @@ a:focus {
         }
       }
       &-image {
-        height: 600px !important;
+        height: 600px;
+      }
+      &-gallery {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    @media (min-width: 1201px) {
+      &-card {
+        height: 614px;
+        & > div {
+          img {
+            display: none;
+          }
+        }
+        & > div > div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+      &-image {
+        height: 614px;
       }
       &-gallery {
         display: flex;
