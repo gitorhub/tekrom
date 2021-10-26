@@ -154,16 +154,13 @@ a:focus {
 .bg-color-solid-gray {
   background-color: var(--color-solid-gray);
 }
-
 .bg-color-tsoft {
   background-color: #f36d20;
 }
-
 .text-color-tsoft,
 .text-color-tsoft:hover {
   color: #f36d20;
 }
-
 /* page loading bar */
 .pace {
   -webkit-pointer-events: none;
@@ -195,9 +192,6 @@ a:focus {
     height: 66px;
   }
 }
-
-
-
 .maras-technology-base-manu {
   background: #ffffff;
   /* mobil and tablet screen */
@@ -232,10 +226,8 @@ a:focus {
           background-color: rgba(255, 255, 255, .7);
         }
       }
-
     }
   }
-
   &.scrolled {
     position: fixed;
     top: 0;
@@ -348,7 +340,6 @@ a:focus {
     }
   }
 }
-
 /* home page detail */
 .home-page {
   .home-page-main-slider {
@@ -358,7 +349,6 @@ a:focus {
       --swiper-pagination-color: #fff;
       border-radius: 5px;
       padding-bottom: 40px;
-
       .swiper-button-prev,
       .swiper-button-next {
         margin-top: -40px;
@@ -367,7 +357,6 @@ a:focus {
           display: none;
         }
       }
-
       .swiper-wrapper {
         position: relative;
         height: 500px;
@@ -375,7 +364,6 @@ a:focus {
         @media (max-width: 768px) {
           height: 80vh;
         }
-
         .swiper-slide {
           position: relative;
           border-radius: 5px;
@@ -443,10 +431,8 @@ a:focus {
           }
         }
       }
-
     }
   }
-
   .map-of-regions {
     position: relative;
     .region-card {
@@ -475,7 +461,7 @@ a:focus {
           width: 100%;
           /* mobil and tablet screen */
           @media (max-width: 992px) {
-            height: 100px;
+            height: 111px;
             overflow: scroll;
           }
           p {
@@ -515,7 +501,6 @@ a:focus {
     }
     #states .states-kahramanmaras {
       fill: #4d2c70;
-
       &:hover {
         fill: #7c2a7f;
       }
@@ -607,7 +592,6 @@ a:focus {
     @media (max-width: 991px) {
       &-card {
         height: 550px;
-
         &-content {
           display: flex;
           flex-direction: column;
@@ -740,6 +724,9 @@ a:focus {
       color: #212529;
     }
     .content-card-video {
+      &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
       .title {
         font-size: 1.5rem;
       }
@@ -793,7 +780,6 @@ a:focus {
     &-active{
       width: 50px;
       background-color: var(--color-main-one);
-
     }
   }
 }
@@ -808,17 +794,14 @@ a:focus {
     margin-right: 20px;
   }
 }
-
 .footer-prize{
   img{
     max-width:100%;
   }
 }
-
 footer {
   overflow-x: hidden;
 }
-
 .up-arrow {
   display: none;
   width: 40px;
@@ -906,7 +889,6 @@ footer {
   }
 }
 */
-
 .awards-area-text {
   h6 {
     background: #f36d20;
@@ -916,7 +898,6 @@ footer {
     padding: 0 15px;
   }
 }
-
 .sticky-content-list {
   // height: 300px;
   height: 460px;
@@ -926,9 +907,64 @@ footer {
     color:var(--color-main-one);
     background-color: #0a53be15
   }
-  
   &:focus{
     box-shadow: none;
     background-color: #0a52be25
   }
+}
+//generals
+[class^=swiper-button] {
+  width: 75px;
+  height: 100%;
+  top: 0;
+  --swiper-navigation-color: #ffffff55;
+  &hover {
+    --swiper-navigation-color: #ffffff;
+  }
+}
+.swiper-button-prev {
+  left: 0;
+  &:after {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 2rem;
+  }
+}
+.swiper-button-next {
+  right: 0;
+  &after {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 2rem;
+  }
+}
+.slider--life-in-maras {
+  .swiper-button-prev {
+    left: 20px;
+  }
+  .swiper-button-next {
+    right: 20px;
+  }
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 2rem;
+}
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after {
+  background-color: #00000055;
 }

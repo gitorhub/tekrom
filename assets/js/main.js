@@ -21,13 +21,17 @@ const swiper1 = new Swiper('.slider--life-in-maras', {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
         },
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     preloadImages: false,
     lazy: true,
 });
 /* swiper slider - home page maras-tech-base-facilities */
 const swiper2 = new Swiper('.slider--technology-facilities', {
-    slidesPerView: 1,
-    spaceBetween: 30,
+    slidesPerView: 1.2,
+    spaceBetween: 10,
     preloadImages: false,
     lazy: true,
     pagination: {
@@ -43,15 +47,15 @@ const swiper2 = new Swiper('.slider--technology-facilities', {
     },
     breakpoints: {
         640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 2.2,
+            spaceBetween: 10,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 3.2,
             spaceBetween: 20,
         },
     },
@@ -63,13 +67,17 @@ $(".slider--technology-facilities").hover(function () {
 });
 /* swiper slider - home page maras-tech-life */
 const swiper3 = new Swiper('.slider--maras-tech-life', {
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 1.2,
+    spaceBetween: 10,
     loop: true,
     preloadImages: false,
     lazy: true,
     pagination: {
         el: ".swiper-pagination",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     autoplay: {
         delay: 4500,
@@ -77,11 +85,11 @@ const swiper3 = new Swiper('.slider--maras-tech-life', {
     },
     breakpoints: {
         640: {
-            slidesPerView: 2,
-            spaceBetween: 5,
+            slidesPerView: 2.2,
+            spaceBetween: 10,
         },
         768: {
-            slidesPerView: 4,
+            slidesPerView: 4.2,
             spaceBetween: 20,
         },
     },
@@ -91,11 +99,11 @@ let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-document.addEventListener('DOMContentLoaded', function () {
-    let seconds = new Date();
-    let year = seconds.getFullYear()
-    document.querySelector('.date-now').innerHTML = year;
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     let seconds = new Date();
+//     let year = seconds.getFullYear()
+//     document.querySelector('.date-now').innerHTML = year;
+// });
 /* page up arrow */
 $(window).scroll(function () {
     let height = $(window).scrollTop();
