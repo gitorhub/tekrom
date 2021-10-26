@@ -198,7 +198,7 @@ a:focus {
 
 
 
-.tekrom-menu {
+.maras-technology-base-manu {
   background: #ffffff;
   /* mobil and tablet screen */
   @media (max-width: 992px) {
@@ -253,7 +253,7 @@ a:focus {
       }
     }
   }
-  a.navbar-brand-tekrom {
+  a.navbar-brand-maras-technology {
     /* wide screen */
     @media (min-width: 992px) {
       display: flex;
@@ -348,7 +348,238 @@ a:focus {
     }
   }
 }
-
+/* home page slider */
+// fonts
+$font-header: Montserrat,
+helvetica;
+// $font-nav: "Space Mono", monospace;
+// colors
+$color-dark: #111;
+$color-border: #ccc;
+$color-trans-bg: #ededed;
+// easings
+$ease-cb: cubic-bezier(.4, 0, .2, 1);
+$ease-cb-2: cubic-bezier(.19, 1, .22, 1);
+$ease-cb-3: cubic-bezier(.77, 0, .175, 1);
+$ease-cb-4: cubic-bezier(.99, 1, .92, 1);
+// padding
+$pad: 3em;
+// mqs
+$mq-med: 54em;
+$mq-large: 65em;
+$mq-xlarge: 91em;
+@mixin nth-trans-delay($delay_items: 7, $delay_time: 0.2s) {
+  @for $i from 1 through $delay_items {
+    &:nth-child(#{$i}) {
+      transition-delay: $delay_time * $i;
+    }
+  }
+}
+.slides-nav {
+  z-index: 99;
+  position: absolute;
+  // right: -5%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #111;
+  @media (max-width: 768px) {
+    right: 50%;
+    transform: translateX(50%);
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+  @media (min-width: $mq-med) {
+    right: 0;
+  }
+  &__nav {
+    position: relative;
+    right: 0;
+    display: block;
+    font-size: 1em;
+    transform: rotate(90deg);
+    transform-origin: center;
+    /* mobil and tablet screen */
+    @media (max-width: 768px) {
+      transform: none;
+    }
+  }
+  button {
+    position: relative;
+    display: inline-block;
+    padding: 0.35em;
+    margin: 0;
+    // font-family: $font-nav;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    overflow-x: hidden;
+    transition: color 0.5s ease;
+    /* mobil and tablet screen */
+    @media (max-width: 768px) {
+      background: rgba(255, 255, 255, .8);
+      border-radius: 5px;
+      color: #000;
+      padding: 5px 10px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 1px;
+      width: 0;
+      background: $color-dark;
+      transition: width 0.4s ease;
+    }
+    &:hover {
+      cursor: pointer;
+      color: rgba($color-dark, 0.75);
+      transition: color 0.5s ease;
+    }
+    &:hover:after {
+      width: 100%;
+      transition: width 0.4s ease;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  .is-sliding & {
+    pointer-events: none;
+  }
+}
+.slides {
+  position: relative;
+  display: block;
+  height: 80vh;
+  width: 100%;
+  background: #fff;
+  transition: background 1s $ease-cb-4;
+  .is-sliding & {
+    background: $color-trans-bg;
+    transition: background 0.3s $ease-cb-4;
+  }
+}
+$slide-content-size-sm: 95%;
+$slide-content-size: 85%;
+.slide {
+  display: flex;
+  align-items: center;
+  background: #edecf1;
+  z-index: -1;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  transition: z-index 1s ease;
+  &.is-active {
+    z-index: 19;
+    transition: z-index 1s ease;
+  }
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    height: $slide-content-size-sm;
+    width: $slide-content-size-sm;
+    @media (min-width: $mq-med) {
+      height: $slide-content-size;
+      width: $slide-content-size;
+    }
+  }
+  &__header {
+    z-index: 9;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    @media (min-width: $mq-med) {
+      //transform: translateX(-5%);
+    }
+  }
+  &__title {
+    font-family: $font-header;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: $color-dark;
+    overflow-y: hidden;
+    padding-left: 5%;
+    z-index: 2;
+    @media (min-width: $mq-med) {
+      font-size: 3em;
+    }
+    .title-line {
+      display: block;
+      overflow-y: hidden;
+      span {
+        display: inline-block;
+        transform: translate3d(0, 140%, 0);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.8s ease;
+        @include nth-trans-delay(2, 0.15s);
+      }
+      .is-active & span {
+        transform: translate3d(0, 0%, 0);
+        opacity: 1;
+        transition: transform 0.6s $ease-cb-3, opacity 0.1s ease;
+      }
+      .is-active &:nth-of-type(2n) span {
+        transition-delay: 0.2s;
+      }
+    }
+  }
+  &__overlay {
+    background-color: rgba(255, 255, 255, .7);
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 1;
+    clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    -webkit-clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    border-radius: 5px 0 0 5px;
+    /* mobil and tablet screen */
+    @media (max-width: 768px) {
+      width: 80%;
+    }
+  }
+  &__figure {
+    z-index: 7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    transition: transform 0.5s $ease-cb-2;
+    .is-sliding & {
+      transform: scale(0.8);
+      transition: transform 0.5s $ease-cb-2;
+    }
+  }
+  &__img {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0%);
+    transition: height 1s 1.4s $ease-cb-2, filter 0.4s 0.1s ease;
+    border-radius: 5px;
+    .is-active & {
+      height: 100%;
+      opacity: 1;
+      transition: height .5s .3s $ease-cb-3, filter 0.4s 0.1s ease;
+      border-radius: 5px;
+    }
+    .is-sliding & {
+      filter: grayscale(100%);
+    }
+  }
+}
 /* home page detail */
 .home-page {
   .home-page-main-slider {
@@ -358,16 +589,6 @@ a:focus {
       --swiper-pagination-color: #fff;
       border-radius: 5px;
       padding-bottom: 40px;
-
-      .swiper-button-prev,
-      .swiper-button-next {
-        margin-top: -40px;
-        /* mobil and tablet screen */
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-
       .swiper-wrapper {
         position: relative;
         height: 500px;
@@ -375,50 +596,32 @@ a:focus {
         @media (max-width: 768px) {
           height: 80vh;
         }
-
         .swiper-slide {
           position: relative;
           border-radius: 5px;
           overflow: hidden;
           background-color: #c1c1c1;
-
-          &.swiper-slide-active .slide-content {
+          .slide-content {
             display: flex;
             justify-content: center;
             flex-direction: column;
             position: absolute;
             height: 100%;
             z-index: 3;
+            font-size: 3rem;
             font-weight: 700;
             color: #111111;
             margin-left: 5%;
-            animation: homeSlideContent 700ms forwards;
-            font-size: 3rem;
-            /* mobil and tablet screen */
-            @media (max-width: 768px) {
-              font-size: 2rem;
-              margin-left: 10%;
-            }
           }
-          @keyframes homeSlideContent {
-            from {
-              transform: translateX(-250%);
-            }
-            to {
-              transform: translateX(0);
-            }
-          }
-
           .slide-overlay {
             background-color: rgba(255, 255, 255, .7);
             position: absolute;
             height: 100%;
             width: 50%;
             left: 0;
-            top: 0;
             z-index: 2;
-            clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-            -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+            clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+            -webkit-clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
             border-radius: 5px 0 0 5px;
             /* mobil and tablet screen */
             @media (max-width: 768px) {
@@ -427,7 +630,7 @@ a:focus {
           }
           img {
             width: 100%;
-            height: 100%;
+            height: 80vh;
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
@@ -514,10 +717,10 @@ a:focus {
       fill: #7c2a7f;
     }
     #states .states-kahramanmaras {
-      fill: #4d2c70;
+      fill: #7c2a7f;
 
       &:hover {
-        fill: #7c2a7f;
+        fill: #f8b25d;
       }
     }
     .list-of-states {
@@ -651,19 +854,19 @@ a:focus {
       background-color: rgba(0, 0, 0, .7);
     }
   }
-  .line-in-tekrom--card-box {
+  .life-in-marasteknolojiussu--card-box {
     position:relative;
     overflow: hidden;
     border-radius: 5px;
     &:hover {
-      .line-in-tekrom-information {
+      .life-in-marasteknolojiussu-information {
         transform: translateY(0);
       }
-      .line-in-tekrom-overlay {
+      .life-in-marasteknolojiussu-overlay {
         height: 150%;
       }
     }
-    .line-in-tekrom-information {
+    .life-in-marasteknolojiussu-information {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -674,13 +877,13 @@ a:focus {
       height: 100%;
       transform: translateY(80%);
       transition: all 300ms;
-      .line-in-tekrom-title {
+      .life-in-marasteknolojiussu-title {
         width: 100%;
         font-weight: 700;
         font-size: 1.3rem;
         padding: 10px 0 20px;
       }
-      .line-in-tekrom-explanation {
+      .life-in-marasteknolojiussu-explanation {
         width: 100%;
         font-size: 0.9rem;
         height: 100%;
@@ -689,7 +892,7 @@ a:focus {
         padding: 0;
       }
     }
-    .line-in-tekrom-overlay {
+    .life-in-marasteknolojiussu-overlay {
       position:absolute;
       background: rgb(30, 68, 150);
       background: linear-gradient(0deg, rgba(30, 68, 150,1) 0%, rgba(30, 68, 150,0) 100%);
@@ -699,7 +902,7 @@ a:focus {
       z-index: 1;
       transition: all 300ms;
     }
-    .line-in-tekrom-image {
+    .life-in-marasteknolojiussu-image {
       width: 100%;
       height: 100%;
       img {
@@ -771,7 +974,7 @@ a:focus {
     }
   }
 }
-.tekrom-offices {
+.maras-tech-offices {
   a{
     flex-shrink: 0;
   }
@@ -806,7 +1009,7 @@ footer {
   }
 }
 .living-center,
-.tekrom-facilities {
+.maras-tech-base-facilities {
   .content-card {
     background-color: #fff;
     cursor: pointer;
@@ -852,6 +1055,7 @@ footer {
     }
   }
 }
+/*
 .tekrom-modal-content {
   .content-image {
     position: relative;
@@ -878,6 +1082,7 @@ footer {
     display: none;
   }
 }
+*/
 
 .awards-area-text {
   h6 {
