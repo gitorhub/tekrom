@@ -198,7 +198,7 @@ a:focus {
 
 
 
-.maras-technology-base-manu {
+.tekrom-menu {
   background: #ffffff;
   /* mobil and tablet screen */
   @media (max-width: 992px) {
@@ -253,7 +253,7 @@ a:focus {
       }
     }
   }
-  a.navbar-brand-maras-technology {
+  a.navbar-brand-tekrom {
     /* wide screen */
     @media (min-width: 992px) {
       display: flex;
@@ -651,19 +651,19 @@ a:focus {
       background-color: rgba(0, 0, 0, .7);
     }
   }
-  .life-in-marasteknolojiussu--card-box {
+  .line-in-tekrom--card-box {
     position:relative;
     overflow: hidden;
     border-radius: 5px;
     &:hover {
-      .life-in-marasteknolojiussu-information {
+      .line-in-tekrom-information {
         transform: translateY(0);
       }
-      .life-in-marasteknolojiussu-overlay {
+      .line-in-tekrom-overlay {
         height: 150%;
       }
     }
-    .life-in-marasteknolojiussu-information {
+    .line-in-tekrom-information {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -674,13 +674,13 @@ a:focus {
       height: 100%;
       transform: translateY(80%);
       transition: all 300ms;
-      .life-in-marasteknolojiussu-title {
+      .line-in-tekrom-title {
         width: 100%;
         font-weight: 700;
         font-size: 1.3rem;
         padding: 10px 0 20px;
       }
-      .life-in-marasteknolojiussu-explanation {
+      .line-in-tekrom-explanation {
         width: 100%;
         font-size: 0.9rem;
         height: 100%;
@@ -689,7 +689,7 @@ a:focus {
         padding: 0;
       }
     }
-    .life-in-marasteknolojiussu-overlay {
+    .line-in-tekrom-overlay {
       position:absolute;
       background: rgb(30, 68, 150);
       background: linear-gradient(0deg, rgba(30, 68, 150,1) 0%, rgba(30, 68, 150,0) 100%);
@@ -699,7 +699,7 @@ a:focus {
       z-index: 1;
       transition: all 300ms;
     }
-    .life-in-marasteknolojiussu-image {
+    .line-in-tekrom-image {
       width: 100%;
       height: 100%;
       img {
@@ -771,7 +771,7 @@ a:focus {
     }
   }
 }
-.maras-tech-offices {
+.tekrom-offices {
   a{
     flex-shrink: 0;
   }
@@ -806,7 +806,7 @@ footer {
   }
 }
 .living-center,
-.maras-tech-base-facilities {
+.tekrom-facilities {
   .content-card {
     background-color: #fff;
     cursor: pointer;
@@ -852,7 +852,6 @@ footer {
     }
   }
 }
-/*
 .tekrom-modal-content {
   .content-image {
     position: relative;
@@ -879,7 +878,6 @@ footer {
     display: none;
   }
 }
-*/
 
 .awards-area-text {
   h6 {

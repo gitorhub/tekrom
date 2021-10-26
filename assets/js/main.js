@@ -24,8 +24,8 @@ const swiper1 = new Swiper('.slider--life-in-maras', {
     preloadImages: false,
     lazy: true,
 });
-/* swiper slider - home page maras-tech-base-facilities */
-const swiper2 = new Swiper('.slider--technology-facilities', {
+/* swiper slider - home page tekrom-facilities */
+const swiper2 = new Swiper('.slider--tekrom-facilities', {
     slidesPerView: 1,
     spaceBetween: 30,
     preloadImages: false,
@@ -56,13 +56,13 @@ const swiper2 = new Swiper('.slider--technology-facilities', {
         },
     },
 });
-$(".slider--technology-facilities").hover(function () {
+$(".slider--tekrom-facilities").hover(function () {
     (this).swiper.autoplay.stop();
 }, function () {
     (this).swiper.autoplay.start();
 });
-/* swiper slider - home page maras-tech-life */
-const swiper3 = new Swiper('.slider--maras-tech-life', {
+/* swiper slider - home page tekrom-life */
+const swiper3 = new Swiper('.slider--tekrom-life', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
