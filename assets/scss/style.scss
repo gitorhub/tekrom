@@ -362,6 +362,10 @@ a:focus {
       .swiper-button-prev,
       .swiper-button-next {
         margin-top: -40px;
+        /* mobil and tablet screen */
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       .swiper-wrapper {
@@ -385,12 +389,17 @@ a:focus {
             position: absolute;
             height: 100%;
             z-index: 3;
-            font-size: 3rem;
             font-weight: 700;
             color: #111111;
+            margin-left: 5%;
             animation: homeSlideContent 700ms forwards;
+            font-size: 3rem;
+            /* mobil and tablet screen */
+            @media (max-width: 768px) {
+              font-size: 2rem;
+              margin-left: 10%;
+            }
           }
-
           @keyframes homeSlideContent {
             from {
               transform: translateX(-250%);
@@ -505,10 +514,10 @@ a:focus {
       fill: #7c2a7f;
     }
     #states .states-kahramanmaras {
-      fill: #7c2a7f;
+      fill: #4d2c70;
 
       &:hover {
-        fill: #f8b25d;
+        fill: #7c2a7f;
       }
     }
     .list-of-states {
