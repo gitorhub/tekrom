@@ -1207,7 +1207,7 @@ footer {
   --swiper-navigation-color: #ffffff55;
 }
 
-[class^=swiper-button]hover {
+[class^=swiper-button]:hover {
   --swiper-navigation-color: #ffffff;
 }
 

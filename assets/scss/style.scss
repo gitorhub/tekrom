@@ -918,7 +918,7 @@ footer {
   height: 100%;
   top: 0;
   --swiper-navigation-color: #ffffff55;
-  &hover {
+  &:hover {
     --swiper-navigation-color: #ffffff;
   }
 }
