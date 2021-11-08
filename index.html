@@ -98,8 +98,12 @@
                                     <span class="title-line">Yaşam</span>
                                 </div>
                                 <div class="slide-overlay"></div>
-                                <img src="assets/images/slider/dogal-yasam.jpg"
-                                     alt="Doğal Yaşam"/>
+                                <picture>
+                                    <source srcset="assets/images/slider/webp/dogal-yasam.webp" type="image/webp">
+                                    <source srcset="assets/images/slider/dogal-yasam.jpg" type="image/jpeg">
+                                    <img src="assets/images/slider/dogal-yasam.jpg"
+                                         alt="Doğal Yaşam"/>
+                                </picture>
                             </div>
                             <div class="swiper-slide">
                                 <div class="slide-content">
@@ -191,10 +195,15 @@
                     </div>
                     <div class="row pb-5 maras-tech-bas-three">
                         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-none d-lg-block text-center box-radius">
-                            <img loading="lazy" src="assets/images/content/home/maps/maras-tech-loading.png"
-                                 data-src="assets/images/content/home/maps/maras-working.jpg"
-                                 class="lazyload box-radius img-fluid w-100 h-100 object-fit-cover"
-                                 alt="working">
+
+                            <picture>
+                                <source srcset="assets/images/content/home/maps/webp/maras-working.webp" type="image/webp">
+                                <source srcset="assets/images/content/home/maps/maras-tech-loading.png" type="image/jpeg">
+                                <img loading="lazy" src="assets/images/content/home/maps/maras-tech-loading.png"
+                                     data-src="assets/images/content/home/maps/maras-working.jpg"
+                                     class="lazyload box-radius img-fluid w-100 h-100 object-fit-cover"
+                                     alt="working">
+                            </picture>
                         </div>
                         <div
                                 class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-around flex-column text-center p-4 box-radius bg-color-gray maras-tech-bas-three__text">
