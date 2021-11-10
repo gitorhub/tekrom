@@ -286,6 +286,7 @@ a:focus {
       color: #1e4496;
       color: var(--color-main-one);
       transition: color 300ms ease-in-out;
+      border-bottom: 2px solid transparent;
       &::after {
         display: none;
       }
@@ -294,7 +295,7 @@ a:focus {
       }
     }
     .active {
-      border-bottom: 2px solid var(--color-main-one);
+      border-bottom: 2px solid var(--color-main-one) !important;
       a {
         color: var(--color-main-one);
       }
@@ -340,6 +341,22 @@ a:focus {
     }
   }
 }
+/* header */
+.post-heading-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.post-heading-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 84, 190, .6);
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+}
+
 /* home page detail */
 .home-page {
   .home-page-main-slider {
@@ -431,6 +448,11 @@ a:focus {
           }
         }
       }
+    }
+  }
+  .maras-tech-bas-three {
+    .maras-tech-bas-content {
+      min-height: 631px;
     }
   }
   .map-of-regions {
