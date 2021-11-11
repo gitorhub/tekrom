@@ -2,6 +2,7 @@
 Tekrom Teknoloji
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 :root {
   --scrollbarBG: transparent;
   --thumbBG: #e4e4e4;
@@ -33,134 +34,169 @@ Tekrom Teknoloji
   --transition: all 300ms;
   --icon-select-down: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
 }
+
 /* System */
 * {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
+
 *:focus {
   outline: 0 !important;
 }
+
 *::-webkit-scrollbar {
   width: 4px;
 }
+
 *::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
+
 *::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
   border-radius: 4px;
   border: 4px solid var(--scrollbarBG);
 }
+
 *:hover::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG-hover);
 }
+
 body {
   background-color: var(--bg-main);
   font-family: var(--font-family-main);
   min-height: 100vh;
   border-top: 4px solid var(--color-border-top);
 }
+
 a,
 a:hover,
 a:focus {
   text-decoration: none;
 }
+
 .font-family-main {
   font-family: var(--font-family-main);
 }
+
 .font-family-two {
   font-family: var(--font-family-two);
 }
+
 .text-space-nowrap {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 .user-select-none {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
 .box-radius {
   border-radius: var(--box-radius);
 }
+
 .box-radius-t {
   border-radius: var(--box-radius-t);
 }
+
 .box-radius-b {
   border-radius: var(--box-radius-b);
 }
+
 .box-radius-l {
   border-radius: var(--box-radius-l);
 }
+
 .box-radius-r {
   border-radius: var(--box-radius-r);
 }
+
 .shadow-one-side-only {
   box-shadow: var(--shadow-one-side-only);
 }
+
 .shadow-soft {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
+
 .border-bottom-line {
   border-bottom: 3px solid var(--color-main-two);
 }
+
 .min-vh-75 {
   min-height: 75vh;
 }
+
 .fw-500 {
   font-weight: 500;
 }
+
 .object-fit-cover {
   object-fit: cover;
 }
+
 .fs-7 {
   font-size: .9rem;
 }
+
 .swiper-container {
   position: relative;
   overflow: hidden;
 }
+
 /* mobil and tablet screen */
 @media (max-width: 992px) {
   .mobile-text-center {
     text-align: center;
   }
 }
+
 /* colors */
 .bg-color-main-one,
 .btn-color-main-one {
   background-color: var(--color-main-one);
 }
+
 .bg-color-main-two,
 .btn-color-main-two {
   background-color: var(--color-main-two);
 }
+
 .bg-color-gray {
   background-color: var(--color-gray);
 }
+
 .bg-color-soft-gray {
   background-color: var(--color-soft-gray);
 }
+
 .bg-color-solid-gray {
   background-color: var(--color-solid-gray);
 }
+
 .bg-color-tsoft {
   background-color: #f36d20;
 }
+
 .text-color-tsoft,
 .text-color-tsoft:hover {
   color: #f36d20;
 }
+
 /* page loading bar */
 .pace {
   -webkit-pointer-events: none;
@@ -169,9 +205,11 @@ a:focus {
   -moz-user-select: none;
   user-select: none;
 }
+
 .pace-inactive {
   display: none;
 }
+
 .pace .pace-progress {
   background: var(--color-sidebar-border);
   position: fixed;
@@ -181,19 +219,24 @@ a:focus {
   width: 100%;
   height: 4px;
 }
+
 /* global components */
 .sticky-menu-height {
+
   /* wide screen */
   @media (min-width: 992px) {
     min-height: 88px;
   }
+
   /* mobil and tablet screen */
   @media (max-width: 992px) {
     height: 66px;
   }
 }
+
 .maras-technology-base-manu {
   background: #ffffff;
+
   /* mobil and tablet screen */
   @media (max-width: 992px) {
     height: 70px;
@@ -204,10 +247,13 @@ a:focus {
     z-index: 1030;
     padding: 15px 0;
   }
+
   .navbar-collapse {
+
     /* mobil and tablet screen */
     @media (max-width: 992px) {
       padding-top: 80px;
+
       .navbar-overlay {
         background-color: rgba(255, 255, 255, .0);
         width: 100%;
@@ -218,16 +264,19 @@ a:focus {
         z-index: 1;
         animation: navbarOverlay 700ms forwards;
       }
+
       @keyframes navbarOverlay {
         from {
           background-color: rgba(255, 255, 255, 0);
         }
+
         to {
           background-color: rgba(255, 255, 255, .7);
         }
       }
     }
   }
+
   &.scrolled {
     position: fixed;
     top: 0;
@@ -236,16 +285,20 @@ a:focus {
     z-index: 1030;
     box-shadow: rgba(0, 0, 0, 0.1) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     animation: navbarAnimation 0.2s ease-in-out;
+
     @keyframes navbarAnimation {
       from {
         top: -100%;
       }
+
       to {
         top: 0;
       }
     }
   }
+
   a.navbar-brand-maras-technology {
+
     /* wide screen */
     @media (min-width: 992px) {
       display: flex;
@@ -255,13 +308,16 @@ a:focus {
       top: 0;
       height: 140%;
       padding: 20px 0 0;
+
       img {
         height: 100%;
       }
     }
+
     /* mobil and tablet screen */
     @media (max-width: 992px) {
       z-index: 2;
+
       img {
         position: absolute;
         top: 10px;
@@ -269,7 +325,9 @@ a:focus {
       }
     }
   }
+
   .navbar-nav {
+
     /* mobil and tablet screen */
     @media (max-width: 992px) {
       background: #fff;
@@ -280,6 +338,7 @@ a:focus {
       border-top: 3px solid var(--color-main-two);
       box-shadow: var(--shadow-one-side-only);
     }
+
     .nav-item a {
       padding: 15px 20px;
       font-weight: 600;
@@ -287,27 +346,34 @@ a:focus {
       color: var(--color-main-one);
       transition: color 300ms ease-in-out;
       border-bottom: 2px solid transparent;
+
       &::after {
         display: none;
       }
+
       &:hover {
         color: #447cec;
       }
     }
+
     .active {
       border-bottom: 2px solid var(--color-main-one) !important;
+
       a {
         color: var(--color-main-one);
       }
     }
+
     ul.dropdown-menu {
       padding: 0;
+
       a.dropdown-item {
         padding: 10px 15px;
         font-weight: 600;
         color: #091133;
         font-size: .8rem;
         border-radius: .25rem;
+
         &:active,
         &.active {
           background-color: var(--color-main-one);
@@ -315,11 +381,14 @@ a:focus {
         }
       }
     }
+
     &.right-contact {
       border: 2px solid var(--color-main-two);
       border-radius: 5px;
+
       a {
         color: var(--color-main-one);
+
         &.active {
           background-color: var(--color-main-one);
           color: #fff;
@@ -327,26 +396,31 @@ a:focus {
       }
     }
   }
+
   .navbar-toggler {
     color: rgba(0, 0, 0, .55);
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjgzMjMgMTAuMDAwMUwxOS42MTk5IDIuMjEyMTVDMjAuMTI2NyAxLjcwNTU3IDIwLjEyNjcgMC44ODY1MSAxOS42MTk5IDAuMzc5OTMzQzE5LjExMzMgLTAuMTI2NjQ0IDE4LjI5NDMgLTAuMTI2NjQ0IDE3Ljc4NzcgMC4zNzk5MzNMOS45OTk4OCA4LjE2NzkzTDIuMjEyMjggMC4zNzk5MzNDMS43MDU0OCAtMC4xMjY2NDQgMC44ODY2NjkgLTAuMTI2NjQ0IDAuMzgwMTAzIDAuMzc5OTMzQy0wLjEyNjcwMSAwLjg4NjUxIC0wLjEyNjcwMSAxLjcwNTU3IDAuMzgwMTAzIDIuMjEyMTVMOC4xNjc3IDEwLjAwMDFMMC4zODAxMDMgMTcuNzg4MUMtMC4xMjY3MDEgMTguMjk0NyAtMC4xMjY3MDEgMTkuMTEzOCAwLjM4MDEwMyAxOS42MjA0QzAuNjMyNTU1IDE5Ljg3MzEgMC45NjQ0OTMgMjAgMS4yOTYxOSAyMEMxLjYyNzg5IDIwIDEuOTU5NTkgMTkuODczMSAyLjIxMjI4IDE5LjYyMDRMOS45OTk4OCAxMS44MzI0TDE3Ljc4NzcgMTkuNjIwNEMxOC4wNDA0IDE5Ljg3MzEgMTguMzcyMSAyMCAxOC43MDM4IDIwQzE5LjAzNTUgMjAgMTkuMzY3MiAxOS44NzMxIDE5LjYxOTkgMTkuNjIwNEMyMC4xMjY3IDE5LjExMzggMjAuMTI2NyAxOC4yOTQ3IDE5LjYxOTkgMTcuNzg4MUwxMS44MzIzIDEwLjAwMDFaIiBmaWxsPSJibGFjayIgZmlsbC1vcGFjaXR5PSIwLjU1Ii8+Cjwvc3ZnPgo=");
       background-size: auto;
     }
+
     &.collapsed .navbar-toggler-icon {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
       background-size: auto;
     }
   }
 }
+
 /* header */
 .post-heading-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .post-heading-overlay {
   display: flex;
   align-items: center;
@@ -361,34 +435,42 @@ a:focus {
 .home-page {
   .home-page-main-slider {
     background-color: #edecf1;
+
     .main-slider {
       --swiper-navigation-color: #fff;
       --swiper-pagination-color: #fff;
       border-radius: 5px;
       padding-bottom: 40px;
+
       .swiper-button-prev,
       .swiper-button-next {
         margin-top: -40px;
+
         /* mobil and tablet screen */
         @media (max-width: 768px) {
           display: none;
         }
       }
+
       .swiper-wrapper {
         position: relative;
         height: 500px;
+
         /* mobil and tablet screen */
         @media (max-width: 768px) {
           height: 80vh;
         }
+
         .swiper-slide {
           position: relative;
           border-radius: 5px;
           overflow: hidden;
           background-color: #c1c1c1;
+
           .slide-content {
             display: none;
           }
+
           &.swiper-slide-active .slide-content {
             display: flex;
             justify-content: center;
@@ -401,20 +483,24 @@ a:focus {
             margin-left: 5%;
             animation: homeSlideContent 700ms forwards;
             font-size: 3rem;
+
             /* mobil and tablet screen */
             @media (max-width: 768px) {
               font-size: 2rem;
               margin-left: 10%;
             }
+
             @keyframes homeSlideContent {
               from {
                 transform: translateX(-250%);
               }
+
               to {
                 transform: translateX(0);
               }
             }
           }
+
           .slide-overlay {
             background-color: rgba(255, 255, 255, .7);
             position: absolute;
@@ -422,14 +508,16 @@ a:focus {
             width: 50%;
             left: 0;
             z-index: 2;
-            clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-            -webkit-clip-path:polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
             border-radius: 5px 0 0 5px;
+
             /* mobil and tablet screen */
             @media (max-width: 768px) {
               width: 80%;
             }
           }
+
           img {
             width: 100%;
             height: 100%;
@@ -450,19 +538,23 @@ a:focus {
       }
     }
   }
+
   .maras-tech-bas-three {
     .maras-tech-bas-content {
       min-height: 631px;
     }
   }
+
   .map-of-regions {
     position: relative;
+
     .region-card {
       display: flex;
       background-color: #fff;
       border: 1px solid rgba(0, 0, 0, .125);
       border-radius: .25rem;
       box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
       .region-image {
         img {
           width: clamp(100px, 8vw, 150px);
@@ -472,24 +564,30 @@ a:focus {
           border-radius: .25rem;
         }
       }
+
       .region-content {
         padding: 10px 10px 0;
+
         /* mobil and tablet screen */
         @media (max-width: 992px) {
           width: 100%;
         }
+
         .desc {
           position: relative;
           width: 100%;
+
           /* mobil and tablet screen */
           @media (max-width: 992px) {
             height: 111px;
             overflow: scroll;
           }
+
           p {
             font-size: .75rem;
             color: var(--color-darken-gray);
           }
+
           .read-more {
             background: rgb(255, 255, 255);
             background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%);
@@ -503,30 +601,38 @@ a:focus {
         }
       }
     }
+
     svg {
       display: block;
       width: 100%;
+
       /* mobil and tablet screen */
       @media (max-width: 992px) {
         padding-top: 120px;
       }
+
       g {
         cursor: pointer;
       }
+
       path {
         fill: #f29320;
         transition: fill 300ms ease-in;
       }
     }
+
     #states .on {
       fill: #7c2a7f;
     }
+
     #states .states-kahramanmaras {
       fill: #4d2c70;
+
       &:hover {
         fill: #7c2a7f;
       }
     }
+
     .list-of-states {
       margin: 0;
       padding: 0;
@@ -534,10 +640,12 @@ a:focus {
       position: absolute;
       top: 0;
       left: 0;
+
       /* wide screen */
       @media (min-width: 992px) {
         max-width: 540px;
       }
+
       /* mobil and tablet screen */
       @media (max-width: 992px) {
         position: absolute !important;
@@ -546,13 +654,16 @@ a:focus {
         width: 100% !important;
       }
     }
+
     .list-of-states li {
       display: none;
     }
+
     .list-of-states li.on {
       display: flex;
     }
   }
+
   .slider--life-in-maras {
     .swiper-pagination-bullet {
       width: 20px;
@@ -564,17 +675,21 @@ a:focus {
       opacity: 1;
       background: rgba(0, 0, 0, 0.2);
     }
+
     .swiper-pagination-bullet-active {
       color: #fff;
       background: #f29820;
     }
+
     @media (max-width: 992px) {
       &-card {
         z-index: 2;
         height: 500px;
-        & > div {
+
+        &>div {
           position: relative;
           padding: 0 !important;
+
           .bg-color-gray-mobile {
             background-color: rgba(0, 0, 0, .6);
             position: relative;
@@ -582,12 +697,14 @@ a:focus {
             height: 100%;
             padding: 3rem;
           }
+
           span,
           p {
             z-index: 2;
             position: relative;
             color: #ffffff;
           }
+
           img {
             position: absolute;
             top: 0;
@@ -596,28 +713,34 @@ a:focus {
           }
         }
       }
+
       &-image {
         display: none;
         position: absolute;
         z-index: 1;
         padding: 0;
       }
+
       &-gallery {
         display: flex;
         justify-content: space-between;
+
         img {
           width: 48%;
           height: 100%;
         }
       }
     }
+
     @media (max-width: 991px) {
       &-card {
         height: 550px;
+
         &-content {
           display: flex;
           flex-direction: column;
           height: 100%;
+
           p {
             height: 100%;
             overflow: auto;
@@ -625,52 +748,64 @@ a:focus {
         }
       }
     }
+
     @media (min-width: 992px) and (max-width: 1200px) {
       &-card {
         height: 600px;
-        & > div {
+
+        &>div {
           img {
             display: none;
           }
         }
-        & > div > div {
+
+        &>div>div {
           display: flex;
           flex-direction: column;
           height: 100%;
         }
       }
+
       &-image {
         height: 600px;
       }
+
       &-gallery {
         display: flex;
         flex-direction: column;
+
         img {
           width: 100%;
           height: 100%;
         }
       }
     }
+
     @media (min-width: 1201px) {
       &-card {
         height: 614px;
-        & > div {
+
+        &>div {
           img {
             display: none;
           }
         }
-        & > div > div {
+
+        &>div>div {
           display: flex;
           flex-direction: column;
           height: 100%;
         }
       }
+
       &-image {
         height: 614px;
       }
+
       &-gallery {
         display: flex;
         flex-direction: column;
+
         img {
           width: 100%;
           height: 100%;
@@ -678,23 +813,28 @@ a:focus {
       }
     }
   }
+
   .future-of-tech--logos {
     .tech-logos-more {
       background-color: rgba(0, 0, 0, .7);
     }
   }
+
   .life-in-marasteknolojiussu--card-box {
-    position:relative;
+    position: relative;
     overflow: hidden;
     border-radius: 5px;
+
     &:hover {
       .life-in-marasteknolojiussu-information {
         transform: translateY(0);
       }
+
       .life-in-marasteknolojiussu-overlay {
         height: 150%;
       }
     }
+
     .life-in-marasteknolojiussu-information {
       position: absolute;
       display: flex;
@@ -706,12 +846,14 @@ a:focus {
       height: 100%;
       transform: translateY(80%);
       transition: all 300ms;
+
       .life-in-marasteknolojiussu-title {
         width: 100%;
         font-weight: 700;
         font-size: 1.3rem;
         padding: 10px 0 20px;
       }
+
       .life-in-marasteknolojiussu-explanation {
         width: 100%;
         font-size: 0.9rem;
@@ -721,19 +863,22 @@ a:focus {
         padding: 0;
       }
     }
+
     .life-in-marasteknolojiussu-overlay {
-      position:absolute;
+      position: absolute;
       background: rgb(30, 68, 150);
-      background: linear-gradient(0deg, rgba(30, 68, 150,1) 0%, rgba(30, 68, 150,0) 100%);
+      background: linear-gradient(0deg, rgba(30, 68, 150, 1) 0%, rgba(30, 68, 150, 0) 100%);
       width: 100%;
       height: 30%;
       bottom: 0;
       z-index: 1;
       transition: all 300ms;
     }
+
     .life-in-marasteknolojiussu-image {
       width: 100%;
       height: 100%;
+
       img {
         width: 100%;
         height: 100%;
@@ -741,29 +886,36 @@ a:focus {
       }
     }
   }
+
   .maras-publicity-videos {
     a {
       color: #212529;
     }
+
     .content-card-video {
-      &:hover{
+      &:hover {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
+
       .title {
         font-size: 1.5rem;
       }
+
       &--box {
         position: relative;
         width: 80%;
         height: 250px;
         border-radius: 21px 21px 0 0;
+
         &:hover {
+
           .video-overlay,
           .video-overlay-play-button {
             transition: all 300ms;
             opacity: 1;
           }
         }
+
         .video-overlay {
           position: absolute;
           width: 100%;
@@ -774,6 +926,7 @@ a:focus {
           opacity: 0;
           transition: all 300ms;
         }
+
         .video-overlay-play-button {
           width: 70px;
           height: 60px;
@@ -785,7 +938,9 @@ a:focus {
           opacity: 0;
           transition: all 300ms;
         }
-        iframe, img {
+
+        iframe,
+        img {
           width: 100%;
           padding: 10px 10px 0;
           height: 250px;
@@ -796,19 +951,23 @@ a:focus {
     }
   }
 }
-.swiper-pagination{
-  &-bullet{
-    border-radius:4px;
-    &-active{
+
+.swiper-pagination {
+  &-bullet {
+    border-radius: 4px;
+
+    &-active {
       width: 50px;
       background-color: var(--color-main-one);
     }
   }
 }
+
 .maras-tech-offices {
-  a{
+  a {
     flex-shrink: 0;
   }
+
   img {
     height: 80px;
     width: 80px;
@@ -816,14 +975,17 @@ a:focus {
     margin-right: 20px;
   }
 }
-.footer-prize{
-  img{
-    max-width:100%;
+
+.footer-prize {
+  img {
+    max-width: 100%;
   }
 }
+
 footer {
   overflow-x: hidden;
 }
+
 .up-arrow {
   display: none;
   width: 40px;
@@ -831,27 +993,33 @@ footer {
   position: fixed;
   right: 15px;
   bottom: 15px;
+
   img {
     width: 40px;
     height: 40px;
   }
 }
+
 .living-center,
 .maras-tech-base-facilities {
   .content-card {
     background-color: #fff;
     cursor: pointer;
+
     .content-image {
       position: relative;
+
       img {
         height: 250px;
         object-fit: cover;
         object-position: center;
+
         /* mobil and tablet screen */
         @media (max-width: 768px) {
           height: auto !important;
         }
       }
+
       &-title {
         background: rgb(0, 0, 0);
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 85%);
@@ -863,6 +1031,7 @@ footer {
         color: #ffffff;
       }
     }
+
     p {
       display: -webkit-box;
       -webkit-line-clamp: 3;
@@ -870,6 +1039,7 @@ footer {
       overflow: hidden;
       font-size: 10pt;
     }
+
     .read-more {
       display: block;
       position: absolute;
@@ -883,6 +1053,7 @@ footer {
     }
   }
 }
+
 /*
 .tekrom-modal-content {
   .content-image {
@@ -911,6 +1082,33 @@ footer {
   }
 }
 */
+
+
+
+/* Buradan ağağıdakiler genel kullanıldığında ayrı yazılabilir.*/
+
+.btn-technology {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ffa500;
+  background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+  box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);
+  &:hover{
+    background-image: none;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+
 .awards-area-text {
   h6 {
     background: #f36d20;
@@ -920,32 +1118,39 @@ footer {
     padding: 0 15px;
   }
 }
+
 .sticky-content-list {
   // height: 300px;
   height: 460px;
 }
-.accordion-button{
-  &:not(.collapsed){
-    color:var(--color-main-one);
+
+.accordion-button {
+  &:not(.collapsed) {
+    color: var(--color-main-one);
     background-color: #0a53be15
   }
-  &:focus{
+
+  &:focus {
     box-shadow: none;
     background-color: #0a52be25
   }
 }
+
 //generals
 [class^=swiper-button] {
   width: 75px;
   height: 100%;
   top: 0;
   --swiper-navigation-color: #ffffff55;
+
   &:hover {
     --swiper-navigation-color: #ffffff;
   }
 }
+
 .swiper-button-prev {
   left: 0;
+
   &:after {
     width: 46px;
     height: 46px;
@@ -956,8 +1161,10 @@ footer {
     font-size: 2rem;
   }
 }
+
 .swiper-button-next {
   right: 0;
+
   &after {
     width: 46px;
     height: 46px;
@@ -968,14 +1175,17 @@ footer {
     font-size: 2rem;
   }
 }
+
 .slider--life-in-maras {
   .swiper-button-prev {
     left: 20px;
   }
+
   .swiper-button-next {
     right: 20px;
   }
 }
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   width: 46px;
@@ -986,6 +1196,7 @@ footer {
   border-radius: 100%;
   font-size: 2rem;
 }
+
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {
   background-color: #00000055;

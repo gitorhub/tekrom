@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Tekrom Teknoloji
 */
@@ -1056,7 +1057,8 @@ a:focus {
   transition: all 300ms;
 }
 
-.home-page .maras-publicity-videos .content-card-video--box iframe, .home-page .maras-publicity-videos .content-card-video--box img {
+.home-page .maras-publicity-videos .content-card-video--box iframe,
+.home-page .maras-publicity-videos .content-card-video--box img {
   width: 100%;
   padding: 10px 10px 0;
   height: 250px;
@@ -1203,6 +1205,32 @@ footer {
   }
 }
 */
+/* Buradan ağağıdakiler genel kullanıldığında ayrı yazılabilir.*/
+.btn-technology {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ffa500;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
+  background-image: -o-linear-gradient(right, #ffa500 0%, #f36d20 100%);
+  background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  border: 0;
+}
+
+.btn-technology:hover {
+  background-image: none;
+  background-color: #fff;
+  color: #000;
+}
+
 .awards-area-text h6 {
   background: #f36d20;
   -webkit-transform: translateY(50%);
