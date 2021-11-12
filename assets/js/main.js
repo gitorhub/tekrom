@@ -152,3 +152,24 @@ const activeClassChanger = function (allElem, classChange = "active", activeElem
     })
     activeElem.classList.add(classChange)
 }
+
+/* change text */
+let text = [
+    "İşler asla zor değildir. Yeter ki onları küçük parçalara bölebilelim.",
+    "Taş devri taşlar tükendiği için değil, kafalar değiştiği için sona ermiştir.",
+    "Okunu hedeften öteye atan okçu, okunu hedefe ulaştıramayan okçudan daha başarılı değildir. - Montaigne"
+];
+let counter = 0;
+let elem = $("#changeText");
+setInterval(change, 5000);
+
+function change() {
+    elem.fadeOut(function () {
+        elem.html(text[counter]);
+        counter++;
+        if (counter >= text.length) {
+            counter = 0;
+        }
+        elem.fadeIn();
+    });
+}
