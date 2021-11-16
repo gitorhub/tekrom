@@ -115,7 +115,6 @@ $(window).scroll(function () {
 });
 /* sticky navbar */
 let lastScrollTop = 0;
-
 let navbar = document.querySelector(".navbar")
 if ( window.innerWidth < 1092) {
     navbar.classList.add("scrolled")    
@@ -152,17 +151,29 @@ const activeClassChanger = function (allElem, classChange = "active", activeElem
     })
     activeElem.classList.add(classChange)
 }
-
+const mailSender={
+    selector:document.querySelectorAll("[data-mail]"),
+    sendMail(){
+        this.selector.forEach((el)=>{
+            console.log(el)
+            el.addEventListener("click", function(e){
+                e.preventDefault();
+                window.location.href="mailto:kariyer@marasteknolojiussu.com";
+            })
+        })
+    }
+}
+mailSender.sendMail()
 /* change text */
 let text = [
+    "Dünyayı değiştirmek isteyen bu kapıdan girsin",
     "İşler asla zor değildir. Yeter ki onları küçük parçalara bölebilelim.",
-    "Taş devri taşlar tükendiği için değil, kafalar değiştiği için sona ermiştir.",
-    "Okunu hedeften öteye atan okçu, okunu hedefe ulaştıramayan okçudan daha başarılı değildir. - Montaigne"
+    // "Taş devri taşlar tükendiği için değil, kafalar değiştiği için sona ermiştir.",
+    // "Okunu hedeften öteye atan okçu, okunu hedefe ulaştıramayan okçudan daha başarılı değildir. - Montaigne"
 ];
 let counter = 0;
 let elem = $("#changeText");
 setInterval(change, 5000);
-
 function change() {
     elem.fadeOut(function () {
         elem.html(text[counter]);
