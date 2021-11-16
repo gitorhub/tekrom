@@ -166,14 +166,18 @@ const mailSender={
 mailSender.sendMail()
 /* change text */
 let text = [
-    "Dünyayı değiştirmek isteyen bu kapıdan girsin",
-    "İşler asla zor değildir. Yeter ki onları küçük parçalara bölebilelim.",
+    "Kod yazmayı seviyorsan ...",
+    "Dünyayı değiştirmek istiyorsan ...",
+    "Maraş Teknolojü Üssü'nde  kariyerine başlamak istiyorsan...",
+    // "Dünyayı değiştirmek isteyen bu kapıdan girsin",
+    // "Emekler zayi olmaz.",
+    // "İşler asla zor değildir. Yeter ki onları küçük parçalara bölebilelim.",
     // "Taş devri taşlar tükendiği için değil, kafalar değiştiği için sona ermiştir.",
     // "Okunu hedeften öteye atan okçu, okunu hedefe ulaştıramayan okçudan daha başarılı değildir. - Montaigne"
 ];
 let counter = 0;
 let elem = $("#changeText");
-setInterval(change, 5000);
+setInterval(change, 3000);
 function change() {
     elem.fadeOut(function () {
         elem.html(text[counter]);
