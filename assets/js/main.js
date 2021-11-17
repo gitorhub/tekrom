@@ -155,7 +155,6 @@ const mailSender={
     selector:document.querySelectorAll("[data-mail]"),
     sendMail(){
         this.selector.forEach((el)=>{
-            console.log(el)
             el.addEventListener("click", function(e){
                 e.preventDefault();
                 window.location.href="mailto:kariyer@marasteknolojiussu.com";
@@ -188,3 +187,16 @@ function change() {
         elem.fadeIn();
     });
 }
+
+
+// githubpages geçici olarak eklenmiştir.
+
+
+// Array.from(document.querySelectorAll('a')).forEach((el)=>{
+// el.addEventListener('click', e => {
+//     e.preventDefault();
+//     let links=e.target.getAttribute("href");
+//     console.log(links)
+//     window.location.href="/tekrom/"+links        
+//     })
+// })

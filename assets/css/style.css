@@ -1271,6 +1271,8 @@ footer {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
   border: 0;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
   -webkit-animation: zoomer 2s infinite ease-in-out;
           animation: zoomer 2s infinite ease-in-out;
 }
@@ -1339,11 +1341,6 @@ footer {
 section img:hover {
   -webkit-filter: drop-shadow(2px 4px 6px var(--color-main-one));
           filter: drop-shadow(2px 4px 6px var(--color-main-one));
-}
-
-.backdrop {
-  -webkit-backdrop-filter: brightness(0.8);
-          backdrop-filter: brightness(0.8);
 }
 
 [class^=swiper-button] {
