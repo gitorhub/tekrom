@@ -224,6 +224,10 @@ a:focus {
   height: 4px;
 }
 
+.sticky-top {
+  z-index: 9;
+}
+
 /* global components */
 .sticky-menu-height {
   /* wide screen */
@@ -377,6 +381,8 @@ a:focus {
     border-top: 3px solid var(--color-main-two);
     -webkit-box-shadow: var(--shadow-one-side-only);
             box-shadow: var(--shadow-one-side-only);
+    max-height: calc(100vh - 150px);
+    overflow: auto;
   }
 }
 
@@ -416,7 +422,6 @@ a:focus {
   font-weight: 600;
   color: #091133;
   font-size: .8rem;
-  border-radius: .25rem;
 }
 
 .maras-technology-base-manu .navbar-nav ul.dropdown-menu a.dropdown-item:active, .maras-technology-base-manu .navbar-nav ul.dropdown-menu a.dropdown-item.active {
@@ -478,9 +483,15 @@ a:focus {
   min-height: 250px;
 }
 
-.post-heading-overlay .post-heading.backdrop {
+.post-heading-overlay.career {
+  min-height: clamp(250px, 25vw, 400px);
+}
+
+.post-heading-overlay .backdrop {
   padding: clamp(20px, 3vw, 46px);
   border-radius: 4px;
+  -webkit-backdrop-filter: sepia(1);
+          backdrop-filter: sepia(1);
 }
 
 #changeText {
@@ -1324,7 +1335,9 @@ footer {
 }
 
 .sticky-content-list {
-  height: 460px;
+  max-height: 460px;
+  height: 100%;
+  min-height: 100px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -1339,8 +1352,8 @@ footer {
 }
 
 section img:hover {
-  -webkit-filter: drop-shadow(2px 4px 6px var(--color-main-one));
-          filter: drop-shadow(2px 4px 6px var(--color-main-one));
+  -webkit-filter: drop-shadow(2px 4px 6px var(--color-darken-gray));
+          filter: drop-shadow(2px 4px 6px var(--color-darken-gray));
 }
 
 [class^=swiper-button] {

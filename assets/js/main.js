@@ -167,6 +167,7 @@ mailSender.sendMail()
 let text = [
     "Kod yazmayı seviyorsan ...",
     "Dünyayı değiştirmek istiyorsan ...",
+    "Hayallerine kavuşmak istiyorsan ...",
     "Maraş Teknolojü Üssü'nde  kariyerine başlamak istiyorsan...",
     // "Dünyayı değiştirmek isteyen bu kapıdan girsin",
     // "Emekler zayi olmaz.",
@@ -187,16 +188,3 @@ function change() {
         elem.fadeIn();
     });
 }
-
-
-// githubpages geçici olarak eklenmiştir.
-
-
-// Array.from(document.querySelectorAll('a')).forEach((el)=>{
-// el.addEventListener('click', e => {
-//     e.preventDefault();
-//     let links=e.target.getAttribute("href");
-//     console.log(links)
-//     window.location.href="/tekrom/"+links        
-//     })
-// })
