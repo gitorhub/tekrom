@@ -376,6 +376,19 @@ a:focus {
     backdrop-filter: sepia(1);
     
   }
+  .not-found{
+    span{
+      background-color: #ffa500;
+      background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
+  
+      padding: 10px;
+      width: 150px;
+      height: 150px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
 }
 #changeText{
@@ -976,6 +989,7 @@ footer {
     animation: zoomer 2s infinite ease-in-out;
   }
 
+
   // box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);
   @keyframes zoomer {
   0% {transform: scale(1);}
@@ -989,6 +1003,7 @@ footer {
     color: #000;
   }
 }
+
 .awards-area-text {
   h6 {
     background: #f36d20;
