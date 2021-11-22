@@ -1288,6 +1288,9 @@ footer {
   border: 0;
   -webkit-filter: drop-shadow(2px 4px 6px black);
           filter: drop-shadow(2px 4px 6px black);
+}
+
+.btn-technology.animate {
   -webkit-animation: zoomer 2s infinite ease-in-out;
           animation: zoomer 2s infinite ease-in-out;
 }

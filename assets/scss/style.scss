@@ -972,8 +972,10 @@ footer {
   transition: all 0.5s linear;
   border: 0;
   filter: drop-shadow(2px 4px 6px black);
+  &.animate{
+    animation: zoomer 2s infinite ease-in-out;
+  }
 
-  animation: zoomer 2s infinite ease-in-out;
   // box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);
   @keyframes zoomer {
   0% {transform: scale(1);}
