@@ -1,5 +1,5 @@
 /*
-Tekrom Teknoloji
+Maraş Teknoloji Üssü
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 :root {
@@ -297,6 +297,12 @@ a:focus {
       color: var(--color-main-one);
       transition: color 300ms ease-in-out;
       border-bottom: 2px solid transparent;
+      &.btn-career{
+        color: #fff;
+        background-color: #ffa500;
+        background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
+
+      }
       &::after {
         display: none;
       }
@@ -988,6 +994,7 @@ footer {
   &.animate{
     animation: zoomer 2s infinite ease-in-out;
   }
+  
 
 
   // box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);

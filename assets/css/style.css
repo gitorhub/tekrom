@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Tekrom Teknoloji
+Maraş Teknoloji Üssü
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 :root {
@@ -399,6 +399,14 @@ a:focus {
   -o-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
   border-bottom: 2px solid transparent;
+}
+
+.maras-technology-base-manu .navbar-nav .nav-item a.btn-career {
+  color: #fff;
+  background-color: #ffa500;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
+  background-image: -o-linear-gradient(right, #ffa500 0%, #f36d20 100%);
+  background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
 }
 
 .maras-technology-base-manu .navbar-nav .nav-item a::after {

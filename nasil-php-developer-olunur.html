@@ -44,14 +44,14 @@
                 <div class="collapse navbar-collapse" id="marasTechBaseNavbar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Ana Sayfa</a>
+                            <a class="nav-link active" aria-current="page" href="#">Ana Sayfa</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/#yasam">Etkinlikler</a>
+                            <a class="nav-link" href="#yasam">Etkinlikler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/#maras-teknoloji">Teknoloji</a>
+                            <a class="nav-link" href="#maras-teknoloji">Teknoloji</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -60,7 +60,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item active" href="/kariyer.html">
+                                    <a class="dropdown-item active btn-career" href="/kariyer.html">
                                         Aramıza Katıl
                                     </a>
                                 </li>
@@ -77,6 +77,11 @@
                                 <li>
                                     <a class="dropdown-item" href="/nasil-php-developer-olunur.html">
                                         Php Developer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="/nasil-nodejs-developer-olunur.html">
+                                        NodeJs Developer
                                     </a>
                                 </li>
                                 <li>
@@ -137,19 +142,19 @@
                         <section>
                             <div class="py-3 py-sm-5 text-secondary">
                                 <p>Çoğunlukla programlamaya başlanırken yaşanılan en büyük problem nereden başlanacağının ve
-                                    neler yapılacağının bilinmemesidir. Aslında bu yazımız Web Sitesi üretmek isteyen ya da Web
-                                    Servisleri geliştirmek isteyenleri ilgilendirmektedir.</p>
+                                    neler yapılacağının bilinmemesidir. Aslında bu yazımız <strong>Web Sitesi</strong> üretmek isteyen ya da <strong>Web
+                                        Servisleri</strong> geliştirmek isteyenleri ilgilendirmektedir.</p>
                                 <p>Php geliştiricisi olmak için bir tek tutkunuzun olması yeterlidir o da web geliştiriciliği.
                                     Php’nin diğer dillere nazaran zor olduğu söylenebilir fakat bu tanımlama hiç doğru değildir
                                     ve hatta belki de programlamanın bütün keyiflerini alabileceğiniz ve kolayca
                                     öğrenebileceğiniz bir programlama dilidir. </p>
                                 <p>
-                                    Kendi tecrübelerimden konuşacak olursam daha önceleri: C, C++, Java, NodeJS ve Python
+                                    Kendi tecrübelerimden konuşacak olursam daha önceleri: <strong>C, C++, Java, NodeJS ve Python</strong>
                                     dilleriyle geliştirmeler yaptım. Üniversite eğitimimde C dili ile başlayan programlama
                                     serüvenimde veri yapıları, işletim sistemleri, oyun programlama ve görüntü işleme ile ilgili
                                     çeşitli deneyimler edinmiştim. Bu tecrübe haliyle diğer dillerin inceliklerini keşfederken
                                     bana ciddi anlamda katkısı olmuştu. Genel olarak C yazım kuralları (syntax’ına) aşina bir
-                                    kişinin en azından kendi deneyimlediğim dilleri öğrenmesi çok daha hızlı ve verimli
+                                    kişinin en azından kendi deneyimlediği dilleri öğrenmesi çok daha hızlı ve verimli
                                     olacaktır.
                                 </p>
                                 <p>
@@ -162,24 +167,30 @@
                                     Php bilindiği üzere direkt olarak HTML taglarının arasına yazılabilmektedir. Hızlı şekilde bir websitesi geliştirilmek istendiğinde Php dili ile basit bir çatı oluşturulup kolayca geliştirme yapılabilmektedir. Bunun yanında birçok hazır framework ile kolayca içerdikleri araçlarla ve özellikleriyle geliştirme süresi çok daha kısa sürdürebilir.
                                 </p>
                                 <p>
-                                    Kod karmaşası frameworkler ile çoğunlukla minimuma indirgenir. Birçok framework MVC yapısına uygundur. Yani bir websitesini kolaylıkla oluşturmak için gerekecek olan bütün araçlara sahiptir. Bunlara aynı zamanda Full-Stack web frameworkleri adı da verilir. Örnek vermek gerekirse Symfony, Laravel, Codeigniter çok popüler full-stack web frameworkleridir. Öğrenmesi ve kullanımı son derece kolay frameworklerdir.
+                                    Kod karmaşası frameworkler ile çoğunlukla minimuma indirgenir. Birçok framework MVC yapısına uygundur. Yani bir websitesini kolaylıkla oluşturmak için gerekecek olan bütün araçlara sahiptir. Bunlara aynı zamanda Full-Stack web frameworkleri adı da verilir. Örnek vermek gerekirse <strong>Symfony, Laravel, Codeigniter</strong> çok popüler full-stack web frameworkleridir. Öğrenmesi ve kullanımı son derece kolay frameworklerdir.
                                 </p>
+                                <span class="d-block fs-3" id="content-1">Servislerin Önemi</span>
+                                <br>
                                 <p>
-                                    <span class="d-block fs-3" id="content-1">Servislerin Önemi</span>
-                                    Bunun dışında API ya da servis geliştirmeleri için özelleştirilmiş frameworkler de bulunmaktadır. Bu türden frameworklere Micro web frameworkleri adı verilir. Örneğin Lumen servis geliştirmeleri için daha uygundur. Daha spesifik olan işlemlerde tercih edilir örnek vermek gerekirse; belirli sürelerde kur birimlerinin güncellenmesi, hava durumunun güncellenmesi ya da API için gerekebilecek verilerin sunulmasında çok daha verimli olacak bir frameworktur.
+                                    Bunun dışında API ya da servis geliştirmeleri için özelleştirilmiş frameworkler de bulunmaktadır. Bu türden frameworklere <strong> Micro web frameworkleri</strong> adı verilir. Örneğin Lumen servis geliştirmeleri için daha uygundur. Daha spesifik olan işlemlerde tercih edilir örnek vermek gerekirse; belirli sürelerde kur birimlerinin güncellenmesi, hava durumunun güncellenmesi ya da API için gerekebilecek verilerin sunulmasında çok daha verimli olacak bir frameworktur.
                                 </p>
                                 <p>
                                     Bu alanda çok fazla geliştiricinin bulunması özellikle öğrenimini daha da kolaylaştırır. İnternet üzerinde bir websitesi oluşturduktan sonra bunu yayınlamak için bir Linux sunucuya sahip olmanız yeterlidir. Haliyle sunucu maliyetleri de çok yüksek olmayacaktır.
                                 </p>
                                 <p>
                                     <span class="d-block fs-3" id="content-2">Açık Kaynak</span>
+                                    <br>
                                     Github üzerinde tonlarca açık-kaynak paketlerin varlığı Php için çok büyük bir ganimettir. Aynı zamanda dokümantasyonları açıklayıcı olması ve uygulanmasını kolaylaştırmaktadır.
                                 </p>
+                                <span class="d-block fs-3" id="content-3">Veri Tabanları ile Uyumu</span>
+                                <br>
                                 <p>
-                                    <span class="d-block fs-3" id="content-3">Veri Tabanları ile Uyumu</span>
-                                    MySql, Ms-Sql, Sqlite, PostgreSql, Redis ve MongoDb vb. etkileşime
+                                    <strong>MySql, Ms-Sql, Sqlite, PostgreSql, Redis ve MongoDb vb.</strong> etkileşime
                                     girmek ve kullanmak çok kolaydır. Çünkü her biri için Php kütüphaneleri bulunmaktadır.
+                                  
+                                
                                 </p>
+                                <p>    Eğer web alanında uzmanlaşmak istiyorsanız sizin için vazgeçilmek dillerden birisi PHP olacaktır. Dünya genelindeki internet sitelerinin yarıdan fazlasının PHP ile yazıldığını hatırlamakta fayda vardır. Ayrıca PHP çok geniş iş fırsatlarını barındıran bir dildir.</p>
                                 <div>
                                     <blockquote>
                                         <strong class="d-block">Birtan Taşkın</strong>
@@ -240,7 +251,7 @@
                                    data-caption="Esentepe Mahallesi, Haberler Sk. No:13 ŞİŞLİ / İSTANBUL">
                                     <img loading="lazy" src="assets/images/default-content-image.png"
                                          data-src="assets/images/content/home/offices/genel-mudurluk.jpg"
-                                         class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Tekrom">
+                                         class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Maraş Teknoloji Üssü">
                                 </a>
                                 <address class="m-0">
                                     Esentepe Mahallesi, Haberler Sk. No:13<br/>
@@ -270,7 +281,7 @@
                                 </a>
                                 <address>
                                     906 Broadway, Suite 100 , San Francisco, CA 94133<br/>
-                                    Kaliforniya / Amerika Birleşik Devletleri
+                                    KALİFORNİYA / AMERİKA BİRLEŞİK DEVLETLERİ
                                     <a class="col-12 d-flex" href="https://www.tsoft.us/">www.tsoft.us</a>
                                 </address>
                             </div>
@@ -306,7 +317,7 @@
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#arge">
-                                Anadolu Ar-Ge Merkezi KSÜ Teknokent
+                                Maraş Teknoloji Üssü
                             </button>
                         </h2>
                         <div id="arge" class="accordion-collapse collapse show">
@@ -316,7 +327,7 @@
                                    data-caption="KSÜ Avşar Kampüsü Teknokent Bina No:259 Kat:2 No:41 ONİKİŞUBAT / KAHRAMANMARAŞ">
                                     <img loading="lazy" src="assets/images/default-content-image.png"
                                          data-src="assets/images/content/home/offices/maras-teknokent.jpg"
-                                         class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Tekrom">
+                                         class="lazyload img-fluid rounded-circle" alt="Kahramanmaraş Maraş Teknoloji Üssü">
                                 </a>
                                 <address class="m-0">
                                     KSÜ Avşar Kampüsü Teknokent Bina No:259 Kat:2 No:41<br/>
@@ -455,15 +466,6 @@
                              alt="instagram">
                     </a>
 
-                    <a href="https://www.facebook.com/tsofteticaret" class="p-3">
-                        <img loading="lazy" src="assets/images/default-content-image.png"
-                             data-src="assets/images/content/home/other/facebook.svg" class="lazyload"
-                             alt="facebook">
-                    </a>
-                    <a href="https://twitter.com/tsofteticaret" class="p-3">
-                        <img loading="lazy" src="assets/images/default-content-image.png"
-                             data-src="assets/images/content/home/other/twitter.svg" class="lazyload" alt="twitter">
-                    </a>
               
                     <a href="https://www.youtube.com/user/TsoftEticaret" class="p-3">
                         <img loading="lazy" src="assets/images/default-content-image.png"

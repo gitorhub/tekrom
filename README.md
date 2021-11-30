@@ -13,26 +13,15 @@ kariyer alanında svg yükledim. 671 kb /297b
 backend developer yol haritası eklenecek
 mobil app developer eklenecek. saniye hanımda
 tasarım ux eklenecek erkan beyde
+nodejs developer eklenmeli
 
-
-eğer tesimler vb varsa eklenecek
-
-
-
-
-
-linkedin paylaşımları için bir ekleme yapsak daha mı iyi olur acaba
 
 Linkedin paylaşımları için hakan beye banner çizdirelim
 
 
+++ YOUTUBE SAYFASI AÇALIM EMRE BEY
 
 
 
+-->
 
-
-
-
-kariyer@maras... >> kariyer@tsoft.com.tr yönlendirildi.
-analist eklendi.
-devops eklendi
