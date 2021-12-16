@@ -69,7 +69,6 @@ a,
 a:hover,
 a:focus {
   text-decoration: none;
-
 }
 .font-family-main {
   font-family: var(--font-family-main);
@@ -173,7 +172,6 @@ a:focus {
   -moz-user-select: none;
   user-select: none;
 }
-
 .pace-inactive {
   display: none;
 }
@@ -301,7 +299,6 @@ a:focus {
         color: #fff;
         background-color: #ffa500;
         background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-
       }
       &::after {
         display: none;
@@ -375,18 +372,15 @@ a:focus {
   &.career{
     min-height: clamp(250px,25vw,400px);
   }
-
  .backdrop{
     padding: clamp(20px,3vw,46px);
     border-radius: 4px;
     backdrop-filter: sepia(1);
-    
   }
   .not-found{
     span{
       background-color: #ffa500;
       background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  
       padding: 10px;
       width: 150px;
       height: 150px;
@@ -395,7 +389,6 @@ a:focus {
       align-items: center;
     }
   }
-
 }
 #changeText{
   font-size: clamp(15px,2vw,20px);
@@ -994,15 +987,11 @@ footer {
   &.animate{
     animation: zoomer 2s infinite ease-in-out;
   }
-  
-
-
   // box-shadow: 0 0 10px 0 rgb(40 40 40 / 30%);
   @keyframes zoomer {
   0% {transform: scale(1);}
   50% {transform: scale(1.1);}
   100% {transform: scale(1);}
- 
   }
   &:hover{
     background-image: none;
@@ -1010,7 +999,6 @@ footer {
     color: #000;
   }
 }
-
 .awards-area-text {
   h6 {
     background: #f36d20;
@@ -1037,10 +1025,12 @@ footer {
   }
 }
 //generals
-section img:hover{
-  filter: drop-shadow(2px 4px 6px var(--color-darken-gray))
+section img{
+  transition: all .3s;
+  &:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-
+}
 [class^=swiper-button] {
   width: 75px;
   height: 100%;
