@@ -299,7 +299,14 @@ a:focus {
         color: #fff;
         background-color: #ffa500;
         background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
+        animation: changeBg 1s infinite;
       }
+      @keyframes changeBg{
+        0%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%)}
+         50%  {background-image: linear-gradient(to left, #f36d20 0%, #ffa500 100%)}
+      100%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%)}
+     
+     }
       &::after {
         display: none;
       }
@@ -315,6 +322,7 @@ a:focus {
     }
     ul.dropdown-menu {
       padding: 0;
+      box-shadow: rgb(0 0 0 / 10%) 0 20px 25px -5px, rgb(0 0 0 / 4%) 0px 10px 10px -5px;
       a.dropdown-item {
         padding: 10px 15px;
         font-weight: 600;
