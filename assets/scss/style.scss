@@ -305,6 +305,8 @@ a:focus {
         0%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%)}
          50%  {background-image: linear-gradient(to left, #f36d20 0%, #ffa500 100%)}
       100%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%)}
+      // 0%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 25%, #ffa500 50%, #f36d20 75%)}
+      // 50%  {background-image: linear-gradient(to left, #f36d20 0%, #ffa500 25%, #f36d20 50%, #ffa500 75%)}
      
      }
       &::after {
