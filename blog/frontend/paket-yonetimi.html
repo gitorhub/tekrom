@@ -152,12 +152,9 @@
                         <section>
                             <div class="py-3 py-sm-5 text-secondary">
                                 <br>
-                                    <span class="d-block fs-3" id="content-front">Frontend Paket Yönetimi</span>
+                                    <span class="d-block fs-3" id="content-0">Paketlere ve Paket Yöneticilerine Neden İhtiyaç Duyarız?</span>
                                 <br> <br>
 
-
-                            
-                                <h2 id="paketlere-ve-paket-y-neticilerine-neden-i-htiya-duyar-z-">Paketlere ve Paket Yöneticilerine Neden İhtiyaç Duyarız?</h2>
                                 <p>Biz yazılım geliştiricileri genelde her şeyi sıfırdan geliştirmek yerine, mevcut açık kaynak paketleri kullanmayı tercih ediyoruz.</p>
                                 <p>Bu paketlerin her birinin kendi topluluğu ve geliştiricileri var.</p>
                                 <p>Projelerimizde açık kaynak paket kullanmak bize daha hızlı geliştirme ve daha iyi güvenlik gibi avantajlar sağlıyor.</p>
@@ -171,7 +168,11 @@
                                 <p>Örneğin bir paket yöneticisi tek bir komutla yeni paketleri kurabilir veya mevcut paketleri güncelleyebilir. Her şey otomatik olduğundan insan hatası olasılığı yoktur.</p>
                                 <p>Aşağıdaki görselde <a href="https://www.pardus.org.tr/">Pardus</a> işletim sisteminin PiSi (Package Installed Succesfully as Intended) paket yöneticisini görebilirsiniz.</p>
                                 <p><img src="./assets/images/pisi-package-manager.png" alt="pisi package manager"></p>
-                                <h1 id="javascript-paket-y-neticileri">JavaScript Paket Yöneticileri</h1>
+                           
+
+                                <br>
+                                <span class="d-block fs-3" id="content-1">JavaScript Paket Yöneticileri</span>
+                            <br> <br>
                                 <p>Bugün paket yöneticileri alanında üç büyük oyuncu var:</p>
                                 <ul>
                                 <li>npm</li>
@@ -187,15 +188,30 @@
                                 <li>Paketleri yayınlama,</li>
                                 <li>Güvenlik denetimleri gerçekleştirme.</li>
                                 </ul>
-                                <h2 id="javascript-paket-y-neticilerinin-k-sa-bir-ge-mi-i">JavaScript Paket Yöneticilerinin Kısa Bir Geçmişi</h2>
+                        
+
+                                <br>
+                                <span class="d-block fs-3" id="content-2">JavaScript Paket Yöneticilerinin Kısa Bir Geçmişi</span>
+                            <br> <br>
+
+                                
                                 <p>Şimdiye kadar piyasaya sürülen ilk paket yöneticisi, Ocak 2010&#39;da npm idi. Paket yöneticilerinin bugün nasıl çalıştığının temel ilkelerini oluşturdu.</p>
-                                <h3 id="npm">npm</h3>
+                                <br>
+                                <span class="d-block fs-3" id="content-3">Npm</span>
+                            <br> <br>
+
                                 <p><img src="./assets/logos/npm.png" alt="npm"></p>
                                 <p>npm, paket yöneticilerinin atasıdır.</p>
                                 <p>Yayınlanması bir devrim oluşturdu çünkü o zamana kadar proje bağımlılıkları <strong>manuel</strong> olarak indirilip yönetiliyordu. Meta veri alanlarıyla birlikte <strong>package.json</strong> dosyası (ör. devDependencies), <strong>node_modules</strong>&#39;ta bağımlılıkları depolamak, özel komut dosyaları, genel ve özel paket kayıtları ve daha fazlası gibi kavramların tümü npm tarafından tanıtıldı.</p>
                                 <p>2010&#39;da yayınlandıktan kısa süre sonra resmi olarak Node.js takımı tarafından sahiplenildi, bu da npm&#39;in dönüm noktası oldu. Node.js&#39;in büyük başarısından sonra geliştirici topluluğu npm&#39;e de ilgi göstermeye başladı.</p>
                                 <p>2020&#39;de <strong>GitHub</strong> npm&#39;i satın aldı, bu nedenle prensipte npm artık <strong>Microsoft</strong>&#39;un yönetimi altında. Bu yazının yazıldığı sırada, en son ana sürüm Ekim 2021&#39;de yayınlanan <strong>v8</strong>&#39;dir.</p>
-                                <h3 id="yarn-v1-classsic-">Yarn (v1 / Classsic )</h3>
+                         
+
+
+                                <br>
+                                <span class="d-block fs-3" id="content-4">Yarn (v1 / Classsic )</span>
+                            <br> <br>
+
                                 <p><img src="./assets/logos/yarn.png" alt="yarn"></p>
                                 <p>Ekim 2016&#39;daki bir blog gönderisinde <strong>Facebook</strong>, npm&#39;nin o sırada sahip olduğu tutarlılık, güvenlik ve performans sorunlarıyla ilgili sorunları çözecek yeni bir paket yöneticisi geliştirmek için <strong>Google ve birkaç şirketle</strong> ortak bir çalışma yürüttüğünü duyurdu.</p>
                                 <p>Yarn&#39;ın mimari tasarımını npm&#39;nin oluşturduğu birçok kavram ve sürece dayandırsalar da Yarn, ilk sürümünde paket yöneticisi ortamı üzerinde büyük bir etkiye sahipti. Yarn, npm&#39;nin aksine, npm&#39;nin ilk sürümleri için önemli bir sorun olan kurulum sürecini hızlandırmak için operasyonları (paket indirme, kurma vb.) <strong>paralel</strong> hale getirdi.</p>
@@ -209,19 +225,35 @@
                                 <p>Aşağıdaki görselde Yarn Classic ve npm benchmark karşılaştırmasını görebilirsiniz.</p>
                                 <p><img src="./assets/images/yarn-vs-npm.png" alt="yarn-vs-npm"></p>
                                 <p>Yarn v1, 2020&#39;de bakım moduna girdi. O zamandan beri v1.x serisi miras olarak kabul edildi ve adı Yarn Classic olarak değiştirildi. Yerine Yarn v2 veya Berry, artık aktif geliştirme dalıdır.</p>
-                                <h3 id="pnpm">pnpm</h3>
+                        
+
+                                <br>
+                                <span class="d-block fs-3" id="content-5">Pnpm</span>
+                            <br> <br>
+
                                 <p><img src="./assets/logos/pnpm.png" alt="pnpm"></p>
                                 <p>pnpm&#39;in 1. versiyonu, 2017 yılında <strong>Zoltan Kochan</strong> tarafından piyasaya sürüldü.</p>
                                 <p>pnpm yaratıcılarının npm ve Yarn ile ilgili temel sorunu, projelerde kullanılan bağımlılıkların fazla depolanmasıydı. Yarn Classic, npm&#39;e göre hız avantajlarına sahip olsa da, pnpm yaratıcıları için bu yeterli değildi.</p>
                                 <p>pnpm bağımlılıkların depolanmasına alternatif bir strateji sundu: içerik adreslenebilir depolama. Bu yöntem, paketleri global bir mağazada (<strong>~/.pnpm-store/</strong>) depolamaya dayalıdır. Bir bağımlılığın her sürümü fiziksel olarak o klasörde yalnızca bir kez saklanır, tek bir doğruluk kaynağı oluşturur ve oldukça fazla disk alanından tasarruf sağlar. Bir bağımlılık kullanılmak istendiğinde proje klasörümüzdeki sembolik bağlantı sayesinde global mağazadan paket çekilir.</p>
                                 <p>Aşağıdaki görselde pnpm&#39;in sağladığı sembolik link yapısını görebilirsiniz.</p>
                                 <p><img src="./assets/images/pnpm-links.png" alt="yarn-vs-npm"></p>
-                                <h3 id="yarn-v2-berry-">Yarn (v2, Berry)</h3>
+                               
+
+                                <br>
+                                <span class="d-block fs-3" id="content-6">Yarn (v2, Berry)</span>
+                               <br> <br>
+
                                 <p>Yarn v2, Ocak 2020&#39;de piyasaya sürüldü. Yarn ekibi, esasen yeni bir kod tabanı ve yeni ilkelere sahip yeni bir paket yöneticisi olduğunu daha açık hale getirmek için Yarn Berry olarak adlandırdı başladı.</p>
                                 <p>Yarn Berry&#39;nin ana yeniliği, node_modules&#39;ı düzeltmek için bir strateji olarak ortaya çıkan Plug&#39;n&#39;Play (PnP) yaklaşımıdır. node_modules (iç içe klasör yapısı) oluşturmak yerine, tek bir dosya olduğu için daha verimli işlenebilen bağımlılık arama tablolarına sahip bir <strong>.pnp.cjs</strong> dosyası oluşturulur. Ayrıca her paket, node_modules klasöründen daha az disk alanı kaplayan <strong>.yarn/cache/</strong> klasörünün içinde bir <strong>zip dosyası olarak saklanır.</strong></p>
                                 <p>Yarn v2 tüm bu değişiklikler ve çok hızlı bir şekilde piyasaya sürülmesiyle büyük tartışmalara yol açtı. PnP&#39;nin son değişiklikleri, geliştiricilerin mevcut paketlerini onunla uyumlu hale getirmek için güncellemelerini gerektirdi. Yeni PnP yaklaşımı varsayılan olarak kullanıldı ve node_modules&#39;a geri dönmek başlangıçta kolay değildi, bu da birçok önde gelen geliştiricinin Yarn 2&#39;yi seçmediği için açıkça eleştirmesine yol açtı.</p>
                                 <p>Yarn Berry ekibi, sonraki sürümlerinde birçok sorunu ele aldı. PnP&#39;nin uyumsuzluğunu gidermek için ekip, varsayılan çalışma modunu kolayca değiştirmenin bazı yollarını önerdi. Bir node_modules eklentisinin yardımıyla, geleneksel node_modules yaklaşımı kullanılabilinir hale getirildi.</p>
-                                <h2 id="paket-y-neticilerinin-pop-ler-projeler-taraf-ndan-benimsenmesi">Paket Yöneticilerinin Popüler Projeler Tarafından Benimsenmesi</h2>
+                             
+
+
+                                <br>
+                                <span class="d-block fs-3" id="content-7">Paket Yöneticilerinin Popüler Projeler Tarafından Benimsenmesi</span>
+                            <br> <br>
+
                                 <table>
                                 <thead>
                                 <tr>
@@ -288,7 +320,12 @@
                                 </tbody>
                                 </table>
                                 <p>İlginç bir şekilde, bu yazının yazıldığı sırada bu açık kaynak projelerinin hiçbiri bir PnP yaklaşımını kullanmıyor.</p>
-                                <h2 id="sonu-">Sonuç</h2>
+                              
+
+                                <br>
+                                <span class="d-block fs-3" id="content-8">Sonuç</span>
+                               <br> <br>
+
                                 <p><img src="./assets/images/node-modules.png" alt="node_modules"></p>
                                 <p>Paket yöneticilerinin mevcut durumu şuan için harika. Tüm büyük paket yöneticileri arasında neredeyse <strong>özellik eşliğine ulaştık</strong>. Ama yine de, kaputun altında biraz farklılar var.</p>
                                 <p>pnpm, CLI kullanımları benzer olduğu için ilk başta npm&#39;e benzer, ancak bağımlılıkları yönetme konusunda çok farklıdır; pnpm&#39;in yöntemi daha iyi performans ve en iyi disk alanı verimliliği sağlar. Yarn Classic hala çok popülerdir, ancak eski bir yazılım olarak kabul edilip yakın gelecekte destek kaldırılabilir. Yarn Berry PnP, bloktaki yeni çocuk, paket yöneticisi ortamında bir kez daha (ilk devrimi npm&#39;in yaptığını hatırlarsak) devrim yaratma potansiyelini tam olarak anlamadı.</p>
@@ -307,12 +344,12 @@
                                 <br>
 
 
-                              <!--  <div>
+                                <div>
                                     <blockquote>
-                                        <strong class="d-block">Hüseyin DAŞCI </strong>
-                                        <span>Frontend Developer</span>
+                                        <strong class="d-block">Emre MERTOĞLU </strong>
+                                        <span>Jr. Front-end Developer</span>
                                     </blockquote>
-                                </div>-->
+                                </div>
 
 
 
@@ -332,8 +369,57 @@
                                     <div class="p-2">
                                         <ul class="list-group list-group-flush overflow-auto sticky-content-list">
                                             <li class="list-group-item">
-                                                <a href="#content-front">
-                                                    Frontend Developer Olmak
+                                                <a href="#content-0">
+                                                    Paketlere ve Paket Yöneticilerine Neden İhtiyaç Duyarız?
+
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#content-1">
+                                                    JavaScript Paket Yöneticileri
+                                                </a>
+                                            </li>
+                                          
+                                            <li class="list-group-item">
+                                                <a href="#content-2">
+                                                    JavaScript Paket Yöneticilerinin Kısa Bir Geçmişi
+                                                </a>
+                                            </li>
+                                          
+                                            <li class="list-group-item">
+                                                <a href="#content-3">
+                                                    Npm
+                                                </a>
+                                            </li>
+                                          
+                                            <li class="list-group-item">
+                                                <a href="#content-4">
+                                                    Yarn (v1 / Classsic )
+
+                                                </a>
+                                            </li>
+                                          
+                                            <li class="list-group-item">
+                                                <a href="#content-5">
+                                                    Pnpm
+                                                </a>
+                                            </li>
+                                          
+                                            <li class="list-group-item">
+                                                <a href="#content-6">
+                                                    Yarn (v2, Berry)
+
+                                                </a>
+                                            </li>
+                                          
+                                            <li class="list-group-item">
+                                                <a href="#content-7">
+                                                    Paket Yöneticilerinin Popüler Projeler Tarafından Benimsenmesi
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#content-8">
+                                                    Sonuç
                                                 </a>
                                             </li>
                                           
