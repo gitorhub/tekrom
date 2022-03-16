@@ -62,8 +62,12 @@ body {
   min-height: 100vh;
   border-top: 4px solid var(--color-border-top);
 }
+
 a{
   color:var(--color-main-one)
+}
+[id*="content"] {
+  scroll-margin-top: 100px;
 }
 a,
 a:hover,

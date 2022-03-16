@@ -74,6 +74,10 @@ a {
   color: var(--color-main-one);
 }
 
+[id*="content"] {
+  scroll-margin-top: 100px;
+}
+
 a,
 a:hover,
 a:focus {
