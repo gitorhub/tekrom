@@ -395,7 +395,7 @@ a:focus {
 }
 
 .maras-technology-base-manu .navbar-nav .nav-item a {
-  padding: 15px 20px;
+  padding: 15px 15px;
   font-weight: 600;
   color: #1e4496;
   color: var(--color-main-one);
