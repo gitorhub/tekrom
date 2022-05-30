@@ -27,6 +27,7 @@ const turkeyMap = function () {
         generalWords.style.position = 'fixed';
     });
 }
+
 generalStates.addEventListener("mouseleave", () => {
     setTimeout(() => {
         if(![...wordStates].filter(e=>e.classList.contains("on")).length){
@@ -34,7 +35,10 @@ generalStates.addEventListener("mouseleave", () => {
             svgMaras.classList.add("on")
             generalWords.setAttribute("style", "position:absolute");
         }
+
+        
     }, 1000);
+    
 })
 svgStates.forEach((el) => {
     el.addEventListener("mouseenter", () => {

@@ -15,3 +15,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{QUERY_STRING} ^(?!(w=123))$
 RewriteRule (.*).html$ /$1 [R=301,L]
 #RewriteRule ^([^\.]+).html$ https://%{SERVER_NAME}/$1 [R=301]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

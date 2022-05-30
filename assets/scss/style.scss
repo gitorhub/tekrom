@@ -62,12 +62,8 @@ body {
   min-height: 100vh;
   border-top: 4px solid var(--color-border-top);
 }
-
 a{
   color:var(--color-main-one)
-}
-[id*="content"] {
-  scroll-margin-top: 100px;
 }
 a,
 a:hover,
@@ -293,7 +289,7 @@ a:focus {
       overflow: auto;
     }
     .nav-item a {
-      padding: 15px 15px;
+      padding: 15px 20px;
       font-weight: 600;
       color: #1e4496;
       color: var(--color-main-one);
@@ -303,16 +299,7 @@ a:focus {
         color: #fff;
         background-color: #ffa500;
         background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-        animation: changeBg 1s infinite;
       }
-      @keyframes changeBg{
-        0%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%)}
-         50%  {background-image: linear-gradient(to left, #f36d20 0%, #ffa500 100%)}
-      100%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%)}
-      // 0%  {background-image: linear-gradient(to left, #ffa500 0%, #f36d20 25%, #ffa500 50%, #f36d20 75%)}
-      // 50%  {background-image: linear-gradient(to left, #f36d20 0%, #ffa500 25%, #f36d20 50%, #ffa500 75%)}
-     
-     }
       &::after {
         display: none;
       }
@@ -328,7 +315,6 @@ a:focus {
     }
     ul.dropdown-menu {
       padding: 0;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       a.dropdown-item {
         padding: 10px 15px;
         font-weight: 600;
@@ -990,15 +976,14 @@ footer {
   color: #fff;
   background-color: #ffa500;
   background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  padding: clamp(7px,1vw,12px) clamp(15px,1.5vw,30px);
+  padding: clamp(5px,1vw,14px) clamp(15px,1.5vw,30px);
   margin: 0;
   font-size: 15px;
   font-weight: bold;
   border-radius: 25px;
   transition: all 0.5s linear;
-  border: 1px solid transparent;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
+  border: 0;
+  filter: drop-shadow(2px 4px 6px black);
   &.animate{
     animation: zoomer 2s infinite ease-in-out;
   }
@@ -1012,7 +997,6 @@ footer {
     background-image: none;
     background-color: #fff;
     color: #000;
-    border: 1px solid #000000;
   }
 }
 .awards-area-text {
@@ -1066,7 +1050,6 @@ section img{
     align-items: center;
     border-radius: 100%;
     font-size: 2rem;
-
   }
 }
 .swiper-button-next {
