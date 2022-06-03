@@ -407,41 +407,6 @@ a:focus {
   background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
   background-image: -o-linear-gradient(right, #ffa500 0%, #f36d20 100%);
   background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  -webkit-animation: changeBg 1s infinite;
-          animation: changeBg 1s infinite;
-}
-
-@-webkit-keyframes changeBg {
-  0% {
-    background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
-    background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  }
-  50% {
-    background-image: -webkit-gradient(linear, right top, left top, from(#f36d20), to(#ffa500));
-    background-image: linear-gradient(to left, #f36d20 0%, #ffa500 100%);
-  }
-  100% {
-    background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
-    background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  }
-}
-
-@keyframes changeBg {
-  0% {
-    background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
-    background-image: -o-linear-gradient(right, #ffa500 0%, #f36d20 100%);
-    background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  }
-  50% {
-    background-image: -webkit-gradient(linear, right top, left top, from(#f36d20), to(#ffa500));
-    background-image: -o-linear-gradient(right, #f36d20 0%, #ffa500 100%);
-    background-image: linear-gradient(to left, #f36d20 0%, #ffa500 100%);
-  }
-  100% {
-    background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
-    background-image: -o-linear-gradient(right, #ffa500 0%, #f36d20 100%);
-    background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  }
 }
 
 .maras-technology-base-manu .navbar-nav .nav-item a::after {
@@ -462,8 +427,6 @@ a:focus {
 
 .maras-technology-base-manu .navbar-nav ul.dropdown-menu {
   padding: 0;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .maras-technology-base-manu .navbar-nav ul.dropdown-menu a.dropdown-item {
@@ -1136,7 +1099,7 @@ a:focus {
 }
 
 .home-page .maras-publicity-videos .content-card-video .title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .home-page .maras-publicity-videos .content-card-video--box {
@@ -1341,7 +1304,7 @@ footer {
   background-image: -webkit-gradient(linear, right top, left top, from(#ffa500), to(#f36d20));
   background-image: -o-linear-gradient(right, #ffa500 0%, #f36d20 100%);
   background-image: linear-gradient(to left, #ffa500 0%, #f36d20 100%);
-  padding: clamp(7px, 1vw, 12px) clamp(15px, 1.5vw, 30px);
+  padding: clamp(5px, 1vw, 14px) clamp(15px, 1.5vw, 30px);
   margin: 0;
   font-size: 15px;
   font-weight: bold;
@@ -1349,9 +1312,9 @@ footer {
   -webkit-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  border: 1px solid transparent;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 0;
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+          filter: drop-shadow(2px 4px 6px black);
 }
 
 .btn-technology.animate {
@@ -1393,7 +1356,6 @@ footer {
   background-image: none;
   background-color: #fff;
   color: #000;
-  border: 1px solid #000000;
 }
 
 .awards-area-text h6 {
